@@ -1,0 +1,92 @@
+[gd_resource type="SpriteFrames" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/character/idle/arms_crossed_three_quarter_right/idle_arms_crossed_three_quarter_right_01.png" id="1_p7qlc"]
+[ext_resource type="Texture2D" path="res://assets/character/idle/arms_crossed_three_quarter_right/idle_arms_crossed_three_quarter_right_02.png" id="2_5wqa1"]
+[ext_resource type="Texture2D" path="res://assets/character/idle/arms_crossed_three_quarter_right/idle_arms_crossed_three_quarter_right_03.png" id="3_c44kv"]
+[ext_resource type="Texture2D" path="res://assets/character/idle/arms_crossed_three_quarter_right/idle_arms_crossed_three_quarter_right_04.png" id="4_hy7wg"]
+[ext_resource type="Texture2D" path="res://assets/character/idle/arms_crossed_three_quarter_right/idle_arms_crossed_three_quarter_right_05.png" id="5_wjb5h"]
+[ext_resource type="Texture2D" path="res://assets/character/idle/arms_crossed_three_quarter_right/idle_arms_crossed_three_quarter_right_06.png" id="6_sn4lr"]
+[ext_resource type="Texture2D" path="res://assets/character/idle/default_three_quarter_right/idle_default_three_quarter_right_01.png" id="7_0e01i"]
+[ext_resource type="Texture2D" path="res://assets/character/idle/default_three_quarter_right/idle_default_three_quarter_right_02.png" id="8_ls424"]
+[ext_resource type="Texture2D" path="res://assets/character/idle/default_three_quarter_right/idle_default_three_quarter_right_03.png" id="9_wrpcb"]
+[ext_resource type="Texture2D" path="res://assets/character/idle/default_three_quarter_right/idle_default_three_quarter_right_04.png" id="10_ihni2"]
+[ext_resource type="Texture2D" path="res://assets/character/idle/default_three_quarter_right/idle_default_three_quarter_right_05.png" id="11_n3j0w"]
+[ext_resource type="Texture2D" path="res://assets/character/idle/default_three_quarter_right/idle_default_three_quarter_right_06.png" id="12_mm8uu"]
+[ext_resource type="Texture2D" path="res://assets/character/idle/pockets_three_quarter_right/idle_pockets_three_quarter_right_01.png" id="13_0ja1y"]
+[ext_resource type="Texture2D" path="res://assets/character/idle/pockets_three_quarter_right/idle_pockets_three_quarter_right_02.png" id="14_ydgda"]
+[ext_resource type="Texture2D" path="res://assets/character/idle/pockets_three_quarter_right/idle_pockets_three_quarter_right_03.png" id="15_eci5x"]
+[ext_resource type="Texture2D" path="res://assets/character/idle/pockets_three_quarter_right/idle_pockets_three_quarter_right_04.png" id="16_vnjl3"]
+[ext_resource type="Texture2D" path="res://assets/character/idle/pockets_three_quarter_right/idle_pockets_three_quarter_right_05.png" id="17_2wdlj"]
+[ext_resource type="Texture2D" path="res://assets/character/idle/pockets_three_quarter_right/idle_pockets_three_quarter_right_06.png" id="18_6rbme"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.3,
+"texture": ExtResource("1_p7qlc")
+}, {
+"duration": 0.9,
+"texture": ExtResource("2_5wqa1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_c44kv")
+}, {
+"duration": 1.2,
+"texture": ExtResource("4_hy7wg")
+}, {
+"duration": 0.9,
+"texture": ExtResource("5_wjb5h")
+}, {
+"duration": 1.3,
+"texture": ExtResource("6_sn4lr")
+}],
+"loop": 1,
+"name": &"idle_arms_crossed",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.2,
+"texture": ExtResource("7_0e01i")
+}, {
+"duration": 0.8,
+"texture": ExtResource("8_ls424")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_wrpcb")
+}, {
+"duration": 0.9,
+"texture": ExtResource("10_ihni2")
+}, {
+"duration": 0.9,
+"texture": ExtResource("11_n3j0w")
+}, {
+"duration": 1.2,
+"texture": ExtResource("12_mm8uu")
+}],
+"loop": 1,
+"name": &"idle_default",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.5,
+"texture": ExtResource("13_0ja1y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_ydgda")
+}, {
+"duration": 0.9,
+"texture": ExtResource("15_eci5x")
+}, {
+"duration": 1.3,
+"texture": ExtResource("16_vnjl3")
+}, {
+"duration": 1.1,
+"texture": ExtResource("17_2wdlj")
+}, {
+"duration": 1.4,
+"texture": ExtResource("18_6rbme")
+}],
+"loop": 1,
+"name": &"idle_pockets",
+"speed": 2.0
+}]

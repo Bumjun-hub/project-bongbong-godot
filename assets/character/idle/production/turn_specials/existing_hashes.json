@@ -1,0 +1,146 @@
+[
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\default\\idle_default_01.png",
+    "Hash": "650011D45AA0B2F43DCA9413562CFF22F8C734EF6F674673BBFC58D4E3F4140B"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\default\\idle_default_02.png",
+    "Hash": "BED7B030166FBBF86C093216001177A0C2FCF5D6A3502C5FA3AC999797524862"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\default\\idle_default_03.png",
+    "Hash": "8686146C00FF6754727AEEC2C4BFB575BA9DB24EF5C17F87C1F6395295BC6476"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\default\\idle_default_04.png",
+    "Hash": "8686146C00FF6754727AEEC2C4BFB575BA9DB24EF5C17F87C1F6395295BC6476"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\default\\idle_default_05.png",
+    "Hash": "BED7B030166FBBF86C093216001177A0C2FCF5D6A3502C5FA3AC999797524862"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\default\\idle_default_06.png",
+    "Hash": "650011D45AA0B2F43DCA9413562CFF22F8C734EF6F674673BBFC58D4E3F4140B"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\default\\idle_default.aseprite",
+    "Hash": "3B51C14A0AD51B010DCDC0944DAA7CFEF32EE704A65A201E69AC03D1464AC6C4"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\default\\idle_default.gif",
+    "Hash": "FA44B0DC4DEC1841C4B75F2895FF90BD0EDC5F7216DA0721E5D9C0E4073E44E8"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\default\\idle_default.png",
+    "Hash": "08248E6879ACF3015A6A5BCC3BE1B84949298BD03201154FCA8B2068FAE4334C"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\pockets\\idle_pockets_01.png",
+    "Hash": "4A0474CDA4B0FA0384AF896F52FC5F7D1EAB81BA980DAC172EE7715155BE83AD"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\pockets\\idle_pockets_02.png",
+    "Hash": "6C8360A17786DCD6628432AEB492D323C78E77F2D686D4A55886460F4009F4BE"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\pockets\\idle_pockets_03.png",
+    "Hash": "B1C4B792B98F5BFAEA281F076F851080C4FD05063A5AE8F7BE404923D6C59805"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\pockets\\idle_pockets_04.png",
+    "Hash": "B1C4B792B98F5BFAEA281F076F851080C4FD05063A5AE8F7BE404923D6C59805"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\pockets\\idle_pockets_05.png",
+    "Hash": "6C8360A17786DCD6628432AEB492D323C78E77F2D686D4A55886460F4009F4BE"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\pockets\\idle_pockets_06.png",
+    "Hash": "4A0474CDA4B0FA0384AF896F52FC5F7D1EAB81BA980DAC172EE7715155BE83AD"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\pockets\\idle_pockets.aseprite",
+    "Hash": "1210D7DF74AFB90D9BFAE69A01D72F7F2899A9B0BB950E9D6CD444BB037B201A"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\pockets\\idle_pockets.gif",
+    "Hash": "44A017FB0FD739DDFAB8D0CC99EC6943B1B645A2C7082B60766EFF530970285A"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\pockets\\idle_pockets.png",
+    "Hash": "EE78E30D577CD6D085D566D5A2DC2C5D60AC5C73D55562C87244D89993220DF1"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\arms_crossed\\idle_arms_crossed_01.png",
+    "Hash": "DB900268DF0B09586B3FE0A29BFDCB9B9A64835AF91E4D76F2B92368B621180A"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\arms_crossed\\idle_arms_crossed_02.png",
+    "Hash": "ED86DFF0BEA7B2CDF2C5A9031E1D65DDF20B9C965F3725DB0FC52596822A11B9"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\arms_crossed\\idle_arms_crossed_03.png",
+    "Hash": "0FBA5392A0830BB64F6422C209EA3EEE44D026D9A721E2F4A9242480229258E0"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\arms_crossed\\idle_arms_crossed_04.png",
+    "Hash": "0FBA5392A0830BB64F6422C209EA3EEE44D026D9A721E2F4A9242480229258E0"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\arms_crossed\\idle_arms_crossed_05.png",
+    "Hash": "ED86DFF0BEA7B2CDF2C5A9031E1D65DDF20B9C965F3725DB0FC52596822A11B9"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\arms_crossed\\idle_arms_crossed_06.png",
+    "Hash": "DB900268DF0B09586B3FE0A29BFDCB9B9A64835AF91E4D76F2B92368B621180A"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\arms_crossed\\idle_arms_crossed.aseprite",
+    "Hash": "8259DADACECA2698FC2BA28E8DCFC0167B1475CCE59A1DF2331DBA65C0215594"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\arms_crossed\\idle_arms_crossed.gif",
+    "Hash": "4993901C76E1984B8390A949D961CB6F40D14A0A28C92F7185C3C8B962782FF6"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\arms_crossed\\idle_arms_crossed.png",
+    "Hash": "301EB993F3939EA044771710381695FAED375A4B5E1B73E69E42973D4A985748"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\default_three_quarter_right\\idle_default_three_quarter_right_01.png",
+    "Hash": "090F37F2CB3506BDB474D03605585B53C8CE8B9BE5E81DA778BCC9630F984C64"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\default_three_quarter_right\\idle_default_three_quarter_right_02.png",
+    "Hash": "38B9B692574475831F92626D0212ED1DC6D2D282F2374103D82B2B60310AA89D"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\default_three_quarter_right\\idle_default_three_quarter_right_03.png",
+    "Hash": "EDFF4E130443F085C3A3968E397654030E251EE5D6E7CB1EB5A1C000760D32CB"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\default_three_quarter_right\\idle_default_three_quarter_right_04.png",
+    "Hash": "EDFF4E130443F085C3A3968E397654030E251EE5D6E7CB1EB5A1C000760D32CB"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\default_three_quarter_right\\idle_default_three_quarter_right_05.png",
+    "Hash": "38B9B692574475831F92626D0212ED1DC6D2D282F2374103D82B2B60310AA89D"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\default_three_quarter_right\\idle_default_three_quarter_right_06.png",
+    "Hash": "090F37F2CB3506BDB474D03605585B53C8CE8B9BE5E81DA778BCC9630F984C64"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\default_three_quarter_right\\idle_default_three_quarter_right.aseprite",
+    "Hash": "2FEB7A52398D25885F1D921C352C8203931B7F04CB548753F34FF4AA432DB6BC"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\default_three_quarter_right\\idle_default_three_quarter_right.gif",
+    "Hash": "B4CCF55927B69D02C0BE1B0811191ABF17EC78433617FCF8D029AEEF79F4E6A0"
+  },
+  {
+    "Path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\assets\\character\\idle\\default_three_quarter_right\\idle_default_three_quarter_right.png",
+    "Hash": "48E47D7D01A197A0FF1D59FAA083F3622F6690DD055B6E71D52BE482174652FE"
+  }
+]

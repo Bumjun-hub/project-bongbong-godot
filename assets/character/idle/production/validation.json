@@ -1,0 +1,1 @@
+{"base_head_preserved": true, "feet_identical_to_base": true, "legs_stable_in_loop": true, "max_head_translation_px": 1, "seamless_endpoints": true, "states": {"arms_crossed": {"changed_pixels_from_rest": [0, 1147, 8043, 8043, 1147, 0]}, "default": {"changed_pixels_from_rest": [0, 1223, 8541, 8541, 1223, 0]}, "pockets": {"changed_pixels_from_rest": [0, 620, 7516, 7516, 620, 0]}}}
