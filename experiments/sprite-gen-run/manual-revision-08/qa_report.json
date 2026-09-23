@@ -1,0 +1,16 @@
+{
+  "frames": 8,
+  "native_gif_ms": [
+    60,
+    60,
+    60,
+    60,
+    60,
+    60,
+    60,
+    60
+  ],
+  "atlas_png_exact": true,
+  "godot_texture_timing_scene_check": "RUN_V8_OK",
+  "visual_review": "all eight poses reviewed; old hand remnants removed; short fading trails behind legs"
+}

@@ -1,0 +1,23 @@
+{
+  "frames": 17,
+  "w": 318,
+  "h": 520,
+  "kind": "periodic",
+  "loop": true,
+  "body_h": 513,
+  "delay_ms": 41.67,
+  "cycle_frames": 17,
+  "cycle_seconds": 0.7083,
+  "subsampled": false,
+  "cell_cap": 64,
+  "top_margin_px": 39,
+  "body_height_target": null,
+  "foot_anchor": "feet",
+  "drift_px": 5,
+  "foot_sway_px": 142,
+  "foot_x": 150,
+  "anchor": [
+    150,
+    520
+  ]
+}

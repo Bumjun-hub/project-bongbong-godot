@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "kind": "sprite-gen-request",
+  "engine": "component-row",
+  "character": {
+    "id": "bongbong-sd17",
+    "description": "",
+    "base_image": "base-source.png"
+  },
+  "cell": {
+    "shape": "square",
+    "width": 192,
+    "height": 192,
+    "safe_margin_x": 14,
+    "safe_margin_y": 14,
+    "size": 192,
+    "safe_margin": 14
+  },
+  "chroma_key": {
+    "name": "green",
+    "hex": "#00FF00",
+    "rgb": [
+      0,
+      255,
+      0
+    ],
+    "selection": "auto",
+    "score": 217.9,
+    "min_subject_distance": 213.56,
+    "background": {
+      "mode": "transparent",
+      "opaque_border_fraction": 0.0,
+      "subject_pixels": 7181
+    },
+    "candidates": [
+      {
+        "name": "magenta",
+        "hex": "#FF00FF",
+        "score": 211.63,
+        "min_subject_distance": 202.24,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "green",
+        "hex": "#00FF00",
+        "score": 217.9,
+        "min_subject_distance": 213.56,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "cyan",
+        "hex": "#00FFFF",
+        "score": 162.45,
+        "min_subject_distance": 148.22,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "blue",
+        "hex": "#004DFF",
+        "score": 130.73,
+        "min_subject_distance": 103.68,
+        "clears_erase_radius": true
+      }
+    ],
+    "selection_reason": "highest 1st-percentile subject distance among the 4 candidate(s) clearing the 96 erase radius"
+  },
+  "states": {
+    "walk": {
+      "frames": 8,
+      "fps": 8,
+      "loop": true,
+      "action": "One continuous cute, short-stride walk cycle moving screen-right, viewed three-quarter front-right. Keep the face and torso turned right as in the attached three-quarter idle direction reference, never a straight front or full side view. Eight distinct poses in this exact left-to-right order: 1 right-foot-forward contact, left foot behind, left arm forward and right arm behind; 2 down on the right support foot, left rear heel lifting; 3 right support foot under the body while the left leg passes visibly beside it, arms near neutral; 4 up as the left foot reaches forward and right foot pushes off; 5 left-foot-forward contact, right foot behind, right arm forward and left arm behind; 6 down on the left support foot, right rear heel lifting; 7 left support foot under the body while the right leg passes visibly beside it, arms near neutral; 8 up as the right foot reaches forward and left foot pushes off, leading smoothly into frame 1. Character left and right are anatomical sides, not screen sides. Both legs and both arms must remain identifiable in every pose. Swing whole arms from shoulders with natural sleeve-to-torso attachment, not hands rotating at the wrist. The receding arm passes partly behind the shirt. Keep leg thickness, visible hands, shoe size, head size, hair silhouette, glasses, expression, shirt, jeans, center axis, and sole baseline consistent. The feet alternate which is in front; no foot skating, duplicate contact, extra limbs, blur, effects, captions, or extra frames."
+    }
+  },
+  "style": "Match the attached Bongbong 1.7-head SD base image as identity truth: same face, hair, glasses, red shirt, blue jeans, white shoes, proportions, palette, outlines, and detail density. The additional idle pose reference establishes three-quarter-right facing only. Make clear, compact pixel-like frame art and preserve the original character rather than redesigning it.",
+  "layout": "taxonomy/v1",
+  "fit": {
+    "resample": "kcentroid",
+    "align_x": "foot-centroid",
+    "align_y": "bottom",
+    "ground_frames": true,
+    "pixel_unfake": true,
+    "palette_size": 128,
+    "detail_bias": true
+  },
+  "chroma": {
+    "mode": "rgb",
+    "unmix_reach": 4,
+    "spill_max_fraction": 0.005
+  }
+}

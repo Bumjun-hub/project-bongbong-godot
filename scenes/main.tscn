@@ -1,12 +1,12 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene format=3 uid="uid://cjvupdrvhjn5y"]
 
-[ext_resource type="Script" path="res://scripts/main.gd" id="1_script"]
+[ext_resource type="Script" uid="uid://c4exjb8shadbe" path="res://scripts/main.gd" id="1_script"]
 [ext_resource type="SpriteFrames" path="res://scenes/idle_frames.tres" id="2_frames"]
 
-[node name="Main" type="Node2D"]
+[node name="Main" type="Node2D" unique_id=1045299581]
 script = ExtResource("1_script")
 
-[node name="Bongbong" type="AnimatedSprite2D" parent="."]
+[node name="Bongbong" type="AnimatedSprite2D" parent="." unique_id=355821441]
 texture_filter = 1
 position = Vector2(320, 320)
 sprite_frames = ExtResource("2_frames")
@@ -14,14 +14,16 @@ animation = &"idle_default"
 centered = false
 offset = Vector2(-95, -174)
 
-[node name="Help" type="Label" parent="."]
+[node name="Help" type="Label" parent="." unique_id=1770051403]
+visible = false
 offset_left = 24.0
 offset_top = 20.0
 offset_right = 616.0
-offset_bottom = 100.0
-mouse_filter = 2
+offset_bottom = 164.0
 theme_override_colors/font_color = Color(0.86, 0.9, 0.96, 1)
 theme_override_font_sizes/font_size = 16
-text = "Current: idle_default
+text = "Idle | Facing: Right
 1: Default    2: Pockets    3: Arms crossed
-192 x 192  |  1:1 pixels  |  Baseline + center guides"
+Left/Right: Walk    Shift + Left/Right: Run
+4: Auto walk    5: Auto run    Space: Stop
+F1: Test view    Esc: Quit"

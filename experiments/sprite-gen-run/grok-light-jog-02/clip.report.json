@@ -1,0 +1,23 @@
+{
+  "kind": "sprite-gen-video-report",
+  "provider": "grok-imagine",
+  "auth_source": "grok-login",
+  "model": "grok-imagine-video-1.5",
+  "mode": "image-to-video",
+  "request_id": "b4f79784-d4af-9976-beed-eb02defd1bc0",
+  "image": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-light-jog-02\\canvas.png",
+  "inputs": {
+    "image": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-light-jog-02\\canvas.png"
+  },
+  "prompt": "Animate this exact cute pixel-art boy doing a smooth, easy jogging loop IN PLACE toward SCREEN RIGHT. Keep his right-facing three-quarter view, glasses, face, black hair, red shirt, jeans, shoes and large-head SD proportions consistent. Fixed camera, fixed character scale, full body visible, pure flat green background.\n\nEstablish the gentle jog immediately, then sustain exactly the same relaxed rhythm throughout the clip. A complete left-right stride takes about 0.9 seconds. Each foot alternates cleanly: contact, support, toe-off, low swing, contact. Small strides, low knees, only a very short low flight phase. Loose bent arms swing in opposition to the feet. The body rises and falls smoothly by a small amount with each step. Head, chin, neck and torso remain connected and move together. Keep the smile and gaze toward the direction of travel.\n\nShow many identical, evenly timed complete gait cycles. Motion flows continuously through every pose and every landing, with no pauses, no held poses, no slow motion, no acceleration, no extra shuffle or double step, no change of stride halfway through, no high hops and no sudden vertical snapping. Do not stop at the end. Keep the same facing and body proportions throughout. No camera motion, perspective change, motion blur, shadows, floor line, text, additional limbs or afterimages. Preserve crisp pixel-art detail.",
+  "out": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-light-jog-02\\clip.mp4",
+  "bytes": 3771332,
+  "host": "vidgen.x.ai",
+  "duration_requested": 6,
+  "duration_reported": 6,
+  "resolution": "720p",
+  "aspect_ratio": null,
+  "generate_audio": false,
+  "elapsed_seconds": 37.703,
+  "polls": 9
+}

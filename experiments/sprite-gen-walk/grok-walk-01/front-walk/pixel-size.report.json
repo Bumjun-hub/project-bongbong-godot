@@ -1,0 +1,88 @@
+{
+  "kind": "sprite-gen-video-loop-report",
+  "frames_dir": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\grok-walk-01\\front-walk\\frames\\keyed",
+  "out_dir": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\grok-walk-01\\front-walk\\pixel-size",
+  "state": "walk",
+  "fps": 24.0,
+  "frames_total": 73,
+  "window": [
+    12,
+    36
+  ],
+  "profile": "full gait = two steps; the floor admits a legless body's fast bounce (~13 frames at 24 fps) — the 15% depth rule rejects the one-step half period when the near/far leg shows, and the gait floor (min_seconds) catches it when it does not",
+  "cycle_mode": "fixed",
+  "seam_max": 2.0,
+  "anchor": "feet",
+  "seam_measurement": "source-frames",
+  "cycle": {
+    "kind": "fixed",
+    "start": 24,
+    "length": 17,
+    "seam": 0.040055982768535614,
+    "inner_mean_adjacent": 0.0375218540430069,
+    "ratio": 1.0675374069368786,
+    "period_global": null,
+    "periodicity": null
+  },
+  "periodic_attempt": null,
+  "cycle_seconds": 0.7083,
+  "n_out": 17,
+  "gif_fps": 24.0,
+  "delay_ms": 42,
+  "status": "passed",
+  "resampled_seam": 0.040055982768535614,
+  "resampled_inner_mean_adjacent": 0.0375218540430069,
+  "resampled_seam_ratio": 1.0675,
+  "scrubbed_rgb_pixels": 0,
+  "specks_dropped": 59,
+  "strip": {
+    "path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\grok-walk-01\\front-walk\\pixel-size\\walk-front.strip.png",
+    "frames": 17,
+    "w": 97,
+    "h": 158,
+    "kind": "fixed",
+    "loop": true,
+    "body_h": 156,
+    "delay_ms": 41.67,
+    "cycle_frames": 17,
+    "cycle_seconds": 0.7083,
+    "subsampled": false,
+    "cell_cap": 64,
+    "top_margin_px": 39,
+    "body_height_target": 156,
+    "foot_anchor": "feet",
+    "drift_px": 5,
+    "foot_sway_px": 142,
+    "foot_x": 46,
+    "anchor": [
+      46,
+      158
+    ]
+  },
+  "gif": {
+    "file": "walk-front.gif",
+    "format": "GIF",
+    "n_frames": 17,
+    "loop": 0,
+    "size": [
+      97,
+      158
+    ],
+    "corners_transparent": true,
+    "stale_rgb_under_alpha0": 0,
+    "bytes": 174890
+  },
+  "webp": {
+    "file": "walk-front.webp",
+    "format": "WEBP",
+    "n_frames": 17,
+    "loop": 0,
+    "size": [
+      97,
+      158
+    ],
+    "corners_transparent": true,
+    "stale_rgb_under_alpha0": 0,
+    "bytes": 335758
+  }
+}

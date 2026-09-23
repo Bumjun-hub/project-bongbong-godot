@@ -1,0 +1,9 @@
+{
+  "revision": 14,
+  "fresh_aseprite_export_matches_published_sheet": true,
+  "all_8_runtime_pngs_match": true,
+  "godot_frame_references_present": true,
+  "preview_frames": 8,
+  "runtime_fps": 8,
+  "runtime_launched": false
+}

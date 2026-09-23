@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "kind": "sprite-gen-request",
+  "engine": "component-row",
+  "character": {
+    "id": "bongbong-sd17",
+    "description": "Approved Bongbong three-quarter-right idle character; refine the existing eight-frame walk gait without redesigning the character."
+  },
+  "cell": {
+    "shape": "square",
+    "width": 192,
+    "height": 192,
+    "safe_margin_x": 14,
+    "safe_margin_y": 36
+  },
+  "states": {
+    "walk": {
+      "frames": 8,
+      "fps": 8,
+      "loop": true,
+      "action": "Eight distinct poses in an in-place rightward walk. Frames 1-4 show right-leg contact, loading, passing, push-off; frames 5-8 show the opposite left-leg contact, loading, passing, push-off. Opposite anatomical shoes must visibly lead in frames 1 and 5, with counter-swinging arms, a stable ground line and continuous loop. Do not redraw the head or enlarge the character."
+    }
+  },
+  "style": "Edit the accepted eight-frame Walk while retaining the approved three-quarter-right idle identity exactly. Keep head, face, hair, glasses, shirt, necklace, pixel palette and body size constant. Improve alternating planted feet and opposite arm swing.",
+  "fit": {
+    "resample": "kcentroid",
+    "align_x": "foot-centroid",
+    "align_y": "center",
+    "ground_frames": true,
+    "pixel_unfake": true,
+    "palette_size": 128,
+    "detail_bias": true
+  }
+}

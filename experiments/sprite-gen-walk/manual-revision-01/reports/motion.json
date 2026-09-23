@@ -1,0 +1,343 @@
+{
+  "kind": "sprite-gen-motion-report",
+  "version": 1,
+  "status": "needs-review",
+  "frame_count": 8,
+  "duration_seconds": 1.0,
+  "size": [
+    192,
+    192
+  ],
+  "anchor_px": [
+    95.0,
+    174.0
+  ],
+  "facing": "right",
+  "contacts": [],
+  "foot_box": null,
+  "duplicate_frames": {
+    "exact": 0,
+    "adjacent_exact": 0,
+    "exact_silhouette": 0,
+    "near_silhouette": 0
+  },
+  "motion": {
+    "present": true,
+    "changed_transitions": 7,
+    "silhouette_changed_transitions": 7,
+    "silhouette_change_per_second": 0.7681203396386267
+  },
+  "frames": [
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "duration_seconds": 0.125,
+      "bbox": [
+        44,
+        18,
+        146,
+        174
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -51.0,
+        -156.0,
+        51.0,
+        0.0
+      ],
+      "centroid_px": [
+        95.49807165330357,
+        86.03953110727697
+      ],
+      "opaque_pixels": 9853,
+      "edge_sides": []
+    },
+    {
+      "frame": 1,
+      "time_seconds": 0.125,
+      "duration_seconds": 0.125,
+      "bbox": [
+        44,
+        19,
+        146,
+        174
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -51.0,
+        -155.0,
+        51.0,
+        0.0
+      ],
+      "centroid_px": [
+        95.47451967533135,
+        86.2063598068427
+      ],
+      "opaque_pixels": 9733,
+      "edge_sides": []
+    },
+    {
+      "frame": 2,
+      "time_seconds": 0.25,
+      "duration_seconds": 0.125,
+      "bbox": [
+        44,
+        18,
+        146,
+        174
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -51.0,
+        -156.0,
+        51.0,
+        0.0
+      ],
+      "centroid_px": [
+        95.5083864118896,
+        83.0784501061571
+      ],
+      "opaque_pixels": 9420,
+      "edge_sides": []
+    },
+    {
+      "frame": 3,
+      "time_seconds": 0.375,
+      "duration_seconds": 0.125,
+      "bbox": [
+        44,
+        17,
+        146,
+        174
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -51.0,
+        -157.0,
+        51.0,
+        0.0
+      ],
+      "centroid_px": [
+        95.47802781021123,
+        82.54341365035559
+      ],
+      "opaque_pixels": 9421,
+      "edge_sides": []
+    },
+    {
+      "frame": 4,
+      "time_seconds": 0.5,
+      "duration_seconds": 0.125,
+      "bbox": [
+        44,
+        18,
+        146,
+        174
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -51.0,
+        -156.0,
+        51.0,
+        0.0
+      ],
+      "centroid_px": [
+        95.81612970493171,
+        85.40261703680534
+      ],
+      "opaque_pixels": 9591,
+      "edge_sides": []
+    },
+    {
+      "frame": 5,
+      "time_seconds": 0.625,
+      "duration_seconds": 0.125,
+      "bbox": [
+        44,
+        19,
+        146,
+        174
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -51.0,
+        -155.0,
+        51.0,
+        0.0
+      ],
+      "centroid_px": [
+        95.28055176754432,
+        85.39636001258785
+      ],
+      "opaque_pixels": 9533,
+      "edge_sides": []
+    },
+    {
+      "frame": 6,
+      "time_seconds": 0.75,
+      "duration_seconds": 0.125,
+      "bbox": [
+        44,
+        18,
+        146,
+        174
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -51.0,
+        -156.0,
+        51.0,
+        0.0
+      ],
+      "centroid_px": [
+        95.65740248698054,
+        83.1611754702944
+      ],
+      "opaque_pixels": 9409,
+      "edge_sides": []
+    },
+    {
+      "frame": 7,
+      "time_seconds": 0.875,
+      "duration_seconds": 0.125,
+      "bbox": [
+        44,
+        17,
+        146,
+        174
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -51.0,
+        -157.0,
+        51.0,
+        0.0
+      ],
+      "centroid_px": [
+        95.67910150413388,
+        86.58018726964838
+      ],
+      "opaque_pixels": 10039,
+      "edge_sides": []
+    }
+  ],
+  "bbox_stats": {
+    "union": [
+      44,
+      17,
+      146,
+      174
+    ],
+    "width_range": [
+      102,
+      102
+    ],
+    "height_range": [
+      155,
+      157
+    ],
+    "bottom_range": [
+      174,
+      174
+    ]
+  },
+  "edge_contact": {
+    "frames": [],
+    "sides": {
+      "left": [],
+      "top": [],
+      "right": [],
+      "bottom": []
+    }
+  },
+  "contact_candidates": [],
+  "confidence": 0.0,
+  "sequence": {
+    "source": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\manual-revision-01\\walk.asset.json",
+    "state": null,
+    "fps_override": null,
+    "frame_count": 8,
+    "size": [
+      192,
+      192
+    ],
+    "anchor_px": [
+      95.0,
+      174.0
+    ],
+    "durations_seconds": [
+      0.125,
+      0.125,
+      0.125,
+      0.125,
+      0.125,
+      0.125,
+      0.125,
+      0.125
+    ]
+  },
+  "source_fingerprints": {
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\manual-revision-01\\walk.asset.json": "d43956982b3201b18e4ff14bf0f07c7ee151d0c7300bac5bf65201dca21d159c",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\manual-revision-01\\frames\\walk_01.png": "51f898c26b01a2e57898e45a6d5c27bdbbb540024e583610715ccf19e6ef780b",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\manual-revision-01\\frames\\walk_02.png": "1037954379864b0d81c10f88d707120ea86dcca77b9f6fd86aaef2d65cffd8f5",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\manual-revision-01\\frames\\walk_03.png": "481f9cd627bbfc0fc0b74c08f4a359d952261eeb7b8ebf752aa30b371297f155",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\manual-revision-01\\frames\\walk_04.png": "a8f075a9d076db080ff9caf207517505275db97dda9cbef00ed7e2610bbb9297",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\manual-revision-01\\frames\\walk_05.png": "68869ba2bb7ab349f87539d50150a2ba8ffd79450ea521c656c92470c089483a",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\manual-revision-01\\frames\\walk_06.png": "ba7476907c7964595a5d92d31c3ad114deec64998668e4c88ccf694bfee244e1",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\manual-revision-01\\frames\\walk_07.png": "9bbff1727ba7ba66cf3dfa3a22c008d39f58f8892d1a126d89f06ef499cd1aa8",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\manual-revision-01\\frames\\walk_08.png": "99bbf1bf5645264016e53e50747de4bdcac794758da160b5c596465afab474cb"
+  },
+  "stride_verified": false,
+  "foot_velocity_px_per_second": null,
+  "stride_px_per_second": null,
+  "warnings": [
+    "Ground contact is unknown: provide both manual contacts and a single-foot ROI; silhouette bottoms do not identify a planted foot."
+  ],
+  "method": {
+    "silhouette": "alpha > 0 in source canvas coordinates; bbox right/bottom are exclusive",
+    "near_silhouette_iou": 0.98,
+    "duplicates": "Counts frames matching an earlier frame; near excludes exact silhouette matches. No time or frames are removed.",
+    "motion": "Adjacent visible pixel changes; silhouette XOR/union summed over full duration. No loop-seam assumption.",
+    "contact": "User-declared same-foot stance spans plus isolated ROI alpha centroid; no automatic contact or facing inference.",
+    "timing": "Cumulative frame-start seconds; repeated tracked poses use their first onset with all intervening durations retained. Final hold is included in duration but has no displacement endpoint.",
+    "velocity": "Endpoint horizontal displacement / pose-onset elapsed seconds; positive = image right. Stride is absolute velocity under manual ground-contact assumptions.",
+    "confidence": "0.9 = at least 3 distinct poses, stable baseline/shape, monotonic near-linear motion and consistent spans. Heuristic conditional confidence, not a calibrated contact probability.",
+    "sequence": "Identity of the analysed sequence: source, atlas state, fps override, frame count, size, anchor and effective per-frame durations. A consumer applying the stride must match all of it and source_fingerprints; another state or frame rate of the same files is a different sequence."
+  },
+  "source_files": [
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\manual-revision-01\\walk.asset.json",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\manual-revision-01\\frames\\walk_01.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\manual-revision-01\\frames\\walk_02.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\manual-revision-01\\frames\\walk_03.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\manual-revision-01\\frames\\walk_04.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\manual-revision-01\\frames\\walk_05.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\manual-revision-01\\frames\\walk_06.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\manual-revision-01\\frames\\walk_07.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\manual-revision-01\\frames\\walk_08.png"
+  ],
+  "source": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\manual-revision-01\\walk.asset.json"
+}

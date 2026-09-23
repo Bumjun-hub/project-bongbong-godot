@@ -1,0 +1,142 @@
+{
+  "status": "ok",
+  "canvas": [
+    192,
+    192
+  ],
+  "frames": 8,
+  "durations_ms": [
+    80,
+    60,
+    60,
+    80,
+    80,
+    60,
+    60,
+    80
+  ],
+  "total_duration_ms": 560,
+  "distinct_lower_poses": 8,
+  "details": [
+    {
+      "frame": 1,
+      "visible_bbox": [
+        45,
+        18,
+        147,
+        176
+      ],
+      "diff_bbox_from_v6": [
+        95,
+        84,
+        130,
+        105
+      ]
+    },
+    {
+      "frame": 2,
+      "visible_bbox": [
+        46,
+        17,
+        148,
+        175
+      ],
+      "diff_bbox_from_v6": [
+        96,
+        83,
+        131,
+        104
+      ]
+    },
+    {
+      "frame": 3,
+      "visible_bbox": [
+        47,
+        15,
+        149,
+        170
+      ],
+      "diff_bbox_from_v6": [
+        97,
+        81,
+        132,
+        102
+      ]
+    },
+    {
+      "frame": 4,
+      "visible_bbox": [
+        47,
+        12,
+        149,
+        162
+      ],
+      "diff_bbox_from_v6": [
+        97,
+        79,
+        132,
+        100
+      ]
+    },
+    {
+      "frame": 5,
+      "visible_bbox": [
+        46,
+        17,
+        148,
+        176
+      ],
+      "diff_bbox_from_v6": [
+        96,
+        84,
+        131,
+        105
+      ]
+    },
+    {
+      "frame": 6,
+      "visible_bbox": [
+        46,
+        15,
+        148,
+        171
+      ],
+      "diff_bbox_from_v6": [
+        62,
+        82,
+        131,
+        174
+      ]
+    },
+    {
+      "frame": 7,
+      "visible_bbox": [
+        45,
+        17,
+        147,
+        173
+      ],
+      "diff_bbox_from_v6": [
+        72,
+        84,
+        131,
+        177
+      ]
+    },
+    {
+      "frame": 8,
+      "visible_bbox": [
+        45,
+        14,
+        147,
+        167
+      ],
+      "diff_bbox_from_v6": [
+        95,
+        82,
+        130,
+        103
+      ]
+    }
+  ]
+}

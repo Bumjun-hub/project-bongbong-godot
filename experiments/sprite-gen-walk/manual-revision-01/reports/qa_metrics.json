@@ -1,0 +1,97 @@
+{
+  "size": [
+    1536,
+    192
+  ],
+  "same_as_prototype": true,
+  "frames": [
+    {
+      "number": 1,
+      "bbox": [
+        44,
+        18,
+        146,
+        174
+      ],
+      "upper_original": true,
+      "whole_original": true
+    },
+    {
+      "number": 2,
+      "bbox": [
+        44,
+        19,
+        146,
+        174
+      ],
+      "upper_original": true,
+      "whole_original": true
+    },
+    {
+      "number": 3,
+      "bbox": [
+        44,
+        18,
+        146,
+        174
+      ],
+      "upper_original": true,
+      "whole_original": true
+    },
+    {
+      "number": 4,
+      "bbox": [
+        44,
+        17,
+        146,
+        174
+      ],
+      "upper_original": true,
+      "whole_original": true
+    },
+    {
+      "number": 5,
+      "bbox": [
+        44,
+        18,
+        146,
+        174
+      ],
+      "upper_original": true,
+      "whole_original": false
+    },
+    {
+      "number": 6,
+      "bbox": [
+        44,
+        19,
+        146,
+        174
+      ],
+      "upper_original": true,
+      "whole_original": false
+    },
+    {
+      "number": 7,
+      "bbox": [
+        44,
+        18,
+        146,
+        174
+      ],
+      "upper_original": true,
+      "whole_original": false
+    },
+    {
+      "number": 8,
+      "bbox": [
+        44,
+        17,
+        146,
+        174
+      ],
+      "upper_original": true,
+      "whole_original": false
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "kind": "sprite-gen-video-loop-report",
+  "frames_dir": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-light-jog-02\\frames\\keyed",
+  "out_dir": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-light-jog-02\\loop-full",
+  "state": "run",
+  "fps": 24.0,
+  "frames_total": 145,
+  "window": [
+    7,
+    29
+  ],
+  "profile": "faster gait",
+  "cycle_mode": "fixed",
+  "seam_max": 2.0,
+  "anchor": "body",
+  "seam_measurement": "source-frames",
+  "cycle": {
+    "kind": "fixed",
+    "start": 49,
+    "length": 18,
+    "seam": 0.05649447441101074,
+    "inner_mean_adjacent": 0.04482797160744667,
+    "ratio": 1.260250517371749,
+    "period_global": null,
+    "periodicity": null
+  },
+  "periodic_attempt": null,
+  "cycle_seconds": 0.75,
+  "n_out": 18,
+  "gif_fps": 24.0,
+  "delay_ms": 42,
+  "status": "passed",
+  "resampled_seam": 0.05649447441101074,
+  "resampled_inner_mean_adjacent": 0.04482797160744667,
+  "resampled_seam_ratio": 1.2603,
+  "scrubbed_rgb_pixels": 0,
+  "specks_dropped": 123,
+  "strip": {
+    "path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-light-jog-02\\loop-full\\run.strip.png",
+    "frames": 18,
+    "w": 110,
+    "h": 165,
+    "kind": "fixed",
+    "loop": true,
+    "body_h": 159,
+    "delay_ms": 41.67,
+    "cycle_frames": 18,
+    "cycle_seconds": 0.75,
+    "subsampled": false,
+    "cell_cap": 64,
+    "top_margin_px": 52,
+    "body_height_target": 159,
+    "foot_anchor": "body",
+    "drift_px": 0,
+    "foot_sway_px": 0,
+    "foot_x": null,
+    "wrap_dx_px": -1,
+    "seam_ratio_after_anchor": 1.2565
+  },
+  "gif": {
+    "file": "run.gif",
+    "format": "GIF",
+    "n_frames": 18,
+    "loop": 0,
+    "size": [
+      110,
+      165
+    ],
+    "corners_transparent": true,
+    "stale_rgb_under_alpha0": 0,
+    "bytes": 211272
+  },
+  "webp": {
+    "file": "run.webp",
+    "format": "WEBP",
+    "n_frames": 18,
+    "loop": 0,
+    "size": [
+      110,
+      165
+    ],
+    "corners_transparent": true,
+    "stale_rgb_under_alpha0": 0,
+    "bytes": 407010
+  }
+}

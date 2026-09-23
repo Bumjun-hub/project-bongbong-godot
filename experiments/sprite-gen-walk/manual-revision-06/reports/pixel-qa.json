@@ -1,0 +1,53 @@
+{
+  "revision": 17,
+  "frames": [
+    {
+      "frame": 1,
+      "changed_pixels": 42,
+      "black_shoulder_pixels": 166,
+      "alpha_unchanged": true
+    },
+    {
+      "frame": 2,
+      "changed_pixels": 42,
+      "black_shoulder_pixels": 174,
+      "alpha_unchanged": true
+    },
+    {
+      "frame": 3,
+      "changed_pixels": 40,
+      "black_shoulder_pixels": 188,
+      "alpha_unchanged": true
+    },
+    {
+      "frame": 4,
+      "changed_pixels": 38,
+      "black_shoulder_pixels": 208,
+      "alpha_unchanged": true
+    },
+    {
+      "frame": 5,
+      "changed_pixels": 36,
+      "black_shoulder_pixels": 227,
+      "alpha_unchanged": true
+    },
+    {
+      "frame": 6,
+      "changed_pixels": 38,
+      "black_shoulder_pixels": 208,
+      "alpha_unchanged": true
+    },
+    {
+      "frame": 7,
+      "changed_pixels": 40,
+      "black_shoulder_pixels": 188,
+      "alpha_unchanged": true
+    },
+    {
+      "frame": 8,
+      "changed_pixels": 42,
+      "black_shoulder_pixels": 174,
+      "alpha_unchanged": true
+    }
+  ]
+}

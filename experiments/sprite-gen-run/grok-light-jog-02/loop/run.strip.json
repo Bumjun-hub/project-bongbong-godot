@@ -1,0 +1,21 @@
+{
+  "frames": 9,
+  "w": 108,
+  "h": 165,
+  "kind": "periodic",
+  "loop": true,
+  "body_h": 159,
+  "delay_ms": 41.67,
+  "cycle_frames": 9,
+  "cycle_seconds": 0.375,
+  "subsampled": false,
+  "cell_cap": 64,
+  "top_margin_px": 52,
+  "body_height_target": 159,
+  "foot_anchor": "body",
+  "drift_px": 0,
+  "foot_sway_px": 0,
+  "foot_x": null,
+  "wrap_dx_px": -6,
+  "seam_ratio_after_anchor": 0.9671
+}

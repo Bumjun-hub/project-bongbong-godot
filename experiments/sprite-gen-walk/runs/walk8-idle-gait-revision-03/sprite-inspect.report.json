@@ -1,0 +1,61 @@
+{
+  "ok": true,
+  "engine": "component-row",
+  "kind": "sprite-gen-inspect-report",
+  "run_dir": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\runs\\walk8-idle-gait-revision-03",
+  "states": [
+    "walk"
+  ],
+  "thresholds": {
+    "histogram_min": 0.0,
+    "dhash_min": 0.55,
+    "motion_min": 0.01
+  },
+  "rows": [
+    {
+      "state": "walk",
+      "source": "frames",
+      "expected_frames": 8,
+      "found_frames": 8,
+      "natural_pose_count": 8,
+      "frame_files": [
+        "frames/walk/frame-0.png",
+        "frames/walk/frame-1.png",
+        "frames/walk/frame-2.png",
+        "frames/walk/frame-3.png",
+        "frames/walk/frame-4.png",
+        "frames/walk/frame-5.png",
+        "frames/walk/frame-6.png",
+        "frames/walk/frame-7.png"
+      ],
+      "metrics": {
+        "histogram_intersection": {
+          "min": 0.9523520201689952,
+          "mean": 0.967117037728429
+        },
+        "dhash_similarity": {
+          "min": 0.921875,
+          "mean": 0.9620535714285714
+        },
+        "motion_presence": 0.02449174982492997,
+        "centroid_sigma": {
+          "x": 0.15627099939026268,
+          "y": 1.6666117419051558
+        }
+      },
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "walk: pitch disagreement — detect 1.00x1.00 (uniformity 209.7) vs runlen 2.39x2.41 (41.8); detect kept. large gap usually means the raw was drawn finer than the cell contract — reroll with a block-count hint",
+        "walk: native logical exceeds the physical cap 192x156 — capped frames (reroll candidates): 0:187x307, 1:186x307, 2:186x307, 3:186x307, 4:186x307, 5:186x307, 6:186x307, 7:186x307",
+        "walk: frame 03 has 27 non-transparent edge pixels"
+      ]
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "walk: pitch disagreement — detect 1.00x1.00 (uniformity 209.7) vs runlen 2.39x2.41 (41.8); detect kept. large gap usually means the raw was drawn finer than the cell contract — reroll with a block-count hint",
+    "walk: native logical exceeds the physical cap 192x156 — capped frames (reroll candidates): 0:187x307, 1:186x307, 2:186x307, 3:186x307, 4:186x307, 5:186x307, 6:186x307, 7:186x307",
+    "walk: frame 03 has 27 non-transparent edge pixels"
+  ]
+}

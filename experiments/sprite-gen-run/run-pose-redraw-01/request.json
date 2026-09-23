@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "kind": "sprite-gen-request",
+  "engine": "component-row",
+  "character": {
+    "id": "bongbong-run-pose-redraw",
+    "description": "Approved SD character in a new eight-pose right-facing sprint",
+    "base_image": "assets/character/run/right_three_quarter/run_01.png"
+  },
+  "cell": {
+    "shape": "square",
+    "width": 192,
+    "height": 192,
+    "safe_margin_x": 14,
+    "safe_margin_y": 14
+  },
+  "chroma_key": {"name": "green", "hex": "#00FF00", "rgb": [0, 255, 0]},
+  "states": {
+    "run": {
+      "frames": 8,
+      "fps": 14.285714285714286,
+      "loop": true,
+      "action": "Draw eight NEW and distinct hand-crafted running poses from the accepted character, not copies of the reference's limbs. Maintain three-quarter screen-right view and consistent head and torso proportions. Frame 1: character-right foot lands forward, character-left knee folds behind; opposite arms counter-swing. Frame 2: right leg supports while left knee drives forward; elbows bend. Frame 3: right foot pushes off, left knee passes hip; opposite arms exchange. Frame 4: airborne stride toward left-foot contact, both shoes visibly separated from ground. Frames 5-8 repeat those phases with character-left foot landing and character-right knee driving. Arms alternate opposite to the leading leg. Keep two visibly separate legs and two anatomically attached arms in every pose, one consistent ground line at contacts, a clear airborne arc, and a seamless 8-to-1 loop."
+    }
+  },
+  "style": "Match the supplied Run character exactly: same black hair silhouette, laughing closed-eye face, glasses, red shirt, necklace, blue jeans, black-and-white shoes, colors, outline density, and pixel size. New arm and leg poses only. Keep pose scale consistent and retain one character per frame.",
+  "layout": "taxonomy/v1",
+  "fit": {
+    "resample": "kcentroid",
+    "align_x": "foot-centroid",
+    "align_y": "center",
+    "ground_frames": false,
+    "pixel_unfake": true,
+    "palette_size": 128,
+    "detail_bias": true
+  },
+  "chroma": {"mode": "rgb", "unmix_reach": 4, "spill_max_fraction": 0.005}
+}

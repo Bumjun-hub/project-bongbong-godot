@@ -1,0 +1,23 @@
+{
+  "kind": "sprite-gen-video-report",
+  "provider": "grok-imagine",
+  "auth_source": "grok-login",
+  "model": "grok-imagine-video-1.5",
+  "mode": "image-to-video",
+  "request_id": "ac6560ec-fd4f-9b90-8b81-cd58a5cbb08e",
+  "image": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-light-jog-01\\canvas.png",
+  "inputs": {
+    "image": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-light-jog-01\\canvas.png"
+  },
+  "prompt": "Animate the exact supplied pixel-art character in a gentle, relaxed jog in place toward SCREEN RIGHT. This is the FIRST of several planned running styles: a light easy jog, more energetic than the existing calm walk but distinctly slower and smaller than a full sprint. Keep the reference's right-facing three-quarter head and body orientation throughout; his nose and gaze look where he is going. Preserve the round glasses, large black parted hair, cute face, red shirt with white cuffs and necklace, jeans, black-white shoes, and 1.7-head-tall SD proportions. The head, chin, neck, shirt and hips move together as ONE connected character; never animate the head separately from the torso.\n\nRepeat a complete alternating left-right jogging gait evenly about every 0.7 seconds. Quick but SHORT steps, modest knee lift, soft alternating foot landings, a tiny flight beat rather than a big jump. Gentle up-and-down motion of the whole connected character. Elbows bent loosely, arms swinging naturally in opposition to the legs with modest range. Hands stay near the waist and chest, no arms straight backward. Friendly focused or subtly playful expression, without exaggerated grin. Hair may bounce slightly together with the head.\n\nDo not walk slowly, sprint, leap high, kick forward, wave arms outward, do a Naruto run, moonwalk, skid or create leg afterimages. No duplicate limbs, detached feet, changing face, changing clothing, camera motion or large changes in character size. Stay centered in a treadmill run. Full body and hair stay inside frame with comfortable margins. Exact flat pure chroma green #00FF00 background, no shadow, floor line, objects, text, lighting change or blur. Crisp pixel-art edges and stable outlines. Make the action periodic with a clean repeat.",
+  "out": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-light-jog-01\\clip.mp4",
+  "bytes": 1854889,
+  "host": "vidgen.x.ai",
+  "duration_requested": 3,
+  "duration_reported": 3,
+  "resolution": "720p",
+  "aspect_ratio": null,
+  "generate_audio": false,
+  "elapsed_seconds": 134.516,
+  "polls": 31
+}

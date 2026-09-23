@@ -1,0 +1,55 @@
+{
+  "ok": true,
+  "engine": "component-row",
+  "kind": "sprite-gen-inspect-report",
+  "run_dir": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\runs\\walk4-leg-a-05",
+  "states": [
+    "walk"
+  ],
+  "thresholds": {
+    "histogram_min": 0.0,
+    "dhash_min": 0.55,
+    "motion_min": 0.01
+  },
+  "rows": [
+    {
+      "state": "walk",
+      "source": "frames",
+      "expected_frames": 4,
+      "found_frames": 4,
+      "natural_pose_count": 4,
+      "frame_files": [
+        "frames/walk/frame-0.png",
+        "frames/walk/frame-1.png",
+        "frames/walk/frame-2.png",
+        "frames/walk/frame-3.png"
+      ],
+      "metrics": {
+        "histogram_intersection": {
+          "min": 0.9715801226875818,
+          "mean": 0.9799540595998958
+        },
+        "dhash_similarity": {
+          "min": 0.921875,
+          "mean": 0.953125
+        },
+        "motion_presence": 0.023354204963235294,
+        "centroid_sigma": {
+          "x": 0.38408187587398046,
+          "y": 1.099182375716178
+        }
+      },
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "walk: pitch disagreement — detect 1.00x1.00 (uniformity 213.4) vs runlen 3.03x5.03 (45.9); detect kept. large gap usually means the raw was drawn finer than the cell contract — reroll with a block-count hint",
+        "walk: native logical exceeds the physical cap 192x156 — capped frames (reroll candidates): 0:310x495, 1:311x497, 2:310x497, 3:312x497"
+      ]
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "walk: pitch disagreement — detect 1.00x1.00 (uniformity 213.4) vs runlen 3.03x5.03 (45.9); detect kept. large gap usually means the raw was drawn finer than the cell contract — reroll with a block-count hint",
+    "walk: native logical exceeds the physical cap 192x156 — capped frames (reroll candidates): 0:310x495, 1:311x497, 2:310x497, 3:312x497"
+  ]
+}

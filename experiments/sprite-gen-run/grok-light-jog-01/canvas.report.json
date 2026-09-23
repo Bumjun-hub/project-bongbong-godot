@@ -1,0 +1,42 @@
+{
+  "kind": "sprite-gen-video-canvas-report",
+  "still": [
+    192,
+    192
+  ],
+  "out": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-light-jog-01\\canvas.png",
+  "state": "run",
+  "shape": "square",
+  "ratio": 1.0,
+  "canvas": [
+    192,
+    192
+  ],
+  "offset": [
+    0,
+    0
+  ],
+  "headroom": 0.0,
+  "lead": 0.0,
+  "trail": 0.0,
+  "facing": "right",
+  "key_rgb": [
+    0,
+    255,
+    0
+  ],
+  "corner_rgb": [
+    0,
+    255,
+    0
+  ],
+  "key": "green",
+  "key_painted": [
+    0,
+    255,
+    0
+  ],
+  "normalized_px": 26750,
+  "normalized_pct": 72.56,
+  "why": "in-place motion fits the still's own frame"
+}

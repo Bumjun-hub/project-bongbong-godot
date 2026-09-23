@@ -1,0 +1,62 @@
+{
+  "kind": "sprite-gen-video-set-report",
+  "root": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\grok-walk-01",
+  "states": [
+    "walk"
+  ],
+  "facing": "right",
+  "facing_fix": "none",
+  "directions": [
+    "front"
+  ],
+  "ok": 1,
+  "failed": [],
+  "items": [
+    {
+      "item": "front-walk",
+      "direction": "front",
+      "state": "walk",
+      "dir": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\grok-walk-01\\front-walk",
+      "canvas": {
+        "shape": "square",
+        "canvas": [
+          192,
+          192
+        ],
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "clip": {
+        "attempts": [
+          0
+        ]
+      },
+      "frames": {
+        "fps": 24.0,
+        "frames": 73,
+        "alpha_zero_pct_min": 73.73,
+        "alpha_zero_pct_max": 75.63,
+        "spill": "full"
+      },
+      "loop": {
+        "kind": "periodic",
+        "cycle": 17,
+        "period": 17,
+        "cycle_ratio": 1.068,
+        "seam_ratio": 1.0675,
+        "n_out": 17,
+        "drift_px": 5,
+        "gif": "front-walk.gif",
+        "webp": "front-walk.webp",
+        "strip": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\grok-walk-01\\front-walk\\loop\\front-walk.strip.png",
+        "review_recommended": false,
+        "half_period_guard": {
+          "applied": false
+        }
+      },
+      "ok": true
+    }
+  ]
+}

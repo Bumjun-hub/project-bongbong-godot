@@ -1,0 +1,11 @@
+# 생성 중간물은 로컬에 보관하고 최종 에셋은 assets/에서 관리한다.
+*.png
+*.gif
+*.webp
+*.mp4
+*.aseprite
+*.import
+*.log
+*.pyc
+__pycache__/
+*.sg-rwlock

@@ -1,0 +1,86 @@
+{
+  "kind": "sprite-gen-video-loop-report",
+  "frames_dir": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-light-jog-01\\frames\\keyed",
+  "out_dir": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-light-jog-01\\loop-long-49-70",
+  "state": "run",
+  "fps": 24.0,
+  "frames_total": 73,
+  "window": [
+    7,
+    29
+  ],
+  "profile": "faster gait",
+  "cycle_mode": "fixed",
+  "seam_max": 2.0,
+  "anchor": "body",
+  "seam_measurement": "source-frames",
+  "cycle": {
+    "kind": "fixed",
+    "start": 48,
+    "length": 22,
+    "seam": 0.04854578152298927,
+    "inner_mean_adjacent": 0.043093737214803696,
+    "ratio": 1.1265159315612263,
+    "period_global": null,
+    "periodicity": null
+  },
+  "periodic_attempt": null,
+  "cycle_seconds": 0.9167,
+  "n_out": 22,
+  "gif_fps": 24.0,
+  "delay_ms": 42,
+  "status": "passed",
+  "resampled_seam": 0.04854578152298927,
+  "resampled_inner_mean_adjacent": 0.043093737214803696,
+  "resampled_seam_ratio": 1.1265,
+  "scrubbed_rgb_pixels": 0,
+  "specks_dropped": 114,
+  "strip": {
+    "path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-light-jog-01\\loop-long-49-70\\run-long.strip.png",
+    "frames": 22,
+    "w": 104,
+    "h": 167,
+    "kind": "fixed",
+    "loop": true,
+    "body_h": 159,
+    "delay_ms": 41.67,
+    "cycle_frames": 22,
+    "cycle_seconds": 0.9167,
+    "subsampled": false,
+    "cell_cap": 64,
+    "top_margin_px": 26,
+    "body_height_target": 159,
+    "foot_anchor": "body",
+    "drift_px": 0,
+    "foot_sway_px": 0,
+    "foot_x": null,
+    "wrap_dx_px": 3,
+    "seam_ratio_after_anchor": 1.1199
+  },
+  "gif": {
+    "file": "run-long.gif",
+    "format": "GIF",
+    "n_frames": 22,
+    "loop": 0,
+    "size": [
+      104,
+      167
+    ],
+    "corners_transparent": true,
+    "stale_rgb_under_alpha0": 0,
+    "bytes": 249072
+  },
+  "webp": {
+    "file": "run-long.webp",
+    "format": "WEBP",
+    "n_frames": 22,
+    "loop": 0,
+    "size": [
+      104,
+      167
+    ],
+    "corners_transparent": true,
+    "stale_rgb_under_alpha0": 0,
+    "bytes": 477880
+  }
+}

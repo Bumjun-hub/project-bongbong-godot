@@ -1,0 +1,23 @@
+{
+  "kind": "sprite-gen-video-report",
+  "provider": "grok-imagine",
+  "auth_source": "grok-login",
+  "model": "grok-imagine-video-1.5",
+  "mode": "image-to-video",
+  "request_id": "e5fcd119-d86c-9953-8a13-96f0f54f4c98",
+  "image": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\grok-walk-01\\front-walk\\canvas.png",
+  "inputs": {
+    "image": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\grok-walk-01\\front-walk\\canvas.png"
+  },
+  "prompt": "2D game sprite animation. The same cute 1.7-head-tall pixel-art boy with black hair, round glasses, red shirt, necklace, blue jeans and black-white sneakers. Preserve the exact character design and crisp pixel art moves in place on a treadmill: a steady locomotion cycle for this body type with clear repeating ground contacts and an even left-right or front-back rhythm the body already has. The character is seen from the front, facing the viewer directly. Stays centered in the frame and does not move across the screen; the body and hair always stay fully inside the frame with margin. Camera completely locked, no zoom, no pan, no reframing. The background stays a perfectly flat, pure chroma-key fill for the whole clip — no shadows, no ground line, no particles, no lighting changes, no effects. Keep the design, colors and proportions exactly as in the image. Consistent, evenly paced motion so the animation loops.",
+  "out": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\grok-walk-01\\front-walk\\clip.mp4",
+  "bytes": 1665940,
+  "host": "vidgen.x.ai",
+  "duration_requested": 3,
+  "duration_reported": 3,
+  "resolution": "720p",
+  "aspect_ratio": null,
+  "generate_audio": false,
+  "elapsed_seconds": 23.672,
+  "polls": 6
+}

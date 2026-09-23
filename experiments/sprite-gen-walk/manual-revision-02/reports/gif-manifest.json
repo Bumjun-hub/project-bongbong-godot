@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "kind": "sprite-gen-gif",
+  "output": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\manual-revision-02\\walk_cycle_8_preview.gif",
+  "delay_ticks": 12,
+  "duration_ms": 120,
+  "loop_count": 0,
+  "selected_user_frames": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "source_frames": [
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\manual-revision-02\\qa-frames\\frame-0.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\manual-revision-02\\qa-frames\\frame-1.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\manual-revision-02\\qa-frames\\frame-2.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\manual-revision-02\\qa-frames\\frame-3.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\manual-revision-02\\qa-frames\\frame-4.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\manual-revision-02\\qa-frames\\frame-5.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\manual-revision-02\\qa-frames\\frame-6.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\manual-revision-02\\qa-frames\\frame-7.png"
+  ],
+  "contact": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\manual-revision-02\\reports\\contact.png",
+  "gif_report": {
+    "path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\manual-revision-02\\walk_cycle_8_preview.gif",
+    "frames": 8,
+    "delay_ticks": [
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12
+    ],
+    "loop": 0,
+    "transparent": true,
+    "disposal": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ]
+  }
+}

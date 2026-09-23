@@ -1,0 +1,48 @@
+{
+	"engine": "4.7.2-stable (official)",
+	"failures": 0,
+	"frames": [
+		{
+			"dark_contour_pixels": 24,
+			"frame": 1,
+			"shoulder_pixel_mismatch": 0
+		},
+		{
+			"dark_contour_pixels": 23,
+			"frame": 2,
+			"shoulder_pixel_mismatch": 0
+		},
+		{
+			"dark_contour_pixels": 22,
+			"frame": 3,
+			"shoulder_pixel_mismatch": 0
+		},
+		{
+			"dark_contour_pixels": 21,
+			"frame": 4,
+			"shoulder_pixel_mismatch": 0
+		},
+		{
+			"dark_contour_pixels": 20,
+			"frame": 5,
+			"shoulder_pixel_mismatch": 0
+		},
+		{
+			"dark_contour_pixels": 21,
+			"frame": 6,
+			"shoulder_pixel_mismatch": 0
+		},
+		{
+			"dark_contour_pixels": 22,
+			"frame": 7,
+			"shoulder_pixel_mismatch": 0
+		},
+		{
+			"dark_contour_pixels": 24,
+			"frame": 8,
+			"shoulder_pixel_mismatch": 0
+		}
+	],
+	"renderer": "forward_plus",
+	"revision": 16
+}

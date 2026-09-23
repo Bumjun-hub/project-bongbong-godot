@@ -1,0 +1,25 @@
+{
+  "kind": "sprite-gen-image-report",
+  "provider": "codex",
+  "prompt": "Edit the FIRST attached image: it is the accepted eight-frame 192x192 Walk sprite sheet for Bongbong. The SECOND image is the approved three-quarter-right idle identity. The THIRD image is a layout guide. Produce a revised sprite strip with exactly eight full-body poses in one evenly spaced horizontal row, on a perfectly flat #00FF00 green background.\n\nKeep the existing Walk's character design, face, hair, glasses, necklace, burgundy shirt, jeans, black-and-white shoes, outline, pixel palette, and 1.7-head proportions. The head and face should remain visibly identical across frames and as close as possible to the attached accepted sheet. Do not change camera direction, body scale, or shoe ground line. Keep the character about 156 pixels tall within each 192x192 final cell, with the crown near y=18 and soles near y=173. Preserve the original's crisp pixel-art texture.\n\nChange the WALK MOTION, especially the feet. Show one complete eight-frame alternating gait cycle to the right, in three-quarter-front-right view. Frames 1-4: character-right foot leads and contacts, carries weight, supports a passing left leg, then pushes off. Frames 5-8: character-left foot leads and contacts, carries weight, supports a passing right leg, then pushes off. Frames 1 and 5 must have different front shoes and different front knees; they cannot be duplicated poses. The near and far legs must cross and change depth logically as the anatomical lead leg swaps. Counter-swing the arms: the arm opposite the leading foot moves forward. The planted sole remains on one common y-level. Every frame has a unique readable leg and arm pose, but maintains one constant-sized head and torso. The eighth frame should flow smoothly into the first.\n\nUse the first image as the editable source, not as a rough inspiration for redrawing the character. Preserve the subtle original design details. Use the third image only for count and spacing; do not draw its guide lines. Each figure must be complete and separated from its neighbors. No text, labels, panels, blur, motion streaks, shadows, detached marks, extra limbs, or missing limbs. Output only the green-background sprite strip.",
+  "out": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\runs\\walk8-idle-gait-revision-04\\raw\\walk.png",
+  "raw": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\runs\\walk8-idle-gait-revision-04\\raw\\walk.png.raw.png",
+  "raw_bytes": 806388,
+  "elapsed_seconds": 55.796,
+  "model": null,
+  "session_id": "01a0ce7b-c34d-7d22-9140-35bea03a5ead",
+  "refs": [
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\runs\\walk8-idle-gait-revision-04\\references\\existing-walk-sheet.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\runs\\walk8-idle-gait-revision-04\\base-source.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\runs\\walk8-idle-gait-revision-04\\references\\layout-guides\\walk.png"
+  ],
+  "transparent": false,
+  "alpha": null,
+  "chroma": null,
+  "extra": {
+    "inline_results": 1,
+    "rollout_cleaned": true,
+    "transparent_background_reported": true
+  },
+  "provider_resolved_from": "explicit"
+}

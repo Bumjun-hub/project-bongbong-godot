@@ -1,0 +1,705 @@
+{
+  "kind": "sprite-gen-motion-report",
+  "version": 1,
+  "status": "needs-review",
+  "frame_count": 18,
+  "duration_seconds": 0.7500599999999998,
+  "size": [
+    110,
+    165
+  ],
+  "anchor_px": [
+    55.0,
+    165.0
+  ],
+  "facing": null,
+  "contacts": [],
+  "foot_box": null,
+  "duplicate_frames": {
+    "exact": 0,
+    "adjacent_exact": 0,
+    "exact_silhouette": 0,
+    "near_silhouette": 0
+  },
+  "motion": {
+    "present": true,
+    "changed_transitions": 17,
+    "silhouette_changed_transitions": 17,
+    "silhouette_change_per_second": 3.3682959443005607
+  },
+  "frames": [
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "duration_seconds": 0.04167,
+      "bbox": [
+        3,
+        3,
+        109,
+        165
+      ],
+      "anchor_px": [
+        55.0,
+        165.0
+      ],
+      "bbox_from_anchor": [
+        -52.0,
+        -162.0,
+        54.0,
+        0.0
+      ],
+      "centroid_px": [
+        54.963946869070206,
+        73.91043643263757
+      ],
+      "opaque_pixels": 10540,
+      "edge_sides": [
+        "bottom"
+      ]
+    },
+    {
+      "frame": 1,
+      "time_seconds": 0.04167,
+      "duration_seconds": 0.04167,
+      "bbox": [
+        3,
+        0,
+        109,
+        163
+      ],
+      "anchor_px": [
+        55.0,
+        165.0
+      ],
+      "bbox_from_anchor": [
+        -52.0,
+        -165.0,
+        54.0,
+        -2.0
+      ],
+      "centroid_px": [
+        54.858526603001366,
+        72.58076398362893
+      ],
+      "opaque_pixels": 10995,
+      "edge_sides": [
+        "top"
+      ]
+    },
+    {
+      "frame": 2,
+      "time_seconds": 0.08334,
+      "duration_seconds": 0.04167,
+      "bbox": [
+        3,
+        0,
+        110,
+        157
+      ],
+      "anchor_px": [
+        55.0,
+        165.0
+      ],
+      "bbox_from_anchor": [
+        -52.0,
+        -165.0,
+        55.0,
+        -8.0
+      ],
+      "centroid_px": [
+        55.140686803308164,
+        71.72878460985257
+      ],
+      "opaque_pixels": 11124,
+      "edge_sides": [
+        "top",
+        "right"
+      ]
+    },
+    {
+      "frame": 3,
+      "time_seconds": 0.12501,
+      "duration_seconds": 0.04167,
+      "bbox": [
+        3,
+        1,
+        110,
+        159
+      ],
+      "anchor_px": [
+        55.0,
+        165.0
+      ],
+      "bbox_from_anchor": [
+        -52.0,
+        -164.0,
+        55.0,
+        -6.0
+      ],
+      "centroid_px": [
+        55.06362991846863,
+        73.49512584190003
+      ],
+      "opaque_pixels": 11284,
+      "edge_sides": [
+        "right"
+      ]
+    },
+    {
+      "frame": 4,
+      "time_seconds": 0.16668,
+      "duration_seconds": 0.04167,
+      "bbox": [
+        2,
+        4,
+        110,
+        164
+      ],
+      "anchor_px": [
+        55.0,
+        165.0
+      ],
+      "bbox_from_anchor": [
+        -53.0,
+        -161.0,
+        55.0,
+        -1.0
+      ],
+      "centroid_px": [
+        54.99090106007067,
+        75.98524734982333
+      ],
+      "opaque_pixels": 11320,
+      "edge_sides": [
+        "right"
+      ]
+    },
+    {
+      "frame": 5,
+      "time_seconds": 0.20834999999999998,
+      "duration_seconds": 0.04167,
+      "bbox": [
+        1,
+        8,
+        110,
+        165
+      ],
+      "anchor_px": [
+        55.0,
+        165.0
+      ],
+      "bbox_from_anchor": [
+        -54.0,
+        -157.0,
+        55.0,
+        0.0
+      ],
+      "centroid_px": [
+        54.75586979722519,
+        80.11855211668446
+      ],
+      "opaque_pixels": 11244,
+      "edge_sides": [
+        "right",
+        "bottom"
+      ]
+    },
+    {
+      "frame": 6,
+      "time_seconds": 0.25001999999999996,
+      "duration_seconds": 0.04167,
+      "bbox": [
+        1,
+        10,
+        110,
+        165
+      ],
+      "anchor_px": [
+        55.0,
+        165.0
+      ],
+      "bbox_from_anchor": [
+        -54.0,
+        -155.0,
+        55.0,
+        0.0
+      ],
+      "centroid_px": [
+        55.08032091479159,
+        80.83170416820361
+      ],
+      "opaque_pixels": 10844,
+      "edge_sides": [
+        "right",
+        "bottom"
+      ]
+    },
+    {
+      "frame": 7,
+      "time_seconds": 0.29168999999999995,
+      "duration_seconds": 0.04167,
+      "bbox": [
+        3,
+        8,
+        110,
+        165
+      ],
+      "anchor_px": [
+        55.0,
+        165.0
+      ],
+      "bbox_from_anchor": [
+        -52.0,
+        -157.0,
+        55.0,
+        0.0
+      ],
+      "centroid_px": [
+        55.82003626473255,
+        75.34758738793191
+      ],
+      "opaque_pixels": 9927,
+      "edge_sides": [
+        "right",
+        "bottom"
+      ]
+    },
+    {
+      "frame": 8,
+      "time_seconds": 0.33335999999999993,
+      "duration_seconds": 0.04167,
+      "bbox": [
+        3,
+        5,
+        110,
+        165
+      ],
+      "anchor_px": [
+        55.0,
+        165.0
+      ],
+      "bbox_from_anchor": [
+        -52.0,
+        -160.0,
+        55.0,
+        0.0
+      ],
+      "centroid_px": [
+        55.59990643518037,
+        71.28417714939182
+      ],
+      "opaque_pixels": 9619,
+      "edge_sides": [
+        "right",
+        "bottom"
+      ]
+    },
+    {
+      "frame": 9,
+      "time_seconds": 0.3750299999999999,
+      "duration_seconds": 0.04167,
+      "bbox": [
+        3,
+        1,
+        110,
+        165
+      ],
+      "anchor_px": [
+        55.0,
+        165.0
+      ],
+      "bbox_from_anchor": [
+        -52.0,
+        -164.0,
+        55.0,
+        0.0
+      ],
+      "centroid_px": [
+        55.06417530815887,
+        71.21111328507142
+      ],
+      "opaque_pixels": 10222,
+      "edge_sides": [
+        "right",
+        "bottom"
+      ]
+    },
+    {
+      "frame": 10,
+      "time_seconds": 0.4166999999999999,
+      "duration_seconds": 0.04167,
+      "bbox": [
+        3,
+        0,
+        109,
+        162
+      ],
+      "anchor_px": [
+        55.0,
+        165.0
+      ],
+      "bbox_from_anchor": [
+        -52.0,
+        -165.0,
+        54.0,
+        -3.0
+      ],
+      "centroid_px": [
+        54.32200188857413,
+        70.66902738432483
+      ],
+      "opaque_pixels": 10590,
+      "edge_sides": [
+        "top"
+      ]
+    },
+    {
+      "frame": 11,
+      "time_seconds": 0.4583699999999999,
+      "duration_seconds": 0.04167,
+      "bbox": [
+        1,
+        0,
+        109,
+        155
+      ],
+      "anchor_px": [
+        55.0,
+        165.0
+      ],
+      "bbox_from_anchor": [
+        -54.0,
+        -165.0,
+        54.0,
+        -10.0
+      ],
+      "centroid_px": [
+        53.61356262167424,
+        70.16181514786317
+      ],
+      "opaque_pixels": 10787,
+      "edge_sides": [
+        "top"
+      ]
+    },
+    {
+      "frame": 12,
+      "time_seconds": 0.5000399999999999,
+      "duration_seconds": 0.04167,
+      "bbox": [
+        1,
+        1,
+        109,
+        158
+      ],
+      "anchor_px": [
+        55.0,
+        165.0
+      ],
+      "bbox_from_anchor": [
+        -54.0,
+        -164.0,
+        54.0,
+        -7.0
+      ],
+      "centroid_px": [
+        53.50340104789043,
+        71.85793731041456
+      ],
+      "opaque_pixels": 10879,
+      "edge_sides": []
+    },
+    {
+      "frame": 13,
+      "time_seconds": 0.5417099999999999,
+      "duration_seconds": 0.04167,
+      "bbox": [
+        0,
+        5,
+        109,
+        165
+      ],
+      "anchor_px": [
+        55.0,
+        165.0
+      ],
+      "bbox_from_anchor": [
+        -55.0,
+        -160.0,
+        54.0,
+        0.0
+      ],
+      "centroid_px": [
+        53.44963044073364,
+        76.22451866046173
+      ],
+      "opaque_pixels": 10959,
+      "edge_sides": [
+        "left",
+        "bottom"
+      ]
+    },
+    {
+      "frame": 14,
+      "time_seconds": 0.5833799999999999,
+      "duration_seconds": 0.04167,
+      "bbox": [
+        0,
+        8,
+        110,
+        165
+      ],
+      "anchor_px": [
+        55.0,
+        165.0
+      ],
+      "bbox_from_anchor": [
+        -55.0,
+        -157.0,
+        55.0,
+        0.0
+      ],
+      "centroid_px": [
+        53.562291743798596,
+        78.81377267678637
+      ],
+      "opaque_pixels": 10804,
+      "edge_sides": [
+        "left",
+        "right",
+        "bottom"
+      ]
+    },
+    {
+      "frame": 15,
+      "time_seconds": 0.6250499999999999,
+      "duration_seconds": 0.04167,
+      "bbox": [
+        0,
+        12,
+        110,
+        165
+      ],
+      "anchor_px": [
+        55.0,
+        165.0
+      ],
+      "bbox_from_anchor": [
+        -55.0,
+        -153.0,
+        55.0,
+        0.0
+      ],
+      "centroid_px": [
+        54.22817733990148,
+        79.69812807881773
+      ],
+      "opaque_pixels": 10150,
+      "edge_sides": [
+        "left",
+        "right",
+        "bottom"
+      ]
+    },
+    {
+      "frame": 16,
+      "time_seconds": 0.6667199999999999,
+      "duration_seconds": 0.04167,
+      "bbox": [
+        1,
+        11,
+        109,
+        165
+      ],
+      "anchor_px": [
+        55.0,
+        165.0
+      ],
+      "bbox_from_anchor": [
+        -54.0,
+        -154.0,
+        54.0,
+        0.0
+      ],
+      "centroid_px": [
+        54.65500406834825,
+        77.69843368592352
+      ],
+      "opaque_pixels": 9832,
+      "edge_sides": [
+        "bottom"
+      ]
+    },
+    {
+      "frame": 17,
+      "time_seconds": 0.7083899999999999,
+      "duration_seconds": 0.04167,
+      "bbox": [
+        3,
+        7,
+        109,
+        165
+      ],
+      "anchor_px": [
+        55.0,
+        165.0
+      ],
+      "bbox_from_anchor": [
+        -52.0,
+        -158.0,
+        54.0,
+        0.0
+      ],
+      "centroid_px": [
+        55.52792321116929,
+        74.25310543065393
+      ],
+      "opaque_pixels": 9741,
+      "edge_sides": [
+        "bottom"
+      ]
+    }
+  ],
+  "bbox_stats": {
+    "union": [
+      0,
+      0,
+      110,
+      165
+    ],
+    "width_range": [
+      106,
+      110
+    ],
+    "height_range": [
+      153,
+      164
+    ],
+    "bottom_range": [
+      155,
+      165
+    ]
+  },
+  "edge_contact": {
+    "frames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "sides": {
+      "left": [
+        13,
+        14,
+        15
+      ],
+      "top": [
+        1,
+        2,
+        10,
+        11
+      ],
+      "right": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        14,
+        15
+      ],
+      "bottom": [
+        0,
+        5,
+        6,
+        7,
+        8,
+        9,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    }
+  },
+  "contact_candidates": [],
+  "confidence": 0.0,
+  "sequence": {
+    "source": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-light-jog-02\\loop-full\\run.strip.json",
+    "state": null,
+    "fps_override": null,
+    "frame_count": 18,
+    "size": [
+      110,
+      165
+    ],
+    "anchor_px": [
+      55.0,
+      165.0
+    ],
+    "durations_seconds": [
+      0.04167,
+      0.04167,
+      0.04167,
+      0.04167,
+      0.04167,
+      0.04167,
+      0.04167,
+      0.04167,
+      0.04167,
+      0.04167,
+      0.04167,
+      0.04167,
+      0.04167,
+      0.04167,
+      0.04167,
+      0.04167,
+      0.04167,
+      0.04167
+    ]
+  },
+  "source_fingerprints": {
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-light-jog-02\\loop-full\\run.strip.json": "181d00313dda918664b36eeda38287c54d7cf8be466bcf856b21a7eba0ad7590",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-light-jog-02\\loop-full\\run.strip.png": "13e3dabc325c698229b2218635130a7251b5ed86c82130674da237754428ade7"
+  },
+  "stride_verified": false,
+  "foot_velocity_px_per_second": null,
+  "stride_px_per_second": null,
+  "warnings": [
+    "Ground contact is unknown: provide both manual contacts and a single-foot ROI; silhouette bottoms do not identify a planted foot.",
+    "Visible pixels touch the canvas edge; clipping is possible."
+  ],
+  "method": {
+    "silhouette": "alpha > 0 in source canvas coordinates; bbox right/bottom are exclusive",
+    "near_silhouette_iou": 0.98,
+    "duplicates": "Counts frames matching an earlier frame; near excludes exact silhouette matches. No time or frames are removed.",
+    "motion": "Adjacent visible pixel changes; silhouette XOR/union summed over full duration. No loop-seam assumption.",
+    "contact": "User-declared same-foot stance spans plus isolated ROI alpha centroid; no automatic contact or facing inference.",
+    "timing": "Cumulative frame-start seconds; repeated tracked poses use their first onset with all intervening durations retained. Final hold is included in duration but has no displacement endpoint.",
+    "velocity": "Endpoint horizontal displacement / pose-onset elapsed seconds; positive = image right. Stride is absolute velocity under manual ground-contact assumptions.",
+    "confidence": "0.9 = at least 3 distinct poses, stable baseline/shape, monotonic near-linear motion and consistent spans. Heuristic conditional confidence, not a calibrated contact probability.",
+    "sequence": "Identity of the analysed sequence: source, atlas state, fps override, frame count, size, anchor and effective per-frame durations. A consumer applying the stride must match all of it and source_fingerprints; another state or frame rate of the same files is a different sequence."
+  },
+  "source_files": [
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-light-jog-02\\loop-full\\run.strip.json",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-light-jog-02\\loop-full\\run.strip.png"
+  ],
+  "source": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-light-jog-02\\loop-full\\run.strip.json"
+}

@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "kind": "sprite-gen-request",
+  "engine": "component-row",
+  "character": {
+    "id": "bongbong-sd17",
+    "description": "",
+    "base_image": "base-source.png"
+  },
+  "cell": {
+    "shape": "square",
+    "width": 192,
+    "height": 192,
+    "safe_margin_x": 14,
+    "safe_margin_y": 14,
+    "size": 192,
+    "safe_margin": 14
+  },
+  "chroma_key": {
+    "name": "green",
+    "hex": "#00FF00",
+    "rgb": [
+      0,
+      255,
+      0
+    ],
+    "selection": "auto",
+    "score": 216.2,
+    "min_subject_distance": 209.81,
+    "background": {
+      "mode": "transparent",
+      "opaque_border_fraction": 0.0,
+      "subject_pixels": 7679
+    },
+    "candidates": [
+      {
+        "name": "magenta",
+        "hex": "#FF00FF",
+        "score": 209.9,
+        "min_subject_distance": 199.83,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "green",
+        "hex": "#00FF00",
+        "score": 216.2,
+        "min_subject_distance": 209.81,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "cyan",
+        "hex": "#00FFFF",
+        "score": 162.14,
+        "min_subject_distance": 150.38,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "blue",
+        "hex": "#004DFF",
+        "score": 126.61,
+        "min_subject_distance": 98.23,
+        "clears_erase_radius": true
+      }
+    ],
+    "selection_reason": "highest 1st-percentile subject distance among the 4 candidate(s) clearing the 96 erase radius"
+  },
+  "states": {
+    "walk": {
+      "frames": 8,
+      "fps": 8,
+      "loop": true,
+      "action": "Refine the existing in-place walk toward screen right in a three-quarter-front-right view. Exactly eight distinct full-body frames, evenly spaced in one repeating gait cycle, with this order: 1 right heel contact ahead and left toes trailing, left arm forward and right arm back; 2 right foot carries body weight while left toes lift, body settles one pixel; 3 right foot supports body and left leg visibly passes beside it, arms near neutral; 4 right toes push off while left heel reaches forward, body rises one pixel; 5 left heel contact ahead and right toes trailing, right arm forward and left arm back; 6 left foot carries body weight while right toes lift, body settles one pixel; 7 left foot supports body and right leg visibly passes beside it, arms near neutral; 8 left toes push off while right heel reaches forward, body rises one pixel and flows into frame 1. Right and left name the character's anatomical sides. Preserve distinct near and far shoes, believable knee overlap, opposite arm swing from the shoulders, and clear alternating contacts. Match the reference walk's modest stride and maintain one common ground line and body scale. During each planted phase the supporting shoe moves backward relative to the in-place canvas as the body advances, so playback with rightward movement does not skate. Keep the face looking three-quarter right throughout. No duplicated contact pose, floating feet, extra limbs, blur, motion trails, labels, or props."
+    }
+  },
+  "style": "Treat the attached accepted three-quarter-right idle as the exact identity and pixel-art source: same head and hair silhouette, glasses, face, burgundy shirt and white cuffs, necklace, jeans, black-and-white shoes, outline, palette, and 1.7-head proportions. Treat the existing walk strip as a gait reference to refine, not as permission to redesign or simply duplicate its frames. One whole character per frame on the same 192x192 transparent-cell geometry, centered near x=95 with shoe baseline near y=173. Crisp discrete pixels and stable detail in all eight poses.",
+  "layout": "taxonomy/v1",
+  "fit": {
+    "resample": "kcentroid",
+    "align_x": "foot-centroid",
+    "align_y": "bottom",
+    "ground_frames": true,
+    "pixel_unfake": true,
+    "palette_size": 128,
+    "detail_bias": true
+  },
+  "chroma": {
+    "mode": "rgb",
+    "unmix_reach": 4,
+    "spill_max_fraction": 0.005
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "ok": true,
+  "kind": "sprite-gen-score-report",
+  "source_report": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\runs\\walk8-idle-gait-revision-03",
+  "overall_score": 91.0,
+  "candidate_rank": 797,
+  "rows": [
+    {
+      "state": "walk",
+      "score": 91.0,
+      "candidate_rank": 797,
+      "expected_frames": 8,
+      "found_frames": 8,
+      "errors": [],
+      "warnings": [
+        "walk: pitch disagreement — detect 1.00x1.00 (uniformity 209.7) vs runlen 2.39x2.41 (41.8); detect kept. large gap usually means the raw was drawn finer than the cell contract — reroll with a block-count hint",
+        "walk: native logical exceeds the physical cap 192x156 — capped frames (reroll candidates): 0:187x307, 1:186x307, 2:186x307, 3:186x307, 4:186x307, 5:186x307, 6:186x307, 7:186x307",
+        "walk: frame 03 has 27 non-transparent edge pixels"
+      ],
+      "hints": [
+        "walk: Pixel-grid pitch instability was detected. Regenerate with a clearer true low-resolution pixel grid, or rerun extraction with the runlen crosscheck visible and review the before/after grid proof.",
+        "walk: Sprite content touched the frame edge. Leave the requested safe margin around every full-body pose."
+      ]
+    }
+  ],
+  "hints": [
+    "walk: Pixel-grid pitch instability was detected. Regenerate with a clearer true low-resolution pixel grid, or rerun extraction with the runlen crosscheck visible and review the before/after grid proof.",
+    "walk: Sprite content touched the frame edge. Leave the requested safe margin around every full-body pose."
+  ]
+}

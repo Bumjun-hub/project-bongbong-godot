@@ -1,0 +1,86 @@
+{
+  "kind": "sprite-gen-video-loop-report",
+  "frames_dir": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\grok-walk-02\\frames\\keyed",
+  "out_dir": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\grok-walk-02\\whole-body-160",
+  "state": "walk",
+  "fps": 24.0,
+  "frames_total": 73,
+  "window": [
+    12,
+    36
+  ],
+  "profile": "full gait = two steps; the floor admits a legless body's fast bounce (~13 frames at 24 fps) — the 15% depth rule rejects the one-step half period when the near/far leg shows, and the gait floor (min_seconds) catches it when it does not",
+  "cycle_mode": "fixed",
+  "seam_max": 2.0,
+  "anchor": "body",
+  "seam_measurement": "source-frames",
+  "cycle": {
+    "kind": "fixed",
+    "start": 32,
+    "length": 24,
+    "seam": 0.01761494018137455,
+    "inner_mean_adjacent": 0.01805916242301464,
+    "ratio": 0.9754018358529202,
+    "period_global": null,
+    "periodicity": null
+  },
+  "periodic_attempt": null,
+  "cycle_seconds": 1.0,
+  "n_out": 24,
+  "gif_fps": 24.0,
+  "delay_ms": 42,
+  "status": "passed",
+  "resampled_seam": 0.01761494018137455,
+  "resampled_inner_mean_adjacent": 0.01805916242301464,
+  "resampled_seam_ratio": 0.9754,
+  "scrubbed_rgb_pixels": 0,
+  "specks_dropped": 75,
+  "strip": {
+    "path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\grok-walk-02\\whole-body-160\\walk-right-calm.strip.png",
+    "frames": 24,
+    "w": 107,
+    "h": 162,
+    "kind": "fixed",
+    "loop": true,
+    "body_h": 160,
+    "delay_ms": 41.67,
+    "cycle_frames": 24,
+    "cycle_seconds": 1.0,
+    "subsampled": false,
+    "cell_cap": 64,
+    "top_margin_px": 70,
+    "body_height_target": 160,
+    "foot_anchor": "body",
+    "drift_px": 0,
+    "foot_sway_px": 0,
+    "foot_x": null,
+    "wrap_dx_px": 0,
+    "seam_ratio_after_anchor": 0.9754
+  },
+  "gif": {
+    "file": "walk-right-calm.gif",
+    "format": "GIF",
+    "n_frames": 24,
+    "loop": 0,
+    "size": [
+      107,
+      162
+    ],
+    "corners_transparent": true,
+    "stale_rgb_under_alpha0": 0,
+    "bytes": 288552
+  },
+  "webp": {
+    "file": "walk-right-calm.webp",
+    "format": "WEBP",
+    "n_frames": 24,
+    "loop": 0,
+    "size": [
+      107,
+      162
+    ],
+    "corners_transparent": true,
+    "stale_rgb_under_alpha0": 0,
+    "bytes": 540462
+  }
+}

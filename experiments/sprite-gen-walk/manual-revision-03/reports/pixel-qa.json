@@ -1,0 +1,121 @@
+{
+  "revision": 14,
+  "aseprite_export_matches_candidate": true,
+  "upper_rows_0_to_137_unchanged": true,
+  "frame_duration_ms": 125,
+  "godot_runtime_tested": false,
+  "frames": [
+    {
+      "frame": 1,
+      "changed_pixels": 1104,
+      "outline_pixels_added": 136,
+      "alpha_components": 1,
+      "bbox": [
+        44,
+        18,
+        146,
+        174
+      ],
+      "ground_row": 173,
+      "skin_unchanged": true
+    },
+    {
+      "frame": 2,
+      "changed_pixels": 909,
+      "outline_pixels_added": 109,
+      "alpha_components": 1,
+      "bbox": [
+        44,
+        19,
+        146,
+        174
+      ],
+      "ground_row": 173,
+      "skin_unchanged": true
+    },
+    {
+      "frame": 3,
+      "changed_pixels": 699,
+      "outline_pixels_added": 67,
+      "alpha_components": 1,
+      "bbox": [
+        44,
+        18,
+        146,
+        174
+      ],
+      "ground_row": 173,
+      "skin_unchanged": true
+    },
+    {
+      "frame": 4,
+      "changed_pixels": 975,
+      "outline_pixels_added": 116,
+      "alpha_components": 1,
+      "bbox": [
+        44,
+        17,
+        146,
+        174
+      ],
+      "ground_row": 173,
+      "skin_unchanged": true
+    },
+    {
+      "frame": 5,
+      "changed_pixels": 1006,
+      "outline_pixels_added": 119,
+      "alpha_components": 1,
+      "bbox": [
+        44,
+        18,
+        146,
+        174
+      ],
+      "ground_row": 173,
+      "skin_unchanged": true
+    },
+    {
+      "frame": 6,
+      "changed_pixels": 910,
+      "outline_pixels_added": 100,
+      "alpha_components": 1,
+      "bbox": [
+        44,
+        19,
+        146,
+        174
+      ],
+      "ground_row": 173,
+      "skin_unchanged": true
+    },
+    {
+      "frame": 7,
+      "changed_pixels": 694,
+      "outline_pixels_added": 66,
+      "alpha_components": 1,
+      "bbox": [
+        44,
+        18,
+        146,
+        174
+      ],
+      "ground_row": 173,
+      "skin_unchanged": true
+    },
+    {
+      "frame": 8,
+      "changed_pixels": 1077,
+      "outline_pixels_added": 125,
+      "alpha_components": 1,
+      "bbox": [
+        44,
+        17,
+        146,
+        174
+      ],
+      "ground_row": 173,
+      "skin_unchanged": true
+    }
+  ]
+}

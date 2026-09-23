@@ -1,0 +1,27 @@
+{
+  "ok": true,
+  "kind": "sprite-gen-score-report",
+  "source_report": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\runs\\walk8-idle-gait-revision-04",
+  "overall_score": 94.0,
+  "candidate_rank": 798,
+  "rows": [
+    {
+      "state": "walk",
+      "score": 94.0,
+      "candidate_rank": 798,
+      "expected_frames": 8,
+      "found_frames": 8,
+      "errors": [],
+      "warnings": [
+        "walk: pitch disagreement — detect 1.00x1.00 (uniformity 215.7) vs runlen 2.39x2.41 (42.2); detect kept. large gap usually means the raw was drawn finer than the cell contract — reroll with a block-count hint",
+        "walk: native logical exceeds the physical cap 192x156 — capped frames (reroll candidates): 0:181x311, 1:182x311, 2:182x311, 3:181x311, 4:183x311, 5:182x311, 6:181x312, 7:181x311"
+      ],
+      "hints": [
+        "walk: Pixel-grid pitch instability was detected. Regenerate with a clearer true low-resolution pixel grid, or rerun extraction with the runlen crosscheck visible and review the before/after grid proof."
+      ]
+    }
+  ],
+  "hints": [
+    "walk: Pixel-grid pitch instability was detected. Regenerate with a clearer true low-resolution pixel grid, or rerun extraction with the runlen crosscheck visible and review the before/after grid proof."
+  ]
+}

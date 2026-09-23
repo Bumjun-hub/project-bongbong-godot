@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "kind": "sprite-gen-request",
+  "engine": "component-row",
+  "character": {
+    "id": "bongbong-sd17",
+    "description": "",
+    "base_image": "base-source.png"
+  },
+  "cell": {
+    "shape": "square",
+    "width": 192,
+    "height": 192,
+    "safe_margin_x": 14,
+    "safe_margin_y": 36
+  },
+  "chroma_key": {
+    "name": "green",
+    "hex": "#00FF00",
+    "rgb": [
+      0,
+      255,
+      0
+    ],
+    "selection": "auto",
+    "score": 216.2,
+    "min_subject_distance": 209.81,
+    "background": {
+      "mode": "transparent",
+      "opaque_border_fraction": 0.0,
+      "subject_pixels": 7679
+    },
+    "candidates": [
+      {
+        "name": "magenta",
+        "hex": "#FF00FF",
+        "score": 209.9,
+        "min_subject_distance": 199.83,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "green",
+        "hex": "#00FF00",
+        "score": 216.2,
+        "min_subject_distance": 209.81,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "cyan",
+        "hex": "#00FFFF",
+        "score": 162.14,
+        "min_subject_distance": 150.38,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "blue",
+        "hex": "#004DFF",
+        "score": 126.61,
+        "min_subject_distance": 98.23,
+        "clears_erase_radius": true
+      }
+    ],
+    "selection_reason": "highest 1st-percentile subject distance among the 4 candidate(s) clearing the 96 erase radius"
+  },
+  "states": {
+    "walk": {
+      "frames": 8,
+      "fps": 8,
+      "loop": true,
+      "action": "Eight distinct poses in an in-place rightward walk. Frames 1-4 show right-leg contact, loading, passing, push-off; frames 5-8 show the opposite left-leg contact, loading, passing, push-off. Opposite anatomical shoes must visibly lead in frames 1 and 5, with counter-swinging arms, a stable ground line and continuous loop. Do not redraw the head or enlarge the character."
+    }
+  },
+  "style": "Edit the accepted eight-frame Walk while retaining the approved three-quarter-right idle identity exactly. Keep head, face, hair, glasses, shirt, necklace, pixel palette and body size constant. Improve alternating planted feet and opposite arm swing.",
+  "layout": "taxonomy/v1",
+  "fit": {
+    "resample": "kcentroid",
+    "align_x": "foot-centroid",
+    "align_y": "center",
+    "ground_frames": true,
+    "pixel_unfake": true,
+    "palette_size": 128,
+    "detail_bias": true
+  },
+  "chroma": {
+    "mode": "rgb",
+    "unmix_reach": 4,
+    "spill_max_fraction": 0.005
+  }
+}

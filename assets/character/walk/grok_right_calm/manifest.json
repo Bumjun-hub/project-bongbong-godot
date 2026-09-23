@@ -1,0 +1,28 @@
+{
+  "source": "experiments/sprite-gen-walk/grok-walk-02/whole-body-159/walk-right-calm.strip.png",
+  "frames": 24,
+  "fps": 24,
+  "cycle_seconds": 1,
+  "canvas": [
+    192,
+    192
+  ],
+  "placement": [
+    42,
+    13
+  ],
+  "foot_anchor": [
+    95,
+    174
+  ],
+  "body_height": 159,
+  "resampled": true,
+  "native_source": "walk_cycle_24.aseprite",
+  "preview": "walk_cycle_24_preview.gif",
+  "revision": 4,
+  "whole_body_motion": "Original Grok head, neck and body frames were scaled together by sprite-gen to 159px standing height; no head transplant or independent head offset.",
+  "head_width_range_px": [
+    101,
+    102
+  ]
+}

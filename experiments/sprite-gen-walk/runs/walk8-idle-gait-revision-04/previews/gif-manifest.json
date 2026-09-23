@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "kind": "sprite-gen-gif-run",
+  "run_dir": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\runs\\walk8-idle-gait-revision-04",
+  "exports": [
+    {
+      "state": "walk",
+      "output": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\runs\\walk8-idle-gait-revision-04\\previews\\walk.gif",
+      "frames": 8,
+      "fps": 8.0,
+      "loop": true,
+      "gif_report": {
+        "path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-walk\\runs\\walk8-idle-gait-revision-04\\previews\\walk.gif",
+        "frames": 8,
+        "delay_ticks": [
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12
+        ],
+        "loop": 0,
+        "transparent": true,
+        "disposal": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    }
+  ]
+}

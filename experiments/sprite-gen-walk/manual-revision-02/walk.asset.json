@@ -1,0 +1,42 @@
+{
+  "kind": "sprite-gen-asset",
+  "version": 1,
+  "anchor": [
+    95,
+    174
+  ],
+  "frames": [
+    {
+      "file": "frames/walk_01.png",
+      "duration": 0.125
+    },
+    {
+      "file": "frames/walk_02.png",
+      "duration": 0.125
+    },
+    {
+      "file": "frames/walk_03.png",
+      "duration": 0.125
+    },
+    {
+      "file": "frames/walk_04.png",
+      "duration": 0.125
+    },
+    {
+      "file": "frames/walk_05.png",
+      "duration": 0.125
+    },
+    {
+      "file": "frames/walk_06.png",
+      "duration": 0.125
+    },
+    {
+      "file": "frames/walk_07.png",
+      "duration": 0.125
+    },
+    {
+      "file": "frames/walk_08.png",
+      "duration": 0.125
+    }
+  ]
+}

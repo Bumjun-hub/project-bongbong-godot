@@ -1,0 +1,25 @@
+{
+  "source": "experiments/sprite-gen-walk/grok-walk-02/loop/walk-right-calm.strip.png",
+  "frames": 24,
+  "fps": 24,
+  "cycle_seconds": 1,
+  "canvas": [
+    192,
+    192
+  ],
+  "placement": [
+    43,
+    16
+  ],
+  "foot_anchor": [
+    95,
+    174
+  ],
+  "body_height": 156,
+  "resampled": false,
+  "head_match": "The top 111 rows of each Walk frame exactly match Idle frame 1; lower rows preserve the Grok Walk.",
+  "head_reference": "assets/character/idle/default_three_quarter_right/idle_default_three_quarter_right_01.png",
+  "native_source": "walk_cycle_24.aseprite",
+  "preview": "walk_cycle_24_preview.gif",
+  "revision": 2
+}

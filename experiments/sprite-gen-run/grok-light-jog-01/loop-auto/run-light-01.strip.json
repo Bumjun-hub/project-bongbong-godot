@@ -1,0 +1,127 @@
+{
+  "frames": 14,
+  "w": 108,
+  "h": 175,
+  "kind": "periodic",
+  "loop": true,
+  "body_h": 159,
+  "delay_ms": 41.67,
+  "cycle_frames": 14,
+  "cycle_seconds": 0.5833,
+  "subsampled": false,
+  "cell_cap": 64,
+  "top_margin_px": 8,
+  "body_height_target": 159,
+  "foot_anchor": "motion-auto",
+  "drift_px": 0,
+  "foot_sway_px": 0,
+  "foot_x": null,
+  "motion_anchor": {
+    "method": "uncorrected-after-uncertain-fine-match-v1",
+    "applied": false,
+    "reason": "fine-match-at-search-boundary",
+    "registration_error": "motion anchor match reached search boundary; inspect the cut and regions",
+    "rejected_measurement": {
+      "dx": 1,
+      "dy": 28,
+      "cost": 0.23316983580589296,
+      "region_costs": [
+        0.20294010639190674,
+        0.3037058711051941
+      ],
+      "center_xy": [
+        0,
+        0
+      ],
+      "search_radius_xy": [
+        14,
+        28
+      ],
+      "k": 1
+    },
+    "requires_rendered_seam_gate": true,
+    "regions": [
+      [
+        240,
+        210,
+        438,
+        366
+      ],
+      [
+        240,
+        408,
+        438,
+        564
+      ]
+    ],
+    "coarse_dx_px": 4,
+    "endpoint_xy": [
+      0,
+      0
+    ],
+    "shifts_xy": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "padding_ltrb": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

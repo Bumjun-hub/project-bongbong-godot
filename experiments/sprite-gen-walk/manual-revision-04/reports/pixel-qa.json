@@ -1,0 +1,71 @@
+{
+  "revision": 15,
+  "frames": [
+    {
+      "frame": 1,
+      "changed_pixels": 116,
+      "connected_components": 1,
+      "denim_unchanged": true,
+      "lower_rows_153_onward_unchanged": true,
+      "changes_confined_to_neck_and_marked_hand": true
+    },
+    {
+      "frame": 2,
+      "changed_pixels": 112,
+      "connected_components": 1,
+      "denim_unchanged": true,
+      "lower_rows_153_onward_unchanged": true,
+      "changes_confined_to_neck_and_marked_hand": true
+    },
+    {
+      "frame": 3,
+      "changed_pixels": 71,
+      "connected_components": 1,
+      "denim_unchanged": true,
+      "lower_rows_153_onward_unchanged": true,
+      "changes_confined_to_neck_and_marked_hand": true
+    },
+    {
+      "frame": 4,
+      "changed_pixels": 21,
+      "connected_components": 1,
+      "denim_unchanged": true,
+      "lower_rows_153_onward_unchanged": true,
+      "changes_confined_to_neck_and_marked_hand": true
+    },
+    {
+      "frame": 5,
+      "changed_pixels": 21,
+      "connected_components": 1,
+      "denim_unchanged": true,
+      "lower_rows_153_onward_unchanged": true,
+      "changes_confined_to_neck_and_marked_hand": true
+    },
+    {
+      "frame": 6,
+      "changed_pixels": 21,
+      "connected_components": 1,
+      "denim_unchanged": true,
+      "lower_rows_153_onward_unchanged": true,
+      "changes_confined_to_neck_and_marked_hand": true
+    },
+    {
+      "frame": 7,
+      "changed_pixels": 71,
+      "connected_components": 1,
+      "denim_unchanged": true,
+      "lower_rows_153_onward_unchanged": true,
+      "changes_confined_to_neck_and_marked_hand": true
+    },
+    {
+      "frame": 8,
+      "changed_pixels": 112,
+      "connected_components": 1,
+      "denim_unchanged": true,
+      "lower_rows_153_onward_unchanged": true,
+      "changes_confined_to_neck_and_marked_hand": true
+    }
+  ],
+  "duration_ms": 125,
+  "frame_count": 8
+}

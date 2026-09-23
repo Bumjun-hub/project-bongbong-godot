@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "kind": "sprite-gen-request",
+  "engine": "component-row",
+  "character": {
+    "id": "bongbong-run-pose-redraw",
+    "description": "",
+    "base_image": "base-source.png"
+  },
+  "cell": {
+    "shape": "square",
+    "width": 192,
+    "height": 192,
+    "safe_margin_x": 14,
+    "safe_margin_y": 14,
+    "size": 192,
+    "safe_margin": 14
+  },
+  "chroma_key": {
+    "name": "green",
+    "hex": "#00FF00",
+    "rgb": [
+      0,
+      255,
+      0
+    ],
+    "selection": "auto",
+    "score": 215.32,
+    "min_subject_distance": 210.36,
+    "background": {
+      "mode": "transparent",
+      "opaque_border_fraction": 0.0,
+      "subject_pixels": 7914
+    },
+    "candidates": [
+      {
+        "name": "magenta",
+        "hex": "#FF00FF",
+        "score": 208.08,
+        "min_subject_distance": 174.71,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "green",
+        "hex": "#00FF00",
+        "score": 215.32,
+        "min_subject_distance": 210.36,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "cyan",
+        "hex": "#00FFFF",
+        "score": 167.87,
+        "min_subject_distance": 158.82,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "blue",
+        "hex": "#004DFF",
+        "score": 128.63,
+        "min_subject_distance": 123.75,
+        "clears_erase_radius": true
+      }
+    ],
+    "selection_reason": "highest 1st-percentile subject distance among the 4 candidate(s) clearing the 96 erase radius"
+  },
+  "states": {
+    "run": {
+      "frames": 8,
+      "fps": 14,
+      "loop": true,
+      "action": "Draw eight NEW and distinct hand-crafted running poses from the accepted character, not copies of the reference's limbs. Maintain three-quarter screen-right view and consistent head and torso proportions. Frame 1: character-right foot lands forward, character-left knee folds behind; opposite arms counter-swing. Frame 2: right leg supports while left knee drives forward; elbows bend. Frame 3: right foot pushes off, left knee passes hip; opposite arms exchange. Frame 4: airborne stride toward left-foot contact, both shoes visibly separated from ground. Frames 5-8 repeat those phases with character-left foot landing and character-right knee driving. Arms alternate opposite to the leading leg. Keep two visibly separate legs and two anatomically attached arms in every pose, one consistent ground line at contacts, a clear airborne arc, and a seamless 8-to-1 loop."
+    }
+  },
+  "style": "Match the supplied Run character exactly: same black hair silhouette, laughing closed-eye face, glasses, red shirt, necklace, blue jeans, black-and-white shoes, colors, outline density, and pixel size. New arm and leg poses only. Keep pose scale consistent and retain one character per frame.",
+  "layout": "taxonomy/v1",
+  "fit": {
+    "resample": "kcentroid",
+    "align_x": "foot-centroid",
+    "align_y": "center",
+    "ground_frames": false,
+    "pixel_unfake": true,
+    "palette_size": 128,
+    "detail_bias": true
+  }
+}
