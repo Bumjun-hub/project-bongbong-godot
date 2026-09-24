@@ -1,0 +1,943 @@
+{
+  "kind": "sprite-gen-motion-report",
+  "version": 1,
+  "status": "needs-review",
+  "frame_count": 28,
+  "duration_seconds": 1.1670000000000003,
+  "size": [
+    192,
+    192
+  ],
+  "anchor_px": [
+    95.0,
+    174.0
+  ],
+  "facing": "right",
+  "contacts": [],
+  "foot_box": null,
+  "duplicate_frames": {
+    "exact": 0,
+    "adjacent_exact": 0,
+    "exact_silhouette": 0,
+    "near_silhouette": 0
+  },
+  "motion": {
+    "present": true,
+    "changed_transitions": 27,
+    "silhouette_changed_transitions": 27,
+    "silhouette_change_per_second": 3.109466035784423
+  },
+  "frames": [
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "duration_seconds": 0.042,
+      "bbox": [
+        35,
+        14,
+        144,
+        174
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -60.0,
+        -160.0,
+        49.0,
+        0.0
+      ],
+      "centroid_px": [
+        93.36596239581314,
+        83.72717580926536
+      ],
+      "opaque_pixels": 10318,
+      "edge_sides": []
+    },
+    {
+      "frame": 1,
+      "time_seconds": 0.042,
+      "duration_seconds": 0.041,
+      "bbox": [
+        36,
+        19,
+        147,
+        174
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -59.0,
+        -155.0,
+        52.0,
+        0.0
+      ],
+      "centroid_px": [
+        94.04314467915505,
+        87.03437624551614
+      ],
+      "opaque_pixels": 10036,
+      "edge_sides": []
+    },
+    {
+      "frame": 2,
+      "time_seconds": 0.083,
+      "duration_seconds": 0.042,
+      "bbox": [
+        38,
+        20,
+        149,
+        174
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -57.0,
+        -154.0,
+        54.0,
+        0.0
+      ],
+      "centroid_px": [
+        94.63315633615848,
+        86.94542019810068
+      ],
+      "opaque_pixels": 9793,
+      "edge_sides": []
+    },
+    {
+      "frame": 3,
+      "time_seconds": 0.125,
+      "duration_seconds": 0.042,
+      "bbox": [
+        41,
+        19,
+        153,
+        174
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -54.0,
+        -155.0,
+        58.0,
+        0.0
+      ],
+      "centroid_px": [
+        96.11731493099121,
+        85.89387285654537
+      ],
+      "opaque_pixels": 9564,
+      "edge_sides": []
+    },
+    {
+      "frame": 4,
+      "time_seconds": 0.167,
+      "duration_seconds": 0.041,
+      "bbox": [
+        43,
+        17,
+        155,
+        174
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -52.0,
+        -157.0,
+        60.0,
+        0.0
+      ],
+      "centroid_px": [
+        96.83990927313008,
+        84.4313218693955
+      ],
+      "opaque_pixels": 9479,
+      "edge_sides": []
+    },
+    {
+      "frame": 5,
+      "time_seconds": 0.20800000000000002,
+      "duration_seconds": 0.042,
+      "bbox": [
+        45,
+        13,
+        155,
+        174
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -50.0,
+        -161.0,
+        60.0,
+        0.0
+      ],
+      "centroid_px": [
+        97.23458886487599,
+        82.59859009982505
+      ],
+      "opaque_pixels": 9717,
+      "edge_sides": []
+    },
+    {
+      "frame": 6,
+      "time_seconds": 0.25,
+      "duration_seconds": 0.042,
+      "bbox": [
+        45,
+        9,
+        155,
+        174
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -50.0,
+        -165.0,
+        60.0,
+        0.0
+      ],
+      "centroid_px": [
+        97.01388329979879,
+        81.10372233400402
+      ],
+      "opaque_pixels": 9940,
+      "edge_sides": []
+    },
+    {
+      "frame": 7,
+      "time_seconds": 0.292,
+      "duration_seconds": 0.041,
+      "bbox": [
+        45,
+        4,
+        155,
+        174
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -50.0,
+        -170.0,
+        60.0,
+        0.0
+      ],
+      "centroid_px": [
+        96.55140324963072,
+        77.7988675529296
+      ],
+      "opaque_pixels": 10155,
+      "edge_sides": []
+    },
+    {
+      "frame": 8,
+      "time_seconds": 0.33299999999999996,
+      "duration_seconds": 0.042,
+      "bbox": [
+        45,
+        2,
+        154,
+        169
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -50.0,
+        -172.0,
+        59.0,
+        -5.0
+      ],
+      "centroid_px": [
+        96.33449562911305,
+        75.34716629014831
+      ],
+      "opaque_pixels": 10181,
+      "edge_sides": []
+    },
+    {
+      "frame": 9,
+      "time_seconds": 0.37499999999999994,
+      "duration_seconds": 0.042,
+      "bbox": [
+        44,
+        1,
+        152,
+        161
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -51.0,
+        -173.0,
+        57.0,
+        -13.0
+      ],
+      "centroid_px": [
+        95.84162151702786,
+        73.94514318885449
+      ],
+      "opaque_pixels": 10336,
+      "edge_sides": []
+    },
+    {
+      "frame": 10,
+      "time_seconds": 0.4169999999999999,
+      "duration_seconds": 0.041,
+      "bbox": [
+        42,
+        1,
+        150,
+        157
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -53.0,
+        -173.0,
+        55.0,
+        -17.0
+      ],
+      "centroid_px": [
+        95.52808172751041,
+        73.41013847196669
+      ],
+      "opaque_pixels": 10327,
+      "edge_sides": []
+    },
+    {
+      "frame": 11,
+      "time_seconds": 0.4579999999999999,
+      "duration_seconds": 0.042,
+      "bbox": [
+        40,
+        3,
+        149,
+        162
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -55.0,
+        -171.0,
+        54.0,
+        -12.0
+      ],
+      "centroid_px": [
+        95.06652566814074,
+        74.53297442799462
+      ],
+      "opaque_pixels": 10402,
+      "edge_sides": []
+    },
+    {
+      "frame": 12,
+      "time_seconds": 0.4999999999999999,
+      "duration_seconds": 0.042,
+      "bbox": [
+        39,
+        5,
+        147,
+        167
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -56.0,
+        -169.0,
+        52.0,
+        -7.0
+      ],
+      "centroid_px": [
+        94.90235384173764,
+        76.33838867094057
+      ],
+      "opaque_pixels": 10451,
+      "edge_sides": []
+    },
+    {
+      "frame": 13,
+      "time_seconds": 0.5419999999999999,
+      "duration_seconds": 0.041,
+      "bbox": [
+        38,
+        9,
+        145,
+        174
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -57.0,
+        -165.0,
+        50.0,
+        0.0
+      ],
+      "centroid_px": [
+        94.77923696319019,
+        80.78853527607362
+      ],
+      "opaque_pixels": 10432,
+      "edge_sides": []
+    },
+    {
+      "frame": 14,
+      "time_seconds": 0.583,
+      "duration_seconds": 0.042,
+      "bbox": [
+        38,
+        13,
+        146,
+        174
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -57.0,
+        -161.0,
+        51.0,
+        0.0
+      ],
+      "centroid_px": [
+        94.82038080435206,
+        83.58286380415777
+      ],
+      "opaque_pixels": 10294,
+      "edge_sides": []
+    },
+    {
+      "frame": 15,
+      "time_seconds": 0.625,
+      "duration_seconds": 0.042,
+      "bbox": [
+        39,
+        17,
+        147,
+        174
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -56.0,
+        -157.0,
+        52.0,
+        0.0
+      ],
+      "centroid_px": [
+        95.41220429575374,
+        85.9961892507176
+      ],
+      "opaque_pixels": 10103,
+      "edge_sides": []
+    },
+    {
+      "frame": 16,
+      "time_seconds": 0.667,
+      "duration_seconds": 0.041,
+      "bbox": [
+        40,
+        17,
+        150,
+        174
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -55.0,
+        -157.0,
+        55.0,
+        0.0
+      ],
+      "centroid_px": [
+        95.92357422070762,
+        85.69805552771375
+      ],
+      "opaque_pixels": 9977,
+      "edge_sides": []
+    },
+    {
+      "frame": 17,
+      "time_seconds": 0.7080000000000001,
+      "duration_seconds": 0.042,
+      "bbox": [
+        43,
+        16,
+        154,
+        174
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -52.0,
+        -158.0,
+        59.0,
+        0.0
+      ],
+      "centroid_px": [
+        96.3644902987373,
+        83.84452314957396
+      ],
+      "opaque_pixels": 9741,
+      "edge_sides": []
+    },
+    {
+      "frame": 18,
+      "time_seconds": 0.7500000000000001,
+      "duration_seconds": 0.042,
+      "bbox": [
+        44,
+        14,
+        155,
+        174
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -51.0,
+        -160.0,
+        60.0,
+        0.0
+      ],
+      "centroid_px": [
+        96.47767529609055,
+        80.92270202284875
+      ],
+      "opaque_pixels": 9541,
+      "edge_sides": []
+    },
+    {
+      "frame": 19,
+      "time_seconds": 0.7920000000000001,
+      "duration_seconds": 0.041,
+      "bbox": [
+        45,
+        8,
+        155,
+        174
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -50.0,
+        -166.0,
+        60.0,
+        0.0
+      ],
+      "centroid_px": [
+        96.47630727481474,
+        77.15943012211669
+      ],
+      "opaque_pixels": 9581,
+      "edge_sides": []
+    },
+    {
+      "frame": 20,
+      "time_seconds": 0.8330000000000002,
+      "duration_seconds": 0.042,
+      "bbox": [
+        45,
+        4,
+        155,
+        174
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -50.0,
+        -170.0,
+        60.0,
+        0.0
+      ],
+      "centroid_px": [
+        96.04544529262087,
+        75.69592875318067
+      ],
+      "opaque_pixels": 9825,
+      "edge_sides": []
+    },
+    {
+      "frame": 21,
+      "time_seconds": 0.8750000000000002,
+      "duration_seconds": 0.042,
+      "bbox": [
+        44,
+        1,
+        155,
+        173
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -51.0,
+        -173.0,
+        60.0,
+        -1.0
+      ],
+      "centroid_px": [
+        95.38352695859399,
+        73.46216860291928
+      ],
+      "opaque_pixels": 10071,
+      "edge_sides": []
+    },
+    {
+      "frame": 22,
+      "time_seconds": 0.9170000000000003,
+      "duration_seconds": 0.041,
+      "bbox": [
+        43,
+        1,
+        154,
+        168
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -52.0,
+        -173.0,
+        59.0,
+        -6.0
+      ],
+      "centroid_px": [
+        95.0301621835443,
+        72.39230617088607
+      ],
+      "opaque_pixels": 10112,
+      "edge_sides": []
+    },
+    {
+      "frame": 23,
+      "time_seconds": 0.9580000000000003,
+      "duration_seconds": 0.042,
+      "bbox": [
+        41,
+        1,
+        153,
+        160
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -54.0,
+        -173.0,
+        58.0,
+        -14.0
+      ],
+      "centroid_px": [
+        94.69828091424107,
+        71.82350068372729
+      ],
+      "opaque_pixels": 10238,
+      "edge_sides": []
+    },
+    {
+      "frame": 24,
+      "time_seconds": 1.0000000000000002,
+      "duration_seconds": 0.042,
+      "bbox": [
+        39,
+        1,
+        152,
+        158
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -56.0,
+        -173.0,
+        57.0,
+        -16.0
+      ],
+      "centroid_px": [
+        94.56126978000772,
+        72.51852566576612
+      ],
+      "opaque_pixels": 10364,
+      "edge_sides": []
+    },
+    {
+      "frame": 25,
+      "time_seconds": 1.0420000000000003,
+      "duration_seconds": 0.041,
+      "bbox": [
+        37,
+        4,
+        150,
+        164
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -58.0,
+        -170.0,
+        55.0,
+        -10.0
+      ],
+      "centroid_px": [
+        94.17954957534116,
+        74.69123962210135
+      ],
+      "opaque_pixels": 10479,
+      "edge_sides": []
+    },
+    {
+      "frame": 26,
+      "time_seconds": 1.0830000000000002,
+      "duration_seconds": 0.042,
+      "bbox": [
+        36,
+        7,
+        149,
+        170
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -59.0,
+        -167.0,
+        54.0,
+        -4.0
+      ],
+      "centroid_px": [
+        94.02613473483039,
+        76.95685618729097
+      ],
+      "opaque_pixels": 10465,
+      "edge_sides": []
+    },
+    {
+      "frame": 27,
+      "time_seconds": 1.1250000000000002,
+      "duration_seconds": 0.042,
+      "bbox": [
+        35,
+        12,
+        148,
+        174
+      ],
+      "anchor_px": [
+        95.0,
+        174.0
+      ],
+      "bbox_from_anchor": [
+        -60.0,
+        -162.0,
+        53.0,
+        0.0
+      ],
+      "centroid_px": [
+        94.07350689127105,
+        81.6999425727412
+      ],
+      "opaque_pixels": 10448,
+      "edge_sides": []
+    }
+  ],
+  "bbox_stats": {
+    "union": [
+      35,
+      1,
+      155,
+      174
+    ],
+    "width_range": [
+      107,
+      113
+    ],
+    "height_range": [
+      154,
+      172
+    ],
+    "bottom_range": [
+      157,
+      174
+    ]
+  },
+  "edge_contact": {
+    "frames": [],
+    "sides": {
+      "left": [],
+      "top": [],
+      "right": [],
+      "bottom": []
+    }
+  },
+  "contact_candidates": [],
+  "confidence": 0.0,
+  "sequence": {
+    "source": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\asset.json",
+    "state": null,
+    "fps_override": null,
+    "frame_count": 28,
+    "size": [
+      192,
+      192
+    ],
+    "anchor_px": [
+      95.0,
+      174.0
+    ],
+    "durations_seconds": [
+      0.042,
+      0.041,
+      0.042,
+      0.042,
+      0.041,
+      0.042,
+      0.042,
+      0.041,
+      0.042,
+      0.042,
+      0.041,
+      0.042,
+      0.042,
+      0.041,
+      0.042,
+      0.042,
+      0.041,
+      0.042,
+      0.042,
+      0.041,
+      0.042,
+      0.042,
+      0.041,
+      0.042,
+      0.042,
+      0.041,
+      0.042,
+      0.042
+    ]
+  },
+  "source_fingerprints": {
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\asset.json": "08ac4926cc4691e7578cef1fca3317b172927c12bbc40420667603ff5851f63f",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_01.png": "d518ef45926139326ab7dd8f401c8eaecdc629b20f913f7d5e2b2ffc8a661c02",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_02.png": "ce2213707c4c97f94d0976efd9c6c30c0cb21fe85cbab5ed2274848098d8be17",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_03.png": "3dc9ac56d471e8708501e9e029b81ecf9fdcc268c08b5b1947099d419b7a1038",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_04.png": "4472ff6c50d1b2831117bbc1c627374bb6adc085e806c1820dd488d04a4f0a95",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_05.png": "a61d54f92e737dc682d9b46baf8ae59b2c6507df30f92ae980fb23f7af7a4572",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_06.png": "24cb78ddd3b0d86efad26edf850e57ce18f1408c84a35eac2a7b5bab990a042a",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_07.png": "928885ecd0bf3a4e7fa99778d93ee548c76eb47dbbc61e0c4ce6e275ac636788",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_08.png": "e3eb7151a74ff77375abb02d6cda2e61a75dc73168cbdf0a0e1f61fed3905e6b",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_09.png": "0a2df61283cc73fbd9f47a3eb4b8479774c13988cf39c1aa97d77fafe66b705b",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_10.png": "13cda37c319f7187e9f02b8644671a3956cadedcabb0831dfe15d509f5768e0e",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_11.png": "19c6326ba9bb74bd08b39c2af9b4ba298f759fec83ccd57e61dd966632611960",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_12.png": "4357a49cdaf61aa99050b7ba3b49d8c640e04d36692e5363f9eb251766448197",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_13.png": "5389b57912febc709246e534f99bd9030c7b0016ca11b0d73b1b6731e1e66732",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_14.png": "771ab4c507e363290cde664025045ede803e03f1138bb383291b47c4aec0d932",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_15.png": "b39e07c3a5de0276a52f0f0458c408dd2be333541c7f8f91cd81c85310dd6678",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_16.png": "4434e8b2c2940723955967190fb91f49d12af79455d14e42f0cafed326941ed5",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_17.png": "7c2fddbcbe2def60f86de92721048c96a6f517dea7502dd5b24834f00bbc4ff4",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_18.png": "0cd1c0d991f3d2d99a1793bf5d22306c1179091e9bdd050a9c2ab07704700516",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_19.png": "118b90cfff855dbbbb15ec7fbd652b6adc2afd31b0544825e3d55fd4f506f82e",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_20.png": "50aa3ffcbb21e04f39c5675629f66ffe69fb5e4c599ade093c0319808ee0b571",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_21.png": "810c25f2658e6360736a90652b64a4e294d5fbd5ba249b1a6ed5c3bdf741eead",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_22.png": "271244cd293b29372a7041cb56434b4e8b305e1120cc897b87e593d35c98a471",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_23.png": "b214f670b7cb87c622dfcc70deb986e378955c60fc3cddd2304be9ec03344af8",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_24.png": "b0fe9f1a26dd116f2de35645312abc9cb8364e176f2cb787b784a7c14dc2300e",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_25.png": "3700e576618dd533130b0fed9f7856e06400d9737ba39df5cff85046ffc5799c",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_26.png": "a83667ec3f178ba289683160239ee85305669ded361fc92db86230eba6452592",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_27.png": "58bfd68f5ba71a34d4b6568da9403fae8eb3ffa1600958c77f373b366b22ba3e",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_28.png": "b5cea218a3962fdc47637ca60f00dd4609c3eeb79a90d528bd7d06ea559a03fa"
+  },
+  "stride_verified": false,
+  "foot_velocity_px_per_second": null,
+  "stride_px_per_second": null,
+  "warnings": [
+    "Ground contact is unknown: provide both manual contacts and a single-foot ROI; silhouette bottoms do not identify a planted foot."
+  ],
+  "method": {
+    "silhouette": "alpha > 0 in source canvas coordinates; bbox right/bottom are exclusive",
+    "near_silhouette_iou": 0.98,
+    "duplicates": "Counts frames matching an earlier frame; near excludes exact silhouette matches. No time or frames are removed.",
+    "motion": "Adjacent visible pixel changes; silhouette XOR/union summed over full duration. No loop-seam assumption.",
+    "contact": "User-declared same-foot stance spans plus isolated ROI alpha centroid; no automatic contact or facing inference.",
+    "timing": "Cumulative frame-start seconds; repeated tracked poses use their first onset with all intervening durations retained. Final hold is included in duration but has no displacement endpoint.",
+    "velocity": "Endpoint horizontal displacement / pose-onset elapsed seconds; positive = image right. Stride is absolute velocity under manual ground-contact assumptions.",
+    "confidence": "0.9 = at least 3 distinct poses, stable baseline/shape, monotonic near-linear motion and consistent spans. Heuristic conditional confidence, not a calibrated contact probability.",
+    "sequence": "Identity of the analysed sequence: source, atlas state, fps override, frame count, size, anchor and effective per-frame durations. A consumer applying the stride must match all of it and source_fingerprints; another state or frame rate of the same files is a different sequence."
+  },
+  "source_files": [
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\asset.json",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_01.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_02.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_03.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_04.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_05.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_06.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_07.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_08.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_09.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_10.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_11.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_12.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_13.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_14.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_15.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_16.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_17.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_18.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_19.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_20.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_21.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_22.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_23.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_24.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_25.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_26.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_27.png",
+    "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\run_28.png"
+  ],
+  "source": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\prepared\\asset.json"
+}

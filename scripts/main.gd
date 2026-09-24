@@ -9,13 +9,16 @@ const RUN: StringName = &"run"
 const RUN_FRAMES: SpriteFrames = preload("res://scenes/run_frames.tres")
 const RUN_LIGHT: StringName = &"run_light"
 const RUN_LIGHT_FRAMES: SpriteFrames = preload("res://scenes/run_light_frames.tres")
+const RUN_BOUNCY: StringName = &"run_bouncy"
+const RUN_BOUNCY_FRAMES: SpriteFrames = preload("res://scenes/run_bouncy_frames.tres")
 const CANVAS_SIZE := Vector2(192, 192)
 const FOOT_ANCHOR := Vector2(95, 174)
-# Keep the existing movement speed with the new 24-frame, one-second Walk.
+# Native movement speeds; both Walk and active Run variants play at 1.25x.
 const WALK_SPEED := 72.0
 # Keep the existing faster Run available as a separate animation variant.
 const RUN_SPEED := 144.0
 const LIGHT_RUN_SPEED := 108.0
+const MOVEMENT_SCALE := 1.25
 const EDGE_MARGIN := 12.0
 
 # Weights apply only when the default Idle completes its allotted loops.
@@ -34,6 +37,7 @@ var _left_pressed := false
 var _right_pressed := false
 var _auto_walk := false
 var _auto_run := false
+var _auto_run_bouncy := false
 var _run_pressed := false
 var _facing := 1
 var _position_x := 320.0
@@ -64,6 +68,11 @@ func _ready() -> void:
 	bongbong.sprite_frames.set_animation_loop(RUN_LIGHT, true)
 	for index in RUN_LIGHT_FRAMES.get_frame_count(RUN_LIGHT):
 		bongbong.sprite_frames.add_frame(RUN_LIGHT, RUN_LIGHT_FRAMES.get_frame_texture(RUN_LIGHT, index), RUN_LIGHT_FRAMES.get_frame_duration(RUN_LIGHT, index))
+	bongbong.sprite_frames.add_animation(RUN_BOUNCY)
+	bongbong.sprite_frames.set_animation_speed(RUN_BOUNCY, RUN_BOUNCY_FRAMES.get_animation_speed(RUN_BOUNCY))
+	bongbong.sprite_frames.set_animation_loop(RUN_BOUNCY, true)
+	for index in RUN_BOUNCY_FRAMES.get_frame_count(RUN_BOUNCY):
+		bongbong.sprite_frames.add_frame(RUN_BOUNCY, RUN_BOUNCY_FRAMES.get_frame_texture(RUN_BOUNCY, index), RUN_BOUNCY_FRAMES.get_frame_duration(RUN_BOUNCY, index))
 	_position_x = bongbong.position.x
 	# Use every pose's visible bounds, in both directions, so a turn cannot clip.
 	var extent := 0.0
@@ -134,6 +143,7 @@ func _unhandled_key_input(event: InputEvent) -> void:
 		if event.is_pressed():
 			_auto_walk = false
 			_auto_run = false
+			_auto_run_bouncy = false
 		if event.keycode == KEY_LEFT:
 			_left_pressed = event.is_pressed()
 		else:
@@ -152,6 +162,7 @@ func _unhandled_key_input(event: InputEvent) -> void:
 		KEY_4, KEY_KP_4:
 			_auto_walk = not _auto_walk
 			_auto_run = false
+			_auto_run_bouncy = false
 			_run_pressed = false
 			_left_pressed = false
 			_right_pressed = false
@@ -163,9 +174,21 @@ func _unhandled_key_input(event: InputEvent) -> void:
 		KEY_5, KEY_KP_5:
 			_auto_run = not _auto_run
 			_auto_walk = false
+			_auto_run_bouncy = false
 			_left_pressed = false
 			_right_pressed = false
 			if _auto_run:
+				_begin_walk(_facing, true)
+				_update_help()
+			else:
+				_stop_walking()
+		KEY_6, KEY_KP_6:
+			_auto_run_bouncy = not _auto_run_bouncy
+			_auto_walk = false
+			_auto_run = false
+			_left_pressed = false
+			_right_pressed = false
+			if _auto_run_bouncy:
 				_begin_walk(_facing, true)
 				_update_help()
 			else:
@@ -179,8 +202,8 @@ func _unhandled_key_input(event: InputEvent) -> void:
 
 
 func _process(delta: float) -> void:
-	var automatic := _auto_walk or _auto_run
-	var running := _auto_run or _run_pressed
+	var automatic := _auto_walk or _auto_run or _auto_run_bouncy
+	var running := _auto_run or _auto_run_bouncy or _run_pressed
 	var direction := _facing if automatic else int(_right_pressed) - int(_left_pressed)
 	if direction == 0:
 		if _is_moving():
@@ -190,7 +213,7 @@ func _process(delta: float) -> void:
 
 	var left_limit := _edge_inset
 	var right_limit := get_viewport_rect().size.x - 1.0 - _edge_inset
-	var next_x := _position_x + direction * (LIGHT_RUN_SPEED if running else WALK_SPEED) * delta
+	var next_x := _position_x + direction * (LIGHT_RUN_SPEED if running else WALK_SPEED) * MOVEMENT_SCALE * delta
 	if next_x <= left_limit or next_x >= right_limit:
 		next_x = clampf(next_x, left_limit, right_limit)
 		if automatic:
@@ -224,11 +247,11 @@ func _set_facing(direction: int) -> void:
 
 
 func _is_moving() -> bool:
-	return bongbong.animation == WALK or bongbong.animation == RUN or bongbong.animation == RUN_LIGHT
+	return bongbong.animation == WALK or bongbong.animation == RUN or bongbong.animation == RUN_LIGHT or bongbong.animation == RUN_BOUNCY
 
 
 func _begin_walk(direction: int, running: bool = false) -> void:
-	var animation_name := RUN_LIGHT if running else WALK
+	var animation_name := (RUN_BOUNCY if _auto_run_bouncy else RUN_LIGHT) if running else WALK
 	var turned := direction != _facing
 	_set_facing(direction)
 	if bongbong.animation == animation_name:
@@ -241,6 +264,7 @@ func _begin_walk(direction: int, running: bool = false) -> void:
 	var previous_count := bongbong.sprite_frames.get_frame_count(bongbong.animation) if keep_phase else 0
 	_requested_idle = &""
 	_completed_loops = 0
+	bongbong.speed_scale = MOVEMENT_SCALE
 	bongbong.play(animation_name)
 	# Keep the relative gait phase when switching between different frame counts.
 	if keep_phase:
@@ -253,6 +277,7 @@ func _begin_walk(direction: int, running: bool = false) -> void:
 func _stop_walking() -> void:
 	_auto_walk = false
 	_auto_run = false
+	_auto_run_bouncy = false
 	_run_pressed = false
 	_left_pressed = false
 	_right_pressed = false
@@ -324,16 +349,17 @@ func _begin_idle(animation_name: StringName, bridge_loops: int = 0) -> void:
 		limits = ARMS_CROSSED_LOOPS
 	_completed_loops = 0
 	_target_loops = bridge_loops if bridge_loops > 0 else _rng.randi_range(limits.x, limits.y)
+	bongbong.speed_scale = 1.0
 	bongbong.play(animation_name)
 	bongbong.set_frame_and_progress(0, 0.0)
 	_update_help()
 
 
 func _update_help() -> void:
-	var mode := "Light run" if bongbong.animation == RUN_LIGHT else ("Run" if bongbong.animation == RUN else ("Walk" if bongbong.animation == WALK else "Idle"))
-	if _auto_walk or _auto_run:
+	var mode := "Bouncy run" if bongbong.animation == RUN_BOUNCY else ("Light run" if bongbong.animation == RUN_LIGHT else ("Run" if bongbong.animation == RUN else ("Walk" if bongbong.animation == WALK else "Idle")))
+	if _auto_walk or _auto_run or _auto_run_bouncy:
 		mode = "Auto " + mode.to_lower()
-	help_label.text = "%s | Facing: %s\n1: Default    2: Pockets    3: Arms crossed\nLeft/Right: Walk    Shift + Left/Right: Run\n4: Auto walk    5: Auto run    Space: Stop" % [mode, "Left" if _facing < 0 else "Right"]
+	help_label.text = "%s | Facing: %s\n1: Default    2: Pockets    3: Arms crossed\nLeft/Right: Walk    Shift + Left/Right: Light run\n4: Auto walk    5: Auto light run    6: Auto bouncy run    Space: Stop" % [mode, "Left" if _facing < 0 else "Right"]
 	help_label.text += "\nF1: Test view    Esc: Quit"
 	help_label.text += "\nCurrent: %s | Loops: %d / %s" % [bongbong.animation, _completed_loops, "infinite" if _is_moving() else str(_target_loops)]
 	if _requested_idle != &"":

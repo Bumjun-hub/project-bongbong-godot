@@ -3,9 +3,9 @@
 ## 현재 적용: Grok 차분한 오른쪽 걷기
 
 - `scenes/walk_frames.tres`는 `assets/character/walk/grok_right_calm/walk_01.png`~`walk_24.png`를 읽는다.
-- 24FPS, 24프레임, 한 바퀴 1초. 오른쪽 3/4 방향의 차분한 걷기다.
+- 원본 24FPS, 24프레임, 한 바퀴 1초. Godot에서는 1.25배로 재생해 화면에서는 30FPS, 한 바퀴 약 0.8초다. 오른쪽 3/4 방향의 차분한 걷기다.
 - Grok 원본의 머리·턱·목·몸통을 한 장면 그대로 유지하고, sprite-gen에서 서 있는 캐릭터 높이 159px로 전체를 함께 조절했다. 추출된 106×161 셀을 192×192 캔버스의 `(42,13)`에 배치해 기존 `(95,174)` 발 기준에 맞췄다.
-- 기존 이동 속도 72px/s와 ←/→ 걷기, 4 자동 걷기 조작을 사용한다.
+- 이동 속도는 기존 72px/s의 1.25배인 90px/s다. ←/→ 걷기와 4 자동 걷기 조작을 사용한다.
 - 이전 Walk 원본은 보존했고, 이전 리소스 연결은 `experiments/sprite-gen-walk/grok-walk-02/walk_frames.before_grok.tres`에 백업했다.
 - 검증: `experiments/sprite-gen-walk/grok-walk-02/verify_godot.gd`에서 24프레임의 픽셀, 시간, 메인 씬 연결, 좌우 방향 및 Idle 전환을 확인한다.
 - 현재 Walk의 머리 폭은 자세에 따라 101~102px이다. 머리와 몸을 분리해 이동하지 않는다. 편집 원본은 `assets/character/walk/grok_right_calm/walk_cycle_24.aseprite`에 있다.

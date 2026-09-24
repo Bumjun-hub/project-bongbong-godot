@@ -1,0 +1,23 @@
+{
+  "kind": "sprite-gen-video-report",
+  "provider": "grok-imagine",
+  "auth_source": "grok-login",
+  "model": "grok-imagine-video-1.5",
+  "mode": "image-to-video",
+  "request_id": "dc79a4d8-1b8a-9557-8bc0-087969fd1879",
+  "image": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\canvas.png",
+  "inputs": {
+    "image": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\canvas.png"
+  },
+  "prompt": "Animate this EXACT cute pixel-art chibi boy in a playful, BOUNCY RUN LOOP IN PLACE toward SCREEN RIGHT, keeping the starting pose's identity. His arms stay raised ABOVE his shoulders throughout, with the two fists waving slightly at different heights; do not lower them into a normal running arm swing. His upper body leans a little backward as if he is joyfully charging forward. Keep the same oversized black parted hair, round glasses, red shirt, necklace, blue jeans, black-and-white sneakers, 1.7-head SD proportions, and big excited smiling eyes and open grin. Preserve the three-quarter RIGHT-facing gaze and coherent attached neck, chin, head, and torso.\n\nThe motion is a run, not a stationary cheer or a series of jumps. Alternate left and right foot contacts clearly. Each step compresses softly on landing, rebounds into a SHORT airborne phase, then the other foot lands. The character's whole body and head rise and fall together in smooth rounded arcs, about a few sprite pixels of bounce, while the legs continue running. Maintain the same step size and rhythm for several complete cycles, about 0.8 to 0.9 seconds per full left-right stride. Sustain the action immediately from the first frame through the last: no startup, stop, pause, held pose, double step, abrupt snap, slow motion, or speed change. Return naturally to the starting stance every cycle.\n\nThe character stays centered at constant scale with the entire hair, both lifted hands, and both feet visible. Camera absolutely fixed. Pure flat green chroma background throughout, with no floor line, shadow, particles, speed streaks, motion blur, text, extra arms, extra legs, deformation, or character redesign. Keep pixel edges clear.",
+  "out": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\clip.mp4",
+  "bytes": 2918878,
+  "host": "vidgen.x.ai",
+  "duration_requested": 4,
+  "duration_reported": 4,
+  "resolution": "720p",
+  "aspect_ratio": null,
+  "generate_audio": false,
+  "elapsed_seconds": 24.266,
+  "polls": 6
+}

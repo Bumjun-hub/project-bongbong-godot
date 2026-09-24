@@ -1,0 +1,86 @@
+{
+  "kind": "sprite-gen-video-loop-report",
+  "frames_dir": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\frames\\keyed",
+  "out_dir": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\loop-selected",
+  "state": "run",
+  "fps": 24.0,
+  "frames_total": 97,
+  "window": [
+    7,
+    29
+  ],
+  "profile": "faster gait",
+  "cycle_mode": "fixed",
+  "seam_max": 2.0,
+  "anchor": "body",
+  "seam_measurement": "source-frames",
+  "cycle": {
+    "kind": "fixed",
+    "start": 67,
+    "length": 28,
+    "seam": 0.047557905316352844,
+    "inner_mean_adjacent": 0.0446641705930233,
+    "ratio": 1.0647887262857079,
+    "period_global": null,
+    "periodicity": null
+  },
+  "periodic_attempt": null,
+  "cycle_seconds": 1.1667,
+  "n_out": 28,
+  "gif_fps": 24.0,
+  "delay_ms": 42,
+  "status": "passed",
+  "resampled_seam": 0.047557905316352844,
+  "resampled_inner_mean_adjacent": 0.0446641705930233,
+  "resampled_seam_ratio": 1.0648,
+  "scrubbed_rgb_pixels": 0,
+  "specks_dropped": 114,
+  "strip": {
+    "path": "C:\\Users\\USER\\Documents\\GitHub\\project-bongbong-godot\\experiments\\sprite-gen-run\\grok-bouncy-arms-up-01\\loop-selected\\run_bouncy.strip.png",
+    "frames": 28,
+    "w": 120,
+    "h": 173,
+    "kind": "fixed",
+    "loop": true,
+    "body_h": 162,
+    "delay_ms": 41.67,
+    "cycle_frames": 28,
+    "cycle_seconds": 1.1667,
+    "subsampled": false,
+    "cell_cap": 64,
+    "top_margin_px": 24,
+    "body_height_target": 162,
+    "foot_anchor": "body",
+    "drift_px": 0,
+    "foot_sway_px": 0,
+    "foot_x": null,
+    "wrap_dx_px": -4,
+    "seam_ratio_after_anchor": 1.0537
+  },
+  "gif": {
+    "file": "run_bouncy.gif",
+    "format": "GIF",
+    "n_frames": 28,
+    "loop": 0,
+    "size": [
+      120,
+      173
+    ],
+    "corners_transparent": true,
+    "stale_rgb_under_alpha0": 0,
+    "bytes": 318526
+  },
+  "webp": {
+    "file": "run_bouncy.webp",
+    "format": "WEBP",
+    "n_frames": 28,
+    "loop": 0,
+    "size": [
+      120,
+      173
+    ],
+    "corners_transparent": true,
+    "stale_rgb_under_alpha0": 0,
+    "bytes": 635042
+  }
+}
