@@ -8,9 +8,9 @@ script = ExtResource("1_script")
 
 [node name="Bongbong" type="AnimatedSprite2D" parent="." unique_id=355821441]
 texture_filter = 1
-position = Vector2(320, 320)
+position = Vector2(330, 337)
 sprite_frames = ExtResource("2_frames")
-animation = &"idle_default"
+animation = &"idle_arms_crossed"
 centered = false
 offset = Vector2(-95, -174)
 
@@ -26,4 +26,5 @@ text = "Idle | Facing: Right
 1: Default    2: Pockets    3: Arms crossed
 Left/Right: Walk    Shift + Left/Right: Light run
 4: Auto walk    5: Auto light run    6: Auto bouncy run    Space: Stop
+Mouse: Grab and drag Bongbong
 F1: Test view    Esc: Quit"

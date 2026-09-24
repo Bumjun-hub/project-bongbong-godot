@@ -1,47 +1,82 @@
-[gd_resource type="SpriteFrames" load_steps=19 format=3]
+[gd_resource type="SpriteFrames" format=3 uid="uid://dobs7a3jjd5hs"]
 
-[ext_resource type="Texture2D" path="res://assets/character/run/light_jog_02/run_01.png" id="1_run_light"]
-[ext_resource type="Texture2D" path="res://assets/character/run/light_jog_02/run_02.png" id="2_run_light"]
-[ext_resource type="Texture2D" path="res://assets/character/run/light_jog_02/run_03.png" id="3_run_light"]
-[ext_resource type="Texture2D" path="res://assets/character/run/light_jog_02/run_04.png" id="4_run_light"]
-[ext_resource type="Texture2D" path="res://assets/character/run/light_jog_02/run_05.png" id="5_run_light"]
-[ext_resource type="Texture2D" path="res://assets/character/run/light_jog_02/run_06.png" id="6_run_light"]
-[ext_resource type="Texture2D" path="res://assets/character/run/light_jog_02/run_07.png" id="7_run_light"]
-[ext_resource type="Texture2D" path="res://assets/character/run/light_jog_02/run_08.png" id="8_run_light"]
-[ext_resource type="Texture2D" path="res://assets/character/run/light_jog_02/run_09.png" id="9_run_light"]
-[ext_resource type="Texture2D" path="res://assets/character/run/light_jog_02/run_10.png" id="10_run_light"]
-[ext_resource type="Texture2D" path="res://assets/character/run/light_jog_02/run_11.png" id="11_run_light"]
-[ext_resource type="Texture2D" path="res://assets/character/run/light_jog_02/run_12.png" id="12_run_light"]
-[ext_resource type="Texture2D" path="res://assets/character/run/light_jog_02/run_13.png" id="13_run_light"]
-[ext_resource type="Texture2D" path="res://assets/character/run/light_jog_02/run_14.png" id="14_run_light"]
-[ext_resource type="Texture2D" path="res://assets/character/run/light_jog_02/run_15.png" id="15_run_light"]
-[ext_resource type="Texture2D" path="res://assets/character/run/light_jog_02/run_16.png" id="16_run_light"]
-[ext_resource type="Texture2D" path="res://assets/character/run/light_jog_02/run_17.png" id="17_run_light"]
-[ext_resource type="Texture2D" path="res://assets/character/run/light_jog_02/run_18.png" id="18_run_light"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_light/frame_01.png" id="1_run_light"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_light/frame_02.png" id="2_run_light"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_light/frame_03.png" id="3_run_light"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_light/frame_04.png" id="4_run_light"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_light/frame_05.png" id="5_run_light"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_light/frame_06.png" id="6_run_light"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_light/frame_07.png" id="7_run_light"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_light/frame_08.png" id="8_run_light"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_light/frame_09.png" id="9_run_light"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_light/frame_10.png" id="10_run_light"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_light/frame_11.png" id="11_run_light"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_light/frame_12.png" id="12_run_light"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_light/frame_13.png" id="13_run_light"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_light/frame_14.png" id="14_run_light"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_light/frame_15.png" id="15_run_light"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_light/frame_16.png" id="16_run_light"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_light/frame_17.png" id="17_run_light"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_light/frame_18.png" id="18_run_light"]
 
 [resource]
 animations = [{
-"frames": [
-{"duration": 1.0, "texture": ExtResource("1_run_light")},
-{"duration": 1.0, "texture": ExtResource("2_run_light")},
-{"duration": 1.0, "texture": ExtResource("3_run_light")},
-{"duration": 1.0, "texture": ExtResource("4_run_light")},
-{"duration": 1.0, "texture": ExtResource("5_run_light")},
-{"duration": 1.0, "texture": ExtResource("6_run_light")},
-{"duration": 1.0, "texture": ExtResource("7_run_light")},
-{"duration": 1.0, "texture": ExtResource("8_run_light")},
-{"duration": 1.0, "texture": ExtResource("9_run_light")},
-{"duration": 1.0, "texture": ExtResource("10_run_light")},
-{"duration": 1.0, "texture": ExtResource("11_run_light")},
-{"duration": 1.0, "texture": ExtResource("12_run_light")},
-{"duration": 1.0, "texture": ExtResource("13_run_light")},
-{"duration": 1.0, "texture": ExtResource("14_run_light")},
-{"duration": 1.0, "texture": ExtResource("15_run_light")},
-{"duration": 1.0, "texture": ExtResource("16_run_light")},
-{"duration": 1.0, "texture": ExtResource("17_run_light")},
-{"duration": 1.0, "texture": ExtResource("18_run_light")}
-],
-"loop": true,
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_run_light")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_run_light")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_run_light")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_run_light")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_run_light")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_run_light")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_run_light")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_run_light")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_run_light")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_run_light")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_run_light")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_run_light")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_run_light")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_run_light")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_run_light")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_run_light")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_run_light")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_run_light")
+}],
+"loop": 1,
 "name": &"run_light",
 "speed": 20.0
 }]

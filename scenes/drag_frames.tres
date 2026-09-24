@@ -1,0 +1,90 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://crbxtn2y4gtrq"]
+
+[ext_resource type="Texture2D" path="res://assets/character/outline_trimmed_motions/drag/frame_01.png" id="1_drag"]
+[ext_resource type="Texture2D" path="res://assets/character/outline_trimmed_motions/drag/frame_02.png" id="2_drag"]
+[ext_resource type="Texture2D" path="res://assets/character/outline_trimmed_motions/drag/frame_03.png" id="3_drag"]
+[ext_resource type="Texture2D" path="res://assets/character/outline_trimmed_motions/drag/frame_04.png" id="4_drag"]
+[ext_resource type="Texture2D" path="res://assets/character/outline_trimmed_motions/drag/frame_05.png" id="5_drag"]
+[ext_resource type="Texture2D" path="res://assets/character/outline_trimmed_motions/drag/frame_06.png" id="6_drag"]
+[ext_resource type="Texture2D" path="res://assets/character/outline_trimmed_motions/drag/frame_07.png" id="7_drag"]
+[ext_resource type="Texture2D" path="res://assets/character/outline_trimmed_motions/drag/frame_08.png" id="8_drag"]
+[ext_resource type="Texture2D" path="res://assets/character/outline_trimmed_motions/drag/frame_09.png" id="9_drag"]
+[ext_resource type="Texture2D" path="res://assets/character/outline_trimmed_motions/drag/frame_10.png" id="10_drag"]
+[ext_resource type="Texture2D" path="res://assets/character/outline_trimmed_motions/drag/frame_11.png" id="11_drag"]
+[ext_resource type="Texture2D" path="res://assets/character/outline_trimmed_motions/drag/frame_12.png" id="12_drag"]
+[ext_resource type="Texture2D" path="res://assets/character/outline_trimmed_motions/drag/frame_13.png" id="13_drag"]
+[ext_resource type="Texture2D" path="res://assets/character/outline_trimmed_motions/drag/frame_14.png" id="14_drag"]
+[ext_resource type="Texture2D" path="res://assets/character/outline_trimmed_motions/drag/frame_15.png" id="15_drag"]
+[ext_resource type="Texture2D" path="res://assets/character/outline_trimmed_motions/drag/frame_16.png" id="16_drag"]
+[ext_resource type="Texture2D" path="res://assets/character/outline_trimmed_motions/drag/frame_17.png" id="17_drag"]
+[ext_resource type="Texture2D" path="res://assets/character/outline_trimmed_motions/drag/frame_18.png" id="18_drag"]
+[ext_resource type="Texture2D" path="res://assets/character/outline_trimmed_motions/drag/frame_19.png" id="19_drag"]
+[ext_resource type="Texture2D" path="res://assets/character/outline_trimmed_motions/drag/frame_20.png" id="20_drag"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_drag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_drag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_drag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_drag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_drag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_drag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_drag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_drag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_drag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_drag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_drag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_drag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_drag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_drag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_drag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_drag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_drag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_drag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_drag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_drag")
+}],
+"loop": 1,
+"name": &"drag",
+"speed": 25.0
+}]

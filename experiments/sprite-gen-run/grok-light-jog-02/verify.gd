@@ -25,7 +25,7 @@ func _run() -> void:
 	await process_frame
 	var sprite: AnimatedSprite2D = main.get_node("Bongbong")
 	assert(sprite.sprite_frames.get_frame_count(&"run_light") == 18)
-	assert(sprite.sprite_frames.get_frame_count(&"run") == 8)
+	assert(sprite.sprite_frames.get_frame_count(&"run_bouncy") == 28)
 	main.call("_begin_walk", 1, true)
 	assert(sprite.animation == &"run_light")
 	assert(not sprite.flip_h)

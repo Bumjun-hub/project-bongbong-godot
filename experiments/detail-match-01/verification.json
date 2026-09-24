@@ -1,0 +1,492 @@
+[
+  {
+    "animation": "walk",
+    "file": "assets/character/detail_matched_motions/walk/frame_01.png",
+    "changed_pixels": 6773,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "walk",
+    "file": "assets/character/detail_matched_motions/walk/frame_02.png",
+    "changed_pixels": 6758,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "walk",
+    "file": "assets/character/detail_matched_motions/walk/frame_03.png",
+    "changed_pixels": 6766,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "walk",
+    "file": "assets/character/detail_matched_motions/walk/frame_04.png",
+    "changed_pixels": 6754,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "walk",
+    "file": "assets/character/detail_matched_motions/walk/frame_05.png",
+    "changed_pixels": 6776,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "walk",
+    "file": "assets/character/detail_matched_motions/walk/frame_06.png",
+    "changed_pixels": 6762,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "walk",
+    "file": "assets/character/detail_matched_motions/walk/frame_07.png",
+    "changed_pixels": 6758,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "walk",
+    "file": "assets/character/detail_matched_motions/walk/frame_08.png",
+    "changed_pixels": 6746,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "walk",
+    "file": "assets/character/detail_matched_motions/walk/frame_09.png",
+    "changed_pixels": 6776,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "walk",
+    "file": "assets/character/detail_matched_motions/walk/frame_10.png",
+    "changed_pixels": 6767,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "walk",
+    "file": "assets/character/detail_matched_motions/walk/frame_11.png",
+    "changed_pixels": 6719,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "walk",
+    "file": "assets/character/detail_matched_motions/walk/frame_12.png",
+    "changed_pixels": 6755,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "walk",
+    "file": "assets/character/detail_matched_motions/walk/frame_13.png",
+    "changed_pixels": 6761,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "walk",
+    "file": "assets/character/detail_matched_motions/walk/frame_14.png",
+    "changed_pixels": 6768,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "walk",
+    "file": "assets/character/detail_matched_motions/walk/frame_15.png",
+    "changed_pixels": 6776,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "walk",
+    "file": "assets/character/detail_matched_motions/walk/frame_16.png",
+    "changed_pixels": 6780,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "walk",
+    "file": "assets/character/detail_matched_motions/walk/frame_17.png",
+    "changed_pixels": 6758,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "walk",
+    "file": "assets/character/detail_matched_motions/walk/frame_18.png",
+    "changed_pixels": 6777,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "walk",
+    "file": "assets/character/detail_matched_motions/walk/frame_19.png",
+    "changed_pixels": 6778,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "walk",
+    "file": "assets/character/detail_matched_motions/walk/frame_20.png",
+    "changed_pixels": 6747,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "walk",
+    "file": "assets/character/detail_matched_motions/walk/frame_21.png",
+    "changed_pixels": 6745,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "walk",
+    "file": "assets/character/detail_matched_motions/walk/frame_22.png",
+    "changed_pixels": 6773,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "walk",
+    "file": "assets/character/detail_matched_motions/walk/frame_23.png",
+    "changed_pixels": 6791,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "walk",
+    "file": "assets/character/detail_matched_motions/walk/frame_24.png",
+    "changed_pixels": 6766,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_light",
+    "file": "assets/character/detail_matched_motions/run_light/frame_01.png",
+    "changed_pixels": 6608,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_light",
+    "file": "assets/character/detail_matched_motions/run_light/frame_02.png",
+    "changed_pixels": 6557,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_light",
+    "file": "assets/character/detail_matched_motions/run_light/frame_03.png",
+    "changed_pixels": 6590,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_light",
+    "file": "assets/character/detail_matched_motions/run_light/frame_04.png",
+    "changed_pixels": 6718,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_light",
+    "file": "assets/character/detail_matched_motions/run_light/frame_05.png",
+    "changed_pixels": 6829,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_light",
+    "file": "assets/character/detail_matched_motions/run_light/frame_06.png",
+    "changed_pixels": 6829,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_light",
+    "file": "assets/character/detail_matched_motions/run_light/frame_07.png",
+    "changed_pixels": 6746,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_light",
+    "file": "assets/character/detail_matched_motions/run_light/frame_08.png",
+    "changed_pixels": 6732,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_light",
+    "file": "assets/character/detail_matched_motions/run_light/frame_09.png",
+    "changed_pixels": 6681,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_light",
+    "file": "assets/character/detail_matched_motions/run_light/frame_10.png",
+    "changed_pixels": 6632,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_light",
+    "file": "assets/character/detail_matched_motions/run_light/frame_11.png",
+    "changed_pixels": 6624,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_light",
+    "file": "assets/character/detail_matched_motions/run_light/frame_12.png",
+    "changed_pixels": 6651,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_light",
+    "file": "assets/character/detail_matched_motions/run_light/frame_13.png",
+    "changed_pixels": 6819,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_light",
+    "file": "assets/character/detail_matched_motions/run_light/frame_14.png",
+    "changed_pixels": 6933,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_light",
+    "file": "assets/character/detail_matched_motions/run_light/frame_15.png",
+    "changed_pixels": 6983,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_light",
+    "file": "assets/character/detail_matched_motions/run_light/frame_16.png",
+    "changed_pixels": 6810,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_light",
+    "file": "assets/character/detail_matched_motions/run_light/frame_17.png",
+    "changed_pixels": 6778,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_light",
+    "file": "assets/character/detail_matched_motions/run_light/frame_18.png",
+    "changed_pixels": 6641,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_bouncy",
+    "file": "assets/character/detail_matched_motions/run_bouncy/frame_01.png",
+    "changed_pixels": 3666,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_bouncy",
+    "file": "assets/character/detail_matched_motions/run_bouncy/frame_02.png",
+    "changed_pixels": 3623,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_bouncy",
+    "file": "assets/character/detail_matched_motions/run_bouncy/frame_03.png",
+    "changed_pixels": 3587,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_bouncy",
+    "file": "assets/character/detail_matched_motions/run_bouncy/frame_04.png",
+    "changed_pixels": 3568,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_bouncy",
+    "file": "assets/character/detail_matched_motions/run_bouncy/frame_05.png",
+    "changed_pixels": 3502,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_bouncy",
+    "file": "assets/character/detail_matched_motions/run_bouncy/frame_06.png",
+    "changed_pixels": 3463,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_bouncy",
+    "file": "assets/character/detail_matched_motions/run_bouncy/frame_07.png",
+    "changed_pixels": 3453,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_bouncy",
+    "file": "assets/character/detail_matched_motions/run_bouncy/frame_08.png",
+    "changed_pixels": 3429,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_bouncy",
+    "file": "assets/character/detail_matched_motions/run_bouncy/frame_09.png",
+    "changed_pixels": 3457,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_bouncy",
+    "file": "assets/character/detail_matched_motions/run_bouncy/frame_10.png",
+    "changed_pixels": 3464,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_bouncy",
+    "file": "assets/character/detail_matched_motions/run_bouncy/frame_11.png",
+    "changed_pixels": 3473,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_bouncy",
+    "file": "assets/character/detail_matched_motions/run_bouncy/frame_12.png",
+    "changed_pixels": 3534,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_bouncy",
+    "file": "assets/character/detail_matched_motions/run_bouncy/frame_13.png",
+    "changed_pixels": 3652,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_bouncy",
+    "file": "assets/character/detail_matched_motions/run_bouncy/frame_14.png",
+    "changed_pixels": 3743,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_bouncy",
+    "file": "assets/character/detail_matched_motions/run_bouncy/frame_15.png",
+    "changed_pixels": 3733,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_bouncy",
+    "file": "assets/character/detail_matched_motions/run_bouncy/frame_16.png",
+    "changed_pixels": 3747,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_bouncy",
+    "file": "assets/character/detail_matched_motions/run_bouncy/frame_17.png",
+    "changed_pixels": 3715,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_bouncy",
+    "file": "assets/character/detail_matched_motions/run_bouncy/frame_18.png",
+    "changed_pixels": 3694,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_bouncy",
+    "file": "assets/character/detail_matched_motions/run_bouncy/frame_19.png",
+    "changed_pixels": 3603,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_bouncy",
+    "file": "assets/character/detail_matched_motions/run_bouncy/frame_20.png",
+    "changed_pixels": 3557,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_bouncy",
+    "file": "assets/character/detail_matched_motions/run_bouncy/frame_21.png",
+    "changed_pixels": 3505,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_bouncy",
+    "file": "assets/character/detail_matched_motions/run_bouncy/frame_22.png",
+    "changed_pixels": 3497,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_bouncy",
+    "file": "assets/character/detail_matched_motions/run_bouncy/frame_23.png",
+    "changed_pixels": 3507,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_bouncy",
+    "file": "assets/character/detail_matched_motions/run_bouncy/frame_24.png",
+    "changed_pixels": 3482,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_bouncy",
+    "file": "assets/character/detail_matched_motions/run_bouncy/frame_25.png",
+    "changed_pixels": 3490,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_bouncy",
+    "file": "assets/character/detail_matched_motions/run_bouncy/frame_26.png",
+    "changed_pixels": 3521,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_bouncy",
+    "file": "assets/character/detail_matched_motions/run_bouncy/frame_27.png",
+    "changed_pixels": 3529,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  },
+  {
+    "animation": "run_bouncy",
+    "file": "assets/character/detail_matched_motions/run_bouncy/frame_28.png",
+    "changed_pixels": 3598,
+    "alpha_unchanged": true,
+    "outside_detail_masks_unchanged": true
+  }
+]

@@ -1,67 +1,122 @@
-[gd_resource type="SpriteFrames" load_steps=29 format=3]
+[gd_resource type="SpriteFrames" format=3 uid="uid://blr4ttwnm2u1"]
 
-[ext_resource type="Texture2D" path="res://assets/character/run/bouncy_arms_up_01/run_01.png" id="1_run_bouncy"]
-[ext_resource type="Texture2D" path="res://assets/character/run/bouncy_arms_up_01/run_02.png" id="2_run_bouncy"]
-[ext_resource type="Texture2D" path="res://assets/character/run/bouncy_arms_up_01/run_03.png" id="3_run_bouncy"]
-[ext_resource type="Texture2D" path="res://assets/character/run/bouncy_arms_up_01/run_04.png" id="4_run_bouncy"]
-[ext_resource type="Texture2D" path="res://assets/character/run/bouncy_arms_up_01/run_05.png" id="5_run_bouncy"]
-[ext_resource type="Texture2D" path="res://assets/character/run/bouncy_arms_up_01/run_06.png" id="6_run_bouncy"]
-[ext_resource type="Texture2D" path="res://assets/character/run/bouncy_arms_up_01/run_07.png" id="7_run_bouncy"]
-[ext_resource type="Texture2D" path="res://assets/character/run/bouncy_arms_up_01/run_08.png" id="8_run_bouncy"]
-[ext_resource type="Texture2D" path="res://assets/character/run/bouncy_arms_up_01/run_09.png" id="9_run_bouncy"]
-[ext_resource type="Texture2D" path="res://assets/character/run/bouncy_arms_up_01/run_10.png" id="10_run_bouncy"]
-[ext_resource type="Texture2D" path="res://assets/character/run/bouncy_arms_up_01/run_11.png" id="11_run_bouncy"]
-[ext_resource type="Texture2D" path="res://assets/character/run/bouncy_arms_up_01/run_12.png" id="12_run_bouncy"]
-[ext_resource type="Texture2D" path="res://assets/character/run/bouncy_arms_up_01/run_13.png" id="13_run_bouncy"]
-[ext_resource type="Texture2D" path="res://assets/character/run/bouncy_arms_up_01/run_14.png" id="14_run_bouncy"]
-[ext_resource type="Texture2D" path="res://assets/character/run/bouncy_arms_up_01/run_15.png" id="15_run_bouncy"]
-[ext_resource type="Texture2D" path="res://assets/character/run/bouncy_arms_up_01/run_16.png" id="16_run_bouncy"]
-[ext_resource type="Texture2D" path="res://assets/character/run/bouncy_arms_up_01/run_17.png" id="17_run_bouncy"]
-[ext_resource type="Texture2D" path="res://assets/character/run/bouncy_arms_up_01/run_18.png" id="18_run_bouncy"]
-[ext_resource type="Texture2D" path="res://assets/character/run/bouncy_arms_up_01/run_19.png" id="19_run_bouncy"]
-[ext_resource type="Texture2D" path="res://assets/character/run/bouncy_arms_up_01/run_20.png" id="20_run_bouncy"]
-[ext_resource type="Texture2D" path="res://assets/character/run/bouncy_arms_up_01/run_21.png" id="21_run_bouncy"]
-[ext_resource type="Texture2D" path="res://assets/character/run/bouncy_arms_up_01/run_22.png" id="22_run_bouncy"]
-[ext_resource type="Texture2D" path="res://assets/character/run/bouncy_arms_up_01/run_23.png" id="23_run_bouncy"]
-[ext_resource type="Texture2D" path="res://assets/character/run/bouncy_arms_up_01/run_24.png" id="24_run_bouncy"]
-[ext_resource type="Texture2D" path="res://assets/character/run/bouncy_arms_up_01/run_25.png" id="25_run_bouncy"]
-[ext_resource type="Texture2D" path="res://assets/character/run/bouncy_arms_up_01/run_26.png" id="26_run_bouncy"]
-[ext_resource type="Texture2D" path="res://assets/character/run/bouncy_arms_up_01/run_27.png" id="27_run_bouncy"]
-[ext_resource type="Texture2D" path="res://assets/character/run/bouncy_arms_up_01/run_28.png" id="28_run_bouncy"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_bouncy/frame_01.png" id="1_run_bouncy"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_bouncy/frame_02.png" id="2_run_bouncy"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_bouncy/frame_03.png" id="3_run_bouncy"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_bouncy/frame_04.png" id="4_run_bouncy"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_bouncy/frame_05.png" id="5_run_bouncy"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_bouncy/frame_06.png" id="6_run_bouncy"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_bouncy/frame_07.png" id="7_run_bouncy"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_bouncy/frame_08.png" id="8_run_bouncy"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_bouncy/frame_09.png" id="9_run_bouncy"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_bouncy/frame_10.png" id="10_run_bouncy"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_bouncy/frame_11.png" id="11_run_bouncy"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_bouncy/frame_12.png" id="12_run_bouncy"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_bouncy/frame_13.png" id="13_run_bouncy"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_bouncy/frame_14.png" id="14_run_bouncy"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_bouncy/frame_15.png" id="15_run_bouncy"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_bouncy/frame_16.png" id="16_run_bouncy"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_bouncy/frame_17.png" id="17_run_bouncy"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_bouncy/frame_18.png" id="18_run_bouncy"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_bouncy/frame_19.png" id="19_run_bouncy"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_bouncy/frame_20.png" id="20_run_bouncy"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_bouncy/frame_21.png" id="21_run_bouncy"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_bouncy/frame_22.png" id="22_run_bouncy"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_bouncy/frame_23.png" id="23_run_bouncy"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_bouncy/frame_24.png" id="24_run_bouncy"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_bouncy/frame_25.png" id="25_run_bouncy"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_bouncy/frame_26.png" id="26_run_bouncy"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_bouncy/frame_27.png" id="27_run_bouncy"]
+[ext_resource type="Texture2D" path="res://assets/character/detail_matched_motions/run_bouncy/frame_28.png" id="28_run_bouncy"]
 
 [resource]
 animations = [{
-"frames": [
-{"duration": 1.0, "texture": ExtResource("1_run_bouncy")},
-{"duration": 1.0, "texture": ExtResource("2_run_bouncy")},
-{"duration": 1.0, "texture": ExtResource("3_run_bouncy")},
-{"duration": 1.0, "texture": ExtResource("4_run_bouncy")},
-{"duration": 1.0, "texture": ExtResource("5_run_bouncy")},
-{"duration": 1.0, "texture": ExtResource("6_run_bouncy")},
-{"duration": 1.0, "texture": ExtResource("7_run_bouncy")},
-{"duration": 1.0, "texture": ExtResource("8_run_bouncy")},
-{"duration": 1.0, "texture": ExtResource("9_run_bouncy")},
-{"duration": 1.0, "texture": ExtResource("10_run_bouncy")},
-{"duration": 1.0, "texture": ExtResource("11_run_bouncy")},
-{"duration": 1.0, "texture": ExtResource("12_run_bouncy")},
-{"duration": 1.0, "texture": ExtResource("13_run_bouncy")},
-{"duration": 1.0, "texture": ExtResource("14_run_bouncy")},
-{"duration": 1.0, "texture": ExtResource("15_run_bouncy")},
-{"duration": 1.0, "texture": ExtResource("16_run_bouncy")},
-{"duration": 1.0, "texture": ExtResource("17_run_bouncy")},
-{"duration": 1.0, "texture": ExtResource("18_run_bouncy")},
-{"duration": 1.0, "texture": ExtResource("19_run_bouncy")},
-{"duration": 1.0, "texture": ExtResource("20_run_bouncy")},
-{"duration": 1.0, "texture": ExtResource("21_run_bouncy")},
-{"duration": 1.0, "texture": ExtResource("22_run_bouncy")},
-{"duration": 1.0, "texture": ExtResource("23_run_bouncy")},
-{"duration": 1.0, "texture": ExtResource("24_run_bouncy")},
-{"duration": 1.0, "texture": ExtResource("25_run_bouncy")},
-{"duration": 1.0, "texture": ExtResource("26_run_bouncy")},
-{"duration": 1.0, "texture": ExtResource("27_run_bouncy")},
-{"duration": 1.0, "texture": ExtResource("28_run_bouncy")}
-],
-"loop": true,
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_run_bouncy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_run_bouncy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_run_bouncy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_run_bouncy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_run_bouncy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_run_bouncy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_run_bouncy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_run_bouncy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_run_bouncy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_run_bouncy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_run_bouncy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_run_bouncy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_run_bouncy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_run_bouncy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_run_bouncy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_run_bouncy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_run_bouncy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_run_bouncy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_run_bouncy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_run_bouncy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_run_bouncy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_run_bouncy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_run_bouncy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_run_bouncy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_run_bouncy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_run_bouncy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_run_bouncy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_run_bouncy")
+}],
+"loop": 1,
 "name": &"run_bouncy",
 "speed": 24.0
 }]

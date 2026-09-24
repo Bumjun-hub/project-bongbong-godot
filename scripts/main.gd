@@ -5,21 +5,23 @@ const IDLE_POCKETS: StringName = &"idle_pockets"
 const IDLE_ARMS_CROSSED: StringName = &"idle_arms_crossed"
 const WALK: StringName = &"walk"
 const WALK_FRAMES: SpriteFrames = preload("res://scenes/walk_frames.tres")
-const RUN: StringName = &"run"
-const RUN_FRAMES: SpriteFrames = preload("res://scenes/run_frames.tres")
 const RUN_LIGHT: StringName = &"run_light"
 const RUN_LIGHT_FRAMES: SpriteFrames = preload("res://scenes/run_light_frames.tres")
 const RUN_BOUNCY: StringName = &"run_bouncy"
 const RUN_BOUNCY_FRAMES: SpriteFrames = preload("res://scenes/run_bouncy_frames.tres")
+const DRAG: StringName = &"drag"
+const DRAG_FRAMES: SpriteFrames = preload("res://scenes/drag_frames.tres")
+const FALL_INTRO: StringName = &"fall_intro"
+const FALL_AIR: StringName = &"fall_air"
+const FALL_FRAMES: SpriteFrames = preload("res://scenes/fall_frames.tres")
 const CANVAS_SIZE := Vector2(192, 192)
 const FOOT_ANCHOR := Vector2(95, 174)
 # Native movement speeds; both Walk and active Run variants play at 1.25x.
 const WALK_SPEED := 72.0
-# Keep the existing faster Run available as a separate animation variant.
-const RUN_SPEED := 144.0
 const LIGHT_RUN_SPEED := 108.0
 const MOVEMENT_SCALE := 1.25
 const EDGE_MARGIN := 12.0
+const FALL_GRAVITY := 330.0
 
 # Weights apply only when the default Idle completes its allotted loops.
 const DEFAULT_WEIGHT := 60
@@ -43,6 +45,12 @@ var _facing := 1
 var _position_x := 320.0
 var _edge_inset := 64.0
 var _test_view := false
+var _dragging := false
+var _drag_grab_offset := Vector2.ZERO
+var _falling := false
+var _fall_velocity := 0.0
+var _fall_position_y := 0.0
+var _floor_y := 0.0
 var _character_bounds := Rect2i()
 var _last_mouse_region := Rect2()
 
@@ -58,11 +66,6 @@ func _ready() -> void:
 	bongbong.sprite_frames.set_animation_loop(WALK, true)
 	for index in WALK_FRAMES.get_frame_count(WALK):
 		bongbong.sprite_frames.add_frame(WALK, WALK_FRAMES.get_frame_texture(WALK, index), WALK_FRAMES.get_frame_duration(WALK, index))
-	bongbong.sprite_frames.add_animation(RUN)
-	bongbong.sprite_frames.set_animation_speed(RUN, RUN_FRAMES.get_animation_speed(RUN))
-	bongbong.sprite_frames.set_animation_loop(RUN, true)
-	for index in RUN_FRAMES.get_frame_count(RUN):
-		bongbong.sprite_frames.add_frame(RUN, RUN_FRAMES.get_frame_texture(RUN, index), RUN_FRAMES.get_frame_duration(RUN, index))
 	bongbong.sprite_frames.add_animation(RUN_LIGHT)
 	bongbong.sprite_frames.set_animation_speed(RUN_LIGHT, RUN_LIGHT_FRAMES.get_animation_speed(RUN_LIGHT))
 	bongbong.sprite_frames.set_animation_loop(RUN_LIGHT, true)
@@ -73,7 +76,20 @@ func _ready() -> void:
 	bongbong.sprite_frames.set_animation_loop(RUN_BOUNCY, true)
 	for index in RUN_BOUNCY_FRAMES.get_frame_count(RUN_BOUNCY):
 		bongbong.sprite_frames.add_frame(RUN_BOUNCY, RUN_BOUNCY_FRAMES.get_frame_texture(RUN_BOUNCY, index), RUN_BOUNCY_FRAMES.get_frame_duration(RUN_BOUNCY, index))
+	bongbong.sprite_frames.add_animation(DRAG)
+	bongbong.sprite_frames.set_animation_speed(DRAG, DRAG_FRAMES.get_animation_speed(DRAG))
+	bongbong.sprite_frames.set_animation_loop(DRAG, true)
+	for index in DRAG_FRAMES.get_frame_count(DRAG):
+		bongbong.sprite_frames.add_frame(DRAG, DRAG_FRAMES.get_frame_texture(DRAG, index), DRAG_FRAMES.get_frame_duration(DRAG, index))
+	for fall_animation in [FALL_INTRO, FALL_AIR]:
+		bongbong.sprite_frames.add_animation(fall_animation)
+		bongbong.sprite_frames.set_animation_speed(fall_animation, FALL_FRAMES.get_animation_speed(fall_animation))
+		bongbong.sprite_frames.set_animation_loop(fall_animation, FALL_FRAMES.get_animation_loop(fall_animation))
+		for index in FALL_FRAMES.get_frame_count(fall_animation):
+			bongbong.sprite_frames.add_frame(fall_animation, FALL_FRAMES.get_frame_texture(fall_animation, index), FALL_FRAMES.get_frame_duration(fall_animation, index))
 	_position_x = bongbong.position.x
+	_floor_y = bongbong.position.y
+	_fall_position_y = _floor_y
 	# Use every pose's visible bounds, in both directions, so a turn cannot clip.
 	var extent := 0.0
 	for animation_name in bongbong.sprite_frames.get_animation_names():
@@ -84,6 +100,7 @@ func _ready() -> void:
 	_edge_inset = ceilf(extent + EDGE_MARGIN)
 	_rng.randomize()
 	bongbong.animation_looped.connect(_on_animation_looped)
+	bongbong.animation_finished.connect(_on_animation_finished)
 	_begin_idle(IDLE_DEFAULT)
 	_configure_desktop_window()
 
@@ -116,7 +133,7 @@ func _update_mouse_region() -> void:
 		_last_mouse_region = Rect2()
 		return
 	# A stable union of all poses keeps the character clickable without a large
-	# invisible window blocking the desktop. Include breathing, Walk and Run poses.
+	# invisible window blocking the desktop. Include breathing and motion poses.
 	var region := Rect2(_character_bounds)
 	if bongbong.flip_h:
 		region.position.x = CANVAS_SIZE.x - region.end.x
@@ -133,8 +150,90 @@ func _update_mouse_region() -> void:
 	])
 
 
+func _unhandled_input(event: InputEvent) -> void:
+	if not event is InputEventMouseButton or event.button_index != MOUSE_BUTTON_LEFT:
+		return
+	if event.pressed:
+		if _dragging or not _is_character_hit(event.position):
+			return
+		_begin_drag(event.position)
+	elif _dragging:
+		_end_drag()
+	else:
+		return
+	get_viewport().set_input_as_handled()
+
+
+func _is_character_hit(mouse_position: Vector2) -> bool:
+	var texture := bongbong.sprite_frames.get_frame_texture(bongbong.animation, bongbong.frame)
+	var pixel := mouse_position - bongbong.position - bongbong.offset
+	if bongbong.flip_h:
+		pixel.x = CANVAS_SIZE.x - 1.0 - pixel.x
+	var position := Vector2i(floori(pixel.x), floori(pixel.y))
+	if position.x < 0 or position.y < 0 or position.x >= int(CANVAS_SIZE.x) or position.y >= int(CANVAS_SIZE.y):
+		return false
+	return texture.get_image().get_pixelv(position).a > 0.2
+
+
+func _begin_drag(mouse_position: Vector2) -> void:
+	_stop_walking()
+	_falling = false
+	_fall_velocity = 0.0
+	_dragging = true
+	_drag_grab_offset = bongbong.position - mouse_position
+	_requested_idle = &""
+	_completed_loops = 0
+	bongbong.speed_scale = 1.0
+	bongbong.play(DRAG)
+	bongbong.set_frame_and_progress(0, 0.0)
+	_update_help()
+
+
+func _end_drag() -> void:
+	if not _dragging:
+		return
+	_dragging = false
+	_position_x = bongbong.position.x
+	if bongbong.position.y < _floor_y - 1.0:
+		_begin_fall()
+	else:
+		bongbong.position.y = _floor_y
+		_begin_idle(IDLE_DEFAULT)
+	_update_mouse_region()
+
+
+func _begin_fall() -> void:
+	_falling = true
+	_fall_velocity = 0.0
+	_fall_position_y = bongbong.position.y
+	_requested_idle = &""
+	_completed_loops = 0
+	bongbong.speed_scale = 1.0
+	bongbong.play(FALL_INTRO)
+	bongbong.set_frame_and_progress(0, 0.0)
+	_update_help()
+
+
 func _unhandled_key_input(event: InputEvent) -> void:
 	if event.is_echo():
+		return
+	if _dragging:
+		if event.is_pressed():
+			match event.keycode:
+				KEY_SPACE:
+					_end_drag()
+				KEY_F1:
+					_toggle_test_view()
+				KEY_ESCAPE:
+					get_tree().quit()
+		return
+	if _falling:
+		if event.is_pressed():
+			match event.keycode:
+				KEY_F1:
+					_toggle_test_view()
+				KEY_ESCAPE:
+					get_tree().quit()
 		return
 	if event.keycode == KEY_SHIFT:
 		_run_pressed = event.is_pressed()
@@ -202,6 +301,32 @@ func _unhandled_key_input(event: InputEvent) -> void:
 
 
 func _process(delta: float) -> void:
+	if _dragging:
+		if not Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
+			_end_drag()
+			return
+		var target := get_viewport().get_mouse_position() + _drag_grab_offset
+		var min_y := FOOT_ANCHOR.y - float(_character_bounds.position.y) + EDGE_MARGIN
+		var max_y := minf(get_viewport_rect().size.y + FOOT_ANCHOR.y - float(_character_bounds.end.y) - EDGE_MARGIN, _floor_y)
+		bongbong.position = Vector2(
+			roundf(clampf(target.x, _edge_inset, get_viewport_rect().size.x - 1.0 - _edge_inset)),
+			roundf(clampf(target.y, min_y, max_y))
+		)
+		_position_x = bongbong.position.x
+		_update_mouse_region()
+		queue_redraw()
+		return
+	if _falling:
+		_fall_velocity += FALL_GRAVITY * delta
+		_fall_position_y = minf(_floor_y, _fall_position_y + _fall_velocity * delta)
+		bongbong.position.y = roundf(_fall_position_y)
+		if _fall_position_y >= _floor_y:
+			_falling = false
+			_fall_velocity = 0.0
+			_begin_idle(IDLE_DEFAULT)
+		_update_mouse_region()
+		queue_redraw()
+		return
 	var automatic := _auto_walk or _auto_run or _auto_run_bouncy
 	var running := _auto_run or _auto_run_bouncy or _run_pressed
 	var direction := _facing if automatic else int(_right_pressed) - int(_left_pressed)
@@ -247,7 +372,7 @@ func _set_facing(direction: int) -> void:
 
 
 func _is_moving() -> bool:
-	return bongbong.animation == WALK or bongbong.animation == RUN or bongbong.animation == RUN_LIGHT or bongbong.animation == RUN_BOUNCY
+	return bongbong.animation == WALK or bongbong.animation == RUN_LIGHT or bongbong.animation == RUN_BOUNCY
 
 
 func _begin_walk(direction: int, running: bool = false) -> void:
@@ -290,6 +415,7 @@ func _stop_walking() -> void:
 
 func _notification(what: int) -> void:
 	if what == NOTIFICATION_APPLICATION_FOCUS_OUT and is_node_ready():
+		_end_drag()
 		_stop_walking()
 
 
@@ -307,6 +433,8 @@ func _request_idle(animation_name: StringName) -> void:
 
 
 func _on_animation_looped() -> void:
+	if _dragging or _falling:
+		return
 	_completed_loops += 1
 	if _is_moving():
 		_update_help()
@@ -327,6 +455,13 @@ func _on_animation_looped() -> void:
 		else:
 			_begin_idle(IDLE_DEFAULT)
 	else:
+		_update_help()
+
+
+func _on_animation_finished() -> void:
+	if _falling and bongbong.animation == FALL_INTRO:
+		bongbong.play(FALL_AIR)
+		bongbong.set_frame_and_progress(0, 0.0)
 		_update_help()
 
 
@@ -356,12 +491,14 @@ func _begin_idle(animation_name: StringName, bridge_loops: int = 0) -> void:
 
 
 func _update_help() -> void:
-	var mode := "Bouncy run" if bongbong.animation == RUN_BOUNCY else ("Light run" if bongbong.animation == RUN_LIGHT else ("Run" if bongbong.animation == RUN else ("Walk" if bongbong.animation == WALK else "Idle")))
+	var mode := "Drag" if _dragging else ("Bouncy run" if bongbong.animation == RUN_BOUNCY else ("Light run" if bongbong.animation == RUN_LIGHT else ("Walk" if bongbong.animation == WALK else "Idle")))
+	if _falling:
+		mode = "Fall"
 	if _auto_walk or _auto_run or _auto_run_bouncy:
 		mode = "Auto " + mode.to_lower()
-	help_label.text = "%s | Facing: %s\n1: Default    2: Pockets    3: Arms crossed\nLeft/Right: Walk    Shift + Left/Right: Light run\n4: Auto walk    5: Auto light run    6: Auto bouncy run    Space: Stop" % [mode, "Left" if _facing < 0 else "Right"]
+	help_label.text = "%s | Facing: %s\n1: Default    2: Pockets    3: Arms crossed\nLeft/Right: Walk    Shift + Left/Right: Light run\n4: Auto walk    5: Auto light run    6: Auto bouncy run    Space: Stop\nMouse: Grab Bongbong, lift, then release to test Fall" % [mode, "Left" if _facing < 0 else "Right"]
 	help_label.text += "\nF1: Test view    Esc: Quit"
-	help_label.text += "\nCurrent: %s | Loops: %d / %s" % [bongbong.animation, _completed_loops, "infinite" if _is_moving() else str(_target_loops)]
+	help_label.text += "\nCurrent: %s | Loops: %d / %s" % [bongbong.animation, _completed_loops, "until floor" if _falling else ("infinite" if _is_moving() or _dragging else str(_target_loops))]
 	if _requested_idle != &"":
 		var next := String(_requested_idle)
 		if not _is_moving() and bongbong.animation != IDLE_DEFAULT and _requested_idle != IDLE_DEFAULT and bongbong.animation != _requested_idle:
@@ -369,14 +506,3 @@ func _update_help() -> void:
 		help_label.text += "\nNext: %s [queued]" % next
 	elif not _is_moving() and bongbong.animation != IDLE_DEFAULT:
 		help_label.text += "\nNext: idle_default"
-
-
-func _draw() -> void:
-	if not _test_view:
-		return
-	# Guides sit behind the full 192x192 canvas; the sprite is never cropped.
-	var guide := Color(0.42, 0.48, 0.57, 0.5)
-	var feet := bongbong.position + Vector2(0.5, 0.5)
-	draw_rect(Rect2(feet + bongbong.offset, CANVAS_SIZE), guide, false, 1.0)
-	draw_line(Vector2(EDGE_MARGIN, feet.y), Vector2(get_viewport_rect().size.x - EDGE_MARGIN, feet.y), guide, 1.0)
-	draw_line(feet + Vector2(0, -182), feet + Vector2(0, 26), guide, 1.0)

@@ -62,7 +62,7 @@ Main (Node2D, scripts/main.gd)
 | `idle_pockets` | `assets/character/idle/pockets_three_quarter_right/` | `idle_pockets_three_quarter_right_01.png` ~ `_06.png` |
 | `idle_arms_crossed` | `assets/character/idle/arms_crossed_three_quarter_right/` | `idle_arms_crossed_three_quarter_right_01.png` ~ `_06.png` |
 
-각각 192×192 RGBA PNG 6장이다. 같은 이름의 가로 1152×192 SpriteSheet, 6프레임 `.aseprite`, 미리보기 GIF도 존재한다. 이번 씬은 개별 PNG를 01→06 순서로 사용한다. 시트의 각 칸과 개별 PNG가 같은 픽셀인지도 확인했다. 상위 `idle/manifest.json`은 정면 에셋 정보이므로 이번 구성에는 사용하지 않는다.
+각각 192×192 RGBA PNG 6장이다. 같은 이름의 가로 1152×192 SpriteSheet, 6프레임 `.aseprite`, 미리보기 GIF도 존재한다. 이번 씬은 개별 PNG를 01→06 순서로 사용한다. 시트의 각 칸과 개별 PNG가 같은 픽셀인지도 확인했다. 사용하지 않는 정면 Idle 세트는 정리했다.
 
 ## SpriteFrames와 시간
 
@@ -110,3 +110,11 @@ Main (Node2D, scripts/main.gd)
 코드·리소스 검증은 통과했다. 자동 검증 환경에서는 Windows 인증서 저장소 읽기와 사용자 폴더의 셰이더 캐시 생성 권한 관련 엔진 메시지가 발생했지만 렌더링·입력·재생 검사는 완료됐다. Headless 에디터의 Import 종료 시 사용자 전역 editor_settings 저장 권한 오류도 있었다. 사용자 환경 설정이나 인증서 설정은 변경하지 않았다.
 
 검증용 스크립트·로그·화면 캡처는 기존 `.gitignore`가 제외하는 `.godot/idle_test/`에 보관했다. `.godot/`은 커밋하지 않는다. 반면 Godot이 생성한 PNG 옆 `.import` 설정과 GDScript `.uid` 파일은 프로젝트와 함께 버전 관리할 파일이다. `.gitignore` 변경은 없다.
+
+## 2026-09-25 부드러운 IDLE 적용
+
+- 승인한 PNG를 기본 첫 프레임에 그대로 적용했다. 기본·주머니·팔짱 3종, 총 18프레임을 `assets/character/idle/soft_three_quarter_right/`에서 읽는다.
+- 세 자세의 머리·얼굴을 같은 그림으로 통일하고 주머니·팔짱 몸통의 색 경계를 부드럽게 조정했다.
+- 원본 프레임을 정확히 재현하는 행 이동을 확인한 뒤 새 그림에 적용했다. 기존 호흡, 3·4번의 1픽셀 상승, 발 위치, 프레임 시간과 루프 규칙을 유지했다.
+- 이전 PNG/Aseprite/GIF는 기존 폴더에 보존했다. RUN/WALK/DRAG/FALL 리소스는 변경하지 않았다.
+- 비교 및 재생성 기록: `experiments/idle-softening-01/`.

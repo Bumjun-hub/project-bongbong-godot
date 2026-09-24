@@ -14,10 +14,8 @@ func check() -> void:
 		assert(frames.get_frame_duration(&"walk", i) == 1.0)
 		var imported: Image = frames.get_frame_texture(&"walk", i).get_image()
 		var original := Image.load_from_file(ProjectSettings.globalize_path("res://assets/character/walk/grok_right_calm/walk_%02d.png" % (i+1)))
-		var coherent_source := Image.load_from_file(ProjectSettings.globalize_path("res://experiments/sprite-gen-walk/grok-walk-02/whole-body-159/walk_%02d.png" % (i+1)))
 		assert(imported.get_size() == Vector2i(192, 192))
 		assert(imported.get_data() == original.get_data())
-		assert(original.get_data() == coherent_source.get_data())
 		var top: int = original.get_used_rect().position.y
 		top_min = mini(top_min, top)
 		top_max = maxi(top_max, top)
@@ -33,5 +31,5 @@ func check() -> void:
 	assert(sprite.animation == &"walk" and sprite.flip_h)
 	main.call("_stop_walking")
 	assert(sprite.animation == &"idle_default")
-	print("WALK_WHOLE_BODY_OK: 24 frames, 1 second, coherent source pixels, moving head and body, both directions, idle transition")
+	print("WALK_WHOLE_BODY_OK: 24 frames, 1 second, final asset pixels, moving head and body, both directions, idle transition")
 	quit()

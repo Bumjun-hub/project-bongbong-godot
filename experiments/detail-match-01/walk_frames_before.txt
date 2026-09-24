@@ -1,0 +1,106 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://cmkh7iafb5hsi"]
+
+[ext_resource type="Texture2D" path="res://assets/character/skin_matched_motions/walk/frame_01.png" id="1_walk"]
+[ext_resource type="Texture2D" path="res://assets/character/skin_matched_motions/walk/frame_02.png" id="2_walk"]
+[ext_resource type="Texture2D" path="res://assets/character/skin_matched_motions/walk/frame_03.png" id="3_walk"]
+[ext_resource type="Texture2D" path="res://assets/character/skin_matched_motions/walk/frame_04.png" id="4_walk"]
+[ext_resource type="Texture2D" path="res://assets/character/skin_matched_motions/walk/frame_05.png" id="5_walk"]
+[ext_resource type="Texture2D" path="res://assets/character/skin_matched_motions/walk/frame_06.png" id="6_walk"]
+[ext_resource type="Texture2D" path="res://assets/character/skin_matched_motions/walk/frame_07.png" id="7_walk"]
+[ext_resource type="Texture2D" path="res://assets/character/skin_matched_motions/walk/frame_08.png" id="8_walk"]
+[ext_resource type="Texture2D" path="res://assets/character/skin_matched_motions/walk/frame_09.png" id="9_walk"]
+[ext_resource type="Texture2D" path="res://assets/character/skin_matched_motions/walk/frame_10.png" id="10_walk"]
+[ext_resource type="Texture2D" path="res://assets/character/skin_matched_motions/walk/frame_11.png" id="11_walk"]
+[ext_resource type="Texture2D" path="res://assets/character/skin_matched_motions/walk/frame_12.png" id="12_walk"]
+[ext_resource type="Texture2D" path="res://assets/character/skin_matched_motions/walk/frame_13.png" id="13_walk"]
+[ext_resource type="Texture2D" path="res://assets/character/skin_matched_motions/walk/frame_14.png" id="14_walk"]
+[ext_resource type="Texture2D" path="res://assets/character/skin_matched_motions/walk/frame_15.png" id="15_walk"]
+[ext_resource type="Texture2D" path="res://assets/character/skin_matched_motions/walk/frame_16.png" id="16_walk"]
+[ext_resource type="Texture2D" path="res://assets/character/skin_matched_motions/walk/frame_17.png" id="17_walk"]
+[ext_resource type="Texture2D" path="res://assets/character/skin_matched_motions/walk/frame_18.png" id="18_walk"]
+[ext_resource type="Texture2D" path="res://assets/character/skin_matched_motions/walk/frame_19.png" id="19_walk"]
+[ext_resource type="Texture2D" path="res://assets/character/skin_matched_motions/walk/frame_20.png" id="20_walk"]
+[ext_resource type="Texture2D" path="res://assets/character/skin_matched_motions/walk/frame_21.png" id="21_walk"]
+[ext_resource type="Texture2D" path="res://assets/character/skin_matched_motions/walk/frame_22.png" id="22_walk"]
+[ext_resource type="Texture2D" path="res://assets/character/skin_matched_motions/walk/frame_23.png" id="23_walk"]
+[ext_resource type="Texture2D" path="res://assets/character/skin_matched_motions/walk/frame_24.png" id="24_walk"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_walk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_walk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_walk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_walk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_walk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_walk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_walk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_walk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_walk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_walk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_walk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_walk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_walk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_walk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_walk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_walk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_walk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_walk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_walk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_walk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_walk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_walk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_walk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_walk")
+}],
+"loop": 1,
+"name": &"walk",
+"speed": 24.0
+}]

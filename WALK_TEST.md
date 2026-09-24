@@ -1,90 +1,15 @@
-# Walk 연결·좌우 이동 테스트
+# Walk 애니메이션
 
 ## 현재 적용: Grok 차분한 오른쪽 걷기
 
-- `scenes/walk_frames.tres`는 `assets/character/walk/grok_right_calm/walk_01.png`~`walk_24.png`를 읽는다.
-- 원본 24FPS, 24프레임, 한 바퀴 1초. Godot에서는 1.25배로 재생해 화면에서는 30FPS, 한 바퀴 약 0.8초다. 오른쪽 3/4 방향의 차분한 걷기다.
-- Grok 원본의 머리·턱·목·몸통을 한 장면 그대로 유지하고, sprite-gen에서 서 있는 캐릭터 높이 159px로 전체를 함께 조절했다. 추출된 106×161 셀을 192×192 캔버스의 `(42,13)`에 배치해 기존 `(95,174)` 발 기준에 맞췄다.
-- 이동 속도는 기존 72px/s의 1.25배인 90px/s다. ←/→ 걷기와 4 자동 걷기 조작을 사용한다.
-- 이전 Walk 원본은 보존했고, 이전 리소스 연결은 `experiments/sprite-gen-walk/grok-walk-02/walk_frames.before_grok.tres`에 백업했다.
-- 검증: `experiments/sprite-gen-walk/grok-walk-02/verify_godot.gd`에서 24프레임의 픽셀, 시간, 메인 씬 연결, 좌우 방향 및 Idle 전환을 확인한다.
-- 현재 Walk의 머리 폭은 자세에 따라 101~102px이다. 머리와 몸을 분리해 이동하지 않는다. 편집 원본은 `assets/character/walk/grok_right_calm/walk_cycle_24.aseprite`에 있다.
-- 이전 156px 원본은 `experiments/sprite-gen-walk/grok-walk-02/before-head-match/`, 고정 머리 시도는 `before-head-bob/`, 머리만 이동한 시도는 `before-whole-body-revert/`에 보관했다.
+- 재생 리소스: `scenes/walk_frames.tres`
+- 최종 프레임: `assets/character/walk/grok_right_calm/walk_01.png` ~ `walk_24.png`
+- 편집 원본: `assets/character/walk/grok_right_calm/walk_cycle_24.aseprite`
+- 미리보기: `assets/character/walk/grok_right_calm/walk_cycle_24_preview.gif`
+- 검증: `experiments/sprite-gen-walk/grok-walk-02/verify_godot.gd`
 
-## 이전 8프레임 Walk 작업 기록
+24프레임의 원본 재생 속도는 24fps, 한 바퀴 1초다. Godot에서는 1.25배로 재생해 30fps와 약 0.8초 루프가 된다. 이동 속도는 90px/s다. 오른쪽 3/4 방향 원본을 왼쪽으로 이동할 때 좌우 반전한다.
 
-> Run 추가 후의 조작은 [RUN_TEST.md](RUN_TEST.md)를 참고한다. Walk revision 17은 어깨 바로 위 외곽선을 기본 Idle의 순검정과 어두운 붉은 음영에 맞췄다. 이전에 다듬은 손은 유지한다. Shift+방향키로 Run, 5로 자동 Run을 확인할 수 있다. 경계 계산에는 Run 8프레임까지 총 34개 자세가 포함된다.
+Grok 원본의 머리·턱·목·몸통을 한 장면으로 유지하고, 최종 프레임은 Idle과 같은 192×192 캔버스 및 `(95,174)` 발 기준을 사용한다. 머리와 몸을 따로 움직이지 않는다. `←/→`로 걷고, `4`로 자동 왕복 걷기를 켜거나 끈다. 멈추면 기본 Idle로 돌아간다.
 
-Godot 4.7.2의 기존 `scenes/main.tscn`에서 Idle 3종과 확정된 Walk 8프레임을 함께 확인한다. Walk 연결 → 좌우 이동 → Idle 전환 → 테스트 창 가장자리 방향 전환 순서로 추가했다.
-
-> 현재는 투명 데스크톱 창으로 시작한다. 기존 배경·안내·기준선을 보려면 캐릭터를 클릭한 뒤 F1을 누른다. 별도 실행 창 설정과 종료 방법은 [DESKTOP_WINDOW_TEST.md](DESKTOP_WINDOW_TEST.md)를 참고한다.
-
-## 실행과 조작
-
-프로젝트를 Godot에서 열고 내장 실행을 해제한 뒤 F5로 실행한다. 캐릭터를 클릭해 키보드 포커스를 주고 F1로 검수 화면을 켠다. 픽셀 검수는 100% 배율에서 한다.
-
-| 조작 | 동작 |
-|---|---|
-| ← / → 누르기 | 해당 방향으로 걷기 |
-| 방향키 놓기 | 같은 위치·방향에서 기본 Idle로 복귀 |
-| 양쪽 방향키 동시에 누르기 | 정지; 한쪽을 놓으면 남은 방향으로 걷기 |
-| 4 | 자동 왕복 걷기 시작 / 정지 |
-| Space | 이동 정지 |
-| 1 / 2 / 3 | 기본 / 주머니 / 팔짱 Idle 요청 |
-
-숫자 키패드의 1~4도 지원한다. 자동 이동 중 방향키를 누르면 수동 이동으로 바뀐다. 키를 오래 눌러 생기는 반복 입력은 애니메이션을 리셋하지 않는다. 다른 창으로 포커스를 옮기면 자동·수동 이동이 멈춘다.
-
-## 재생과 전환
-
-- 실행 시작은 기존 `idle_default`이며 Idle 3종의 랜덤 순환 확률·유지 횟수·프레임 시간은 그대로다.
-- Walk는 `walk_01.png`~`walk_08.png` 순서, 8FPS, 프레임당 125ms, 한 바퀴 1초다.
-- 이동을 시작할 때 Walk로, 멈출 때 기본 Idle로 즉시 전환한다. 위치·스케일·바닥 기준점·바라보는 방향은 유지한다.
-- 이동 중 2 / 3을 누르면 멈춰서 기본 Idle 한 루프를 거친 뒤 요청한 자세로 바뀐다. Idle끼리의 요청은 기존처럼 루프 끝에서 적용한다.
-- 걷는 중 방향을 바꿔도 Walk 프레임과 진행률을 다시 시작하지 않는다.
-- 이동 속도는 기존 72px/s를 유지한다. revision 14는 revision 13의 보행 자세와 2·6프레임 발 들림을 유지하며 하체 도트만 정리했다. 실제 보행 느낌과 발 미끄러짐은 실행 화면에서 다시 확인한다.
-
-## 픽셀·정렬·가장자리
-
-- 192×192 전체 PNG, Nearest, 스케일 `(1, 1)`을 사용한다. 완성된 프레임만 재생한다.
-- 이동 거리는 소수점으로 누적하고 화면 위치는 정수 픽셀에 맞춘다. 발 기준 y=320은 고정이다.
-- 오른쪽 원본 발 기준은 `(95, 174)`, 그리기 offset은 `(-95, -174)`이다.
-- 왼쪽은 전체 프레임을 좌우 반전한다. 기준축이 1px 옮겨지지 않도록 offset을 `(-96, -174)`로 맞춘다. Idle도 같은 방향을 유지한다.
-- 26개 Idle/Walk 프레임의 실제 불투명 영역을 한 번 확인하여 양방향 공통 여백을 계산한다. 현재 640px 테스트 창의 중심축 이동 범위는 x=63~576이고 캐릭터 외곽에 최소 12px를 남긴다.
-- 자동 걷기는 양쪽 가장자리에서 방향을 바꾼다. 수동으로 벽을 향해 계속 누르면 위치와 발 움직임을 함께 멈추며, 반대 방향 입력으로 다시 이동한다.
-- 발 기준선은 고정되고 중심선·캔버스 가이드는 캐릭터를 따라간다. 가장자리에서 투명 캔버스 가이드 일부가 화면 밖으로 나갈 수 있지만 캐릭터 픽셀은 잘리지 않는다.
-
-이 경계는 현재 Godot 테스트 창 내부다. Windows 바탕화면·작업표시줄·다른 앱 창의 경계는 아직 연결하지 않았다.
-
-## 수정 파일
-
-| 파일 | 역할 |
-|---|---|
-| `scenes/walk_frames.tres` | Walk 개별 PNG 8장과 반복 재생 시간 |
-| `scripts/main.gd` | 기존 Idle 제어에 이동·방향·경계 처리 추가 |
-| `scenes/main.tscn` | 조작 안내 문구와 표시 영역 |
-| `IDLE_TEST.md` | 최신 Walk 테스트 문서 안내 |
-| `WALK_TEST.md` | 현재 조작과 검수 기록 |
-
-`idle_frames.tres`는 유지하고 실행할 때 이 씬만 사용할 복사본에 Walk를 추가한다. 에디터에서 Walk 리소스 자체를 확인하려면 `scenes/walk_frames.tres`를 연다. 별도 상태 머신·런타임 관절 계산·새 캐릭터 이미지·프로젝트 설정 변경은 없다.
-
-프레임 시간과 방향 반전은 Godot의 [SpriteFrames](https://docs.godotengine.org/en/stable/classes/class_spriteframes.html), [AnimatedSprite2D](https://docs.godotengine.org/en/stable/classes/class_animatedsprite2d.html) API를 사용한다.
-
-## 검수 기록
-
-- 기존 revision 11은 Godot 4.7.2에서 8개 프레임, 8FPS, 한 바퀴 1초 재생을 확인했다.
-- revision 12의 생성 하체 픽셀은 도트 질감이 깨져 revision 13에서 제거했다.
-- revision 13은 8프레임 전부의 다리와 신발을 4배 확대해 확인했다. 원본 팔레트, 프레임당 단일 연결 실루엣, 192×192 크기, 125ms 프레임 시간, 공통 바닥선, Aseprite 시트와 PNG 8장의 픽셀·알파 일치를 확인했다. Godot 실행 화면에서의 새 버전 재검수는 남아 있다.
-- revision 14는 베이스에서 추출한 청바지 명암색 6개와 신발 중성색 5개로 색 얼룩을 정리하고 하체에 1px 외곽선을 추가했다. 8프레임 확대 검수, 단일 연결 실루엣, 상체·피부 픽셀 보존, 기존 전체 경계·바닥선 유지, Aseprite 시트와 PNG 8장 일치를 확인했다.
-- 2026-09-23 revision 14를 Godot 4.7.2에 다시 가져오고 Windows D3D12 / Forward+로 실행했다. 기존 Walk 검사 5,009개를 통과했다. 8프레임·2회 반복, 좌우 이동·Idle 복귀·경계 전환과 좌우 반전 렌더의 색·좌표를 확인했다. 실행 캡처에서 정리한 바지·신발 도트도 확인했다. 현재 Run까지 포함한 실제 공통 경계 여백은 109px다. 로그: `.godot/walk_test/revision14_render.log`.
-- revision 15는 목 옆 돌출 도트를 8프레임에서 제거하고 화면 오른쪽 손이 보이는 1·2·3·7·8프레임의 손목과 손끝을 다듬었다. 수정 범위·연결 실루엣·바지 픽셀 보존과 Aseprite/PNG 일치를 확인했다. Godot에서 다시 가져온 뒤 기존 검사 5,009개를 통과했고 좌우 반전 렌더를 확인했다. 로그: `.godot/walk_test/revision15_render.log`.
-- 2026-09-24 revision 16은 revision 15에서 끊어진 어깨 외곽선을 붉은 옷 경계에 붙여 복원했다. 8프레임 각각의 어깨 기울기와 상하 움직임에 맞췄으며, 확인 영역에서 외곽선 없이 붉은 옷이 투명 배경에 닿는 곳은 0개다. Godot에서 8개 자세를 각각 렌더링해 어깨 픽셀과 PNG의 일치(불일치 0개)를 확인했다. 로그와 캡처: `.godot/walk_test/revision16/`.
-- revision 17은 기본 Idle의 순검정 어깨 외곽선과 어두운 붉은 테두리 명암을 Walk 8프레임에 적용했다. Godot에서 각 프레임의 어깨 픽셀을 PNG와 비교했고 불일치 0개였다. 비교 화면은 `experiments/sprite-gen-walk/manual-revision-06/reports/base-before-after.png`에 있다.
-- 실제 입력 경로로 좌우 이동, 키 해제, 동시 입력, 자동 이동 토글, 숫자 키패드, 키 반복 무시, Space 정지, 포커스 상실을 확인했다.
-- 기존 Idle 텍스처·프레임 시간 보존, 주머니↔팔짱 사이 기본 Idle 연결, Walk 시작 시 남은 Idle 요청 취소를 확인했다.
-- 양쪽 가장자리 전환과 재생 진행률 보존을 확인했다. 40초 분량의 이동을 가속 계산해 여러 차례 방향을 바꾸는 동안 경계 이탈·소수점 표시 위치가 없음을 검사했다.
-- Windows D3D12 / Forward+ 렌더링 화면에서 오른쪽·왼쪽·양쪽 가장자리를 확인했다. 왼쪽 실제 화면의 캐릭터 픽셀을 원본 반전 위치와 비교해 색·좌표 일치를 확인했다.
-- 테스트 중 환경의 Windows 인증서 저장소 접근 오류가 출력되었지만 재생·입력·렌더링 검사는 통과했다. 사용자 전역 설정은 수정하지 않았다.
-
-직접 검수할 때는 방향키 이동 후 정지 시 바닥 위치, 자동 왕복 시 방향 변화, 걷기와 이동 속도의 어울림을 본다. 투명 창·항상 위 표시 설정은 후속 단계에서 추가했으며 [DESKTOP_WINDOW_TEST.md](DESKTOP_WINDOW_TEST.md)에 정리했다. Drag/Fall/Land는 아직 추가하지 않았다.
-
-검증 스크립트·화면 캡처·로그는 Git에서 제외된 `.godot/walk_test/`에 보관한다. 기존 에셋과 Tauri 참고 프로젝트는 수정하지 않았다.
+사용하지 않는 이전 8프레임 Walk 에셋은 정리했다. 현재 프레임과 Aseprite 원본, 시트·GIF 미리보기는 유지한다.
