@@ -1,0 +1,609 @@
+{
+  "name": "land_high",
+  "canvas": [
+    192,
+    192
+  ],
+  "fps": 24,
+  "loop": false,
+  "anchor": [
+    95,
+    174
+  ],
+  "frames": [
+    "land_01.png",
+    "land_02.png",
+    "land_03.png",
+    "land_04.png",
+    "land_05.png",
+    "land_06.png",
+    "land_07.png",
+    "land_08.png",
+    "land_09.png",
+    "land_10.png",
+    "land_11.png",
+    "land_12.png",
+    "land_13.png",
+    "land_14.png",
+    "land_15.png",
+    "land_16.png",
+    "land_17.png",
+    "land_18.png",
+    "land_19.png",
+    "land_20.png",
+    "land_21.png",
+    "land_22.png",
+    "land_23.png",
+    "land_24.png",
+    "land_25.png",
+    "land_26.png",
+    "land_27.png",
+    "land_28.png",
+    "land_29.png",
+    "land_30.png",
+    "land_31.png",
+    "land_32.png",
+    "land_33.png",
+    "land_34.png",
+    "land_35.png",
+    "land_36.png",
+    "land_37.png",
+    "land_38.png",
+    "land_39.png",
+    "land_40.png",
+    "land_41.png",
+    "land_42.png",
+    "land_43.png",
+    "land_44.png",
+    "land_45.png",
+    "land_46.png",
+    "land_47.png",
+    "land_48.png",
+    "land_49.png",
+    "land_50.png",
+    "land_51.png",
+    "land_52.png"
+  ],
+  "source_video": "experiments/sprite-gen-land/grok-high-land-01/clip.mp4",
+  "dizzy_frames": 20,
+  "frame_selection": [
+    {
+      "source": "fall_air/frame_08.png",
+      "bounds": [
+        45,
+        12,
+        151,
+        175
+      ]
+    },
+    {
+      "video_frame": 2,
+      "shift_y": -3,
+      "bounds": [
+        43,
+        8,
+        152,
+        174
+      ]
+    },
+    {
+      "video_frame": 5,
+      "shift_y": -3,
+      "bounds": [
+        41,
+        8,
+        152,
+        174
+      ]
+    },
+    {
+      "video_frame": 7,
+      "shift_y": -2,
+      "bounds": [
+        40,
+        12,
+        152,
+        174
+      ]
+    },
+    {
+      "video_frame": 9,
+      "shift_y": -1,
+      "bounds": [
+        36,
+        21,
+        152,
+        174
+      ]
+    },
+    {
+      "video_frame": 11,
+      "shift_y": -3,
+      "bounds": [
+        29,
+        35,
+        156,
+        174
+      ]
+    },
+    {
+      "video_frame": 12,
+      "shift_y": -1,
+      "bounds": [
+        19,
+        52,
+        155,
+        174
+      ]
+    },
+    {
+      "video_frame": 13,
+      "shift_y": -1,
+      "bounds": [
+        19,
+        60,
+        153,
+        174
+      ]
+    },
+    {
+      "video_frame": 14,
+      "shift_y": -1,
+      "bounds": [
+        20,
+        60,
+        153,
+        174
+      ]
+    },
+    {
+      "video_frame": 16,
+      "shift_y": -2,
+      "bounds": [
+        24,
+        54,
+        154,
+        174
+      ]
+    },
+    {
+      "video_frame": 19,
+      "shift_y": -2,
+      "bounds": [
+        24,
+        53,
+        154,
+        174
+      ]
+    },
+    {
+      "video_frame": 23,
+      "shift_y": -2,
+      "bounds": [
+        23,
+        53,
+        154,
+        174
+      ]
+    },
+    {
+      "video_frame": 28,
+      "shift_y": -2,
+      "bounds": [
+        23,
+        53,
+        154,
+        174
+      ]
+    },
+    {
+      "source": "dizzy_overlay",
+      "source_pose": "land_13",
+      "orbit_frame": 1,
+      "bounds": [
+        23,
+        33,
+        154,
+        174
+      ]
+    },
+    {
+      "source": "dizzy_overlay",
+      "source_pose": "land_13",
+      "orbit_frame": 2,
+      "bounds": [
+        23,
+        32,
+        154,
+        174
+      ]
+    },
+    {
+      "source": "dizzy_overlay",
+      "source_pose": "land_13",
+      "orbit_frame": 3,
+      "bounds": [
+        23,
+        32,
+        154,
+        174
+      ]
+    },
+    {
+      "source": "dizzy_overlay",
+      "source_pose": "land_13",
+      "orbit_frame": 4,
+      "bounds": [
+        23,
+        33,
+        154,
+        174
+      ]
+    },
+    {
+      "source": "dizzy_overlay",
+      "source_pose": "land_13",
+      "orbit_frame": 5,
+      "bounds": [
+        23,
+        35,
+        154,
+        174
+      ]
+    },
+    {
+      "source": "dizzy_overlay",
+      "source_pose": "land_13",
+      "orbit_frame": 6,
+      "bounds": [
+        23,
+        36,
+        154,
+        174
+      ]
+    },
+    {
+      "source": "dizzy_overlay",
+      "source_pose": "land_13",
+      "orbit_frame": 7,
+      "bounds": [
+        23,
+        34,
+        154,
+        174
+      ]
+    },
+    {
+      "source": "dizzy_overlay",
+      "source_pose": "land_13",
+      "orbit_frame": 8,
+      "bounds": [
+        23,
+        32,
+        154,
+        174
+      ]
+    },
+    {
+      "source": "dizzy_overlay",
+      "source_pose": "land_13",
+      "orbit_frame": 9,
+      "bounds": [
+        23,
+        30,
+        154,
+        174
+      ]
+    },
+    {
+      "source": "dizzy_overlay",
+      "source_pose": "land_13",
+      "orbit_frame": 10,
+      "bounds": [
+        23,
+        30,
+        154,
+        174
+      ]
+    },
+    {
+      "source": "dizzy_overlay",
+      "source_pose": "land_13",
+      "orbit_frame": 11,
+      "bounds": [
+        23,
+        32,
+        154,
+        174
+      ]
+    },
+    {
+      "source": "dizzy_overlay",
+      "source_pose": "land_13",
+      "orbit_frame": 12,
+      "bounds": [
+        23,
+        34,
+        154,
+        174
+      ]
+    },
+    {
+      "source": "dizzy_overlay",
+      "source_pose": "land_13",
+      "orbit_frame": 13,
+      "bounds": [
+        23,
+        33,
+        154,
+        174
+      ]
+    },
+    {
+      "source": "dizzy_overlay",
+      "source_pose": "land_13",
+      "orbit_frame": 14,
+      "bounds": [
+        23,
+        31,
+        154,
+        174
+      ]
+    },
+    {
+      "source": "dizzy_overlay",
+      "source_pose": "land_13",
+      "orbit_frame": 15,
+      "bounds": [
+        23,
+        29,
+        154,
+        174
+      ]
+    },
+    {
+      "source": "dizzy_overlay",
+      "source_pose": "land_13",
+      "orbit_frame": 16,
+      "bounds": [
+        23,
+        29,
+        154,
+        174
+      ]
+    },
+    {
+      "source": "dizzy_overlay",
+      "source_pose": "land_13",
+      "orbit_frame": 17,
+      "bounds": [
+        23,
+        29,
+        154,
+        174
+      ]
+    },
+    {
+      "source": "dizzy_overlay",
+      "source_pose": "land_13",
+      "orbit_frame": 18,
+      "bounds": [
+        23,
+        33,
+        154,
+        174
+      ]
+    },
+    {
+      "source": "dizzy_overlay",
+      "source_pose": "land_13",
+      "orbit_frame": 19,
+      "bounds": [
+        23,
+        36,
+        154,
+        174
+      ]
+    },
+    {
+      "source": "dizzy_overlay",
+      "source_pose": "land_13",
+      "orbit_frame": 20,
+      "bounds": [
+        23,
+        38,
+        154,
+        174
+      ]
+    },
+    {
+      "video_frame": 32,
+      "shift_y": -2,
+      "bounds": [
+        23,
+        52,
+        154,
+        174
+      ]
+    },
+    {
+      "video_frame": 35,
+      "shift_y": -2,
+      "bounds": [
+        29,
+        48,
+        154,
+        174
+      ]
+    },
+    {
+      "video_frame": 37,
+      "shift_y": -2,
+      "bounds": [
+        38,
+        43,
+        154,
+        174
+      ]
+    },
+    {
+      "video_frame": 39,
+      "shift_y": -2,
+      "bounds": [
+        43,
+        41,
+        153,
+        174
+      ]
+    },
+    {
+      "video_frame": 41,
+      "shift_y": -2,
+      "bounds": [
+        48,
+        38,
+        154,
+        174
+      ]
+    },
+    {
+      "video_frame": 43,
+      "shift_y": 0,
+      "bounds": [
+        50,
+        39,
+        157,
+        174
+      ]
+    },
+    {
+      "video_frame": 45,
+      "shift_y": -2,
+      "bounds": [
+        54,
+        37,
+        161,
+        174
+      ]
+    },
+    {
+      "video_frame": 47,
+      "shift_y": -2,
+      "bounds": [
+        53,
+        38,
+        161,
+        174
+      ]
+    },
+    {
+      "video_frame": 49,
+      "shift_y": -2,
+      "bounds": [
+        53,
+        38,
+        161,
+        174
+      ]
+    },
+    {
+      "video_frame": 52,
+      "shift_y": -2,
+      "bounds": [
+        56,
+        38,
+        165,
+        174
+      ]
+    },
+    {
+      "video_frame": 55,
+      "shift_y": -2,
+      "bounds": [
+        58,
+        38,
+        169,
+        174
+      ]
+    },
+    {
+      "video_frame": 58,
+      "shift_y": -2,
+      "bounds": [
+        60,
+        30,
+        167,
+        174
+      ]
+    },
+    {
+      "video_frame": 60,
+      "shift_y": -2,
+      "bounds": [
+        55,
+        22,
+        161,
+        174
+      ]
+    },
+    {
+      "video_frame": 62,
+      "shift_y": -2,
+      "bounds": [
+        51,
+        19,
+        158,
+        174
+      ]
+    },
+    {
+      "video_frame": 64,
+      "shift_y": -2,
+      "bounds": [
+        44,
+        14,
+        152,
+        174
+      ]
+    },
+    {
+      "video_frame": 67,
+      "shift_y": -2,
+      "bounds": [
+        42,
+        14,
+        149,
+        174
+      ]
+    },
+    {
+      "video_frame": 70,
+      "shift_y": -2,
+      "bounds": [
+        41,
+        13,
+        149,
+        174
+      ]
+    },
+    {
+      "video_frame": 73,
+      "shift_y": -2,
+      "bounds": [
+        41,
+        13,
+        149,
+        174
+      ]
+    },
+    {
+      "source": "idle_default/idle_01.png",
+      "bounds": [
+        44,
+        18,
+        146,
+        174
+      ]
+    }
+  ]
+}

@@ -14,6 +14,10 @@ const DRAG_FRAMES: SpriteFrames = preload("res://scenes/drag_frames.tres")
 const FALL_INTRO: StringName = &"fall_intro"
 const FALL_AIR: StringName = &"fall_air"
 const FALL_FRAMES: SpriteFrames = preload("res://scenes/fall_frames.tres")
+const LAND_LOW: StringName = &"land_low"
+const LAND_FRAMES: SpriteFrames = preload("res://scenes/land_frames.tres")
+const LAND_HIGH: StringName = &"land_high"
+const LAND_HIGH_FRAMES: SpriteFrames = preload("res://scenes/land_high_frames.tres")
 const CANVAS_SIZE := Vector2(192, 192)
 const FOOT_ANCHOR := Vector2(95, 174)
 # Native movement speeds; both Walk and active Run variants play at 1.25x.
@@ -21,7 +25,10 @@ const WALK_SPEED := 72.0
 const LIGHT_RUN_SPEED := 108.0
 const MOVEMENT_SCALE := 1.25
 const EDGE_MARGIN := 12.0
-const FALL_GRAVITY := 330.0
+const FALL_GRAVITY := 900.0
+const MAX_FALL_SPEED := 1000.0
+# Keep soft landings below roughly 80 px despite the stronger gravity.
+const HIGH_LAND_SPEED := 380.0
 
 # Weights apply only when the default Idle completes its allotted loops.
 const DEFAULT_WEIGHT := 60
@@ -48,6 +55,7 @@ var _test_view := false
 var _dragging := false
 var _drag_grab_offset := Vector2.ZERO
 var _falling := false
+var _landing := false
 var _fall_velocity := 0.0
 var _fall_position_y := 0.0
 var _floor_y := 0.0
@@ -87,6 +95,13 @@ func _ready() -> void:
 		bongbong.sprite_frames.set_animation_loop(fall_animation, FALL_FRAMES.get_animation_loop(fall_animation))
 		for index in FALL_FRAMES.get_frame_count(fall_animation):
 			bongbong.sprite_frames.add_frame(fall_animation, FALL_FRAMES.get_frame_texture(fall_animation, index), FALL_FRAMES.get_frame_duration(fall_animation, index))
+	for landing_animation in [LAND_LOW, LAND_HIGH]:
+		var landing_frames: SpriteFrames = LAND_FRAMES if landing_animation == LAND_LOW else LAND_HIGH_FRAMES
+		bongbong.sprite_frames.add_animation(landing_animation)
+		bongbong.sprite_frames.set_animation_speed(landing_animation, landing_frames.get_animation_speed(landing_animation))
+		bongbong.sprite_frames.set_animation_loop(landing_animation, false)
+		for index in landing_frames.get_frame_count(landing_animation):
+			bongbong.sprite_frames.add_frame(landing_animation, landing_frames.get_frame_texture(landing_animation, index), landing_frames.get_frame_duration(landing_animation, index))
 	_position_x = bongbong.position.x
 	_floor_y = bongbong.position.y
 	_fall_position_y = _floor_y
@@ -178,6 +193,7 @@ func _is_character_hit(mouse_position: Vector2) -> bool:
 func _begin_drag(mouse_position: Vector2) -> void:
 	_stop_walking()
 	_falling = false
+	_landing = false
 	_fall_velocity = 0.0
 	_dragging = true
 	_drag_grab_offset = bongbong.position - mouse_position
@@ -203,6 +219,8 @@ func _end_drag() -> void:
 
 
 func _begin_fall() -> void:
+	_stop_walking()
+	_landing = false
 	_falling = true
 	_fall_velocity = 0.0
 	_fall_position_y = bongbong.position.y
@@ -210,6 +228,20 @@ func _begin_fall() -> void:
 	_completed_loops = 0
 	bongbong.speed_scale = 1.0
 	bongbong.play(FALL_INTRO)
+	bongbong.set_frame_and_progress(0, 0.0)
+	_update_help()
+
+
+func _begin_land(landing_animation: StringName) -> void:
+	# The drop may meet the floor during either FALL animation. Keep its exact
+	# visible pose for LAND's first frame before the impact begins.
+	var contact_texture := bongbong.sprite_frames.get_frame_texture(bongbong.animation, bongbong.frame)
+	bongbong.sprite_frames.set_frame(landing_animation, 0, contact_texture)
+	_landing = true
+	_requested_idle = &""
+	_completed_loops = 0
+	bongbong.speed_scale = 1.0
+	bongbong.play(landing_animation)
 	bongbong.set_frame_and_progress(0, 0.0)
 	_update_help()
 
@@ -227,7 +259,7 @@ func _unhandled_key_input(event: InputEvent) -> void:
 				KEY_ESCAPE:
 					get_tree().quit()
 		return
-	if _falling:
+	if _falling or _landing:
 		if event.is_pressed():
 			match event.keycode:
 				KEY_F1:
@@ -317,15 +349,25 @@ func _process(delta: float) -> void:
 		queue_redraw()
 		return
 	if _falling:
-		_fall_velocity += FALL_GRAVITY * delta
-		_fall_position_y = minf(_floor_y, _fall_position_y + _fall_velocity * delta)
+		# Accelerate from rest, then travel at the speed limit. Use the distance
+		# actually fallen to find impact speed, even if contact is between frames.
+		var accelerating_time := minf(delta, (MAX_FALL_SPEED - _fall_velocity) / FALL_GRAVITY)
+		var fall_distance := _fall_velocity * accelerating_time + 0.5 * FALL_GRAVITY * accelerating_time * accelerating_time
+		fall_distance += MAX_FALL_SPEED * (delta - accelerating_time)
+		var landing_y: float = _floor_y
+		fall_distance = minf(fall_distance, maxf(0.0, landing_y - _fall_position_y))
+		_fall_velocity = minf(MAX_FALL_SPEED, sqrt(_fall_velocity * _fall_velocity + 2.0 * FALL_GRAVITY * fall_distance))
+		_fall_position_y = minf(landing_y, _fall_position_y + fall_distance)
 		bongbong.position.y = roundf(_fall_position_y)
-		if _fall_position_y >= _floor_y:
+		if _fall_position_y >= landing_y:
 			_falling = false
+			var landing_animation := LAND_HIGH if _fall_velocity >= HIGH_LAND_SPEED else LAND_LOW
 			_fall_velocity = 0.0
-			_begin_idle(IDLE_DEFAULT)
+			_begin_land(landing_animation)
 		_update_mouse_region()
 		queue_redraw()
+		return
+	if _landing:
 		return
 	var automatic := _auto_walk or _auto_run or _auto_run_bouncy
 	var running := _auto_run or _auto_run_bouncy or _run_pressed
@@ -433,7 +475,7 @@ func _request_idle(animation_name: StringName) -> void:
 
 
 func _on_animation_looped() -> void:
-	if _dragging or _falling:
+	if _dragging or _falling or _landing:
 		return
 	_completed_loops += 1
 	if _is_moving():
@@ -463,6 +505,9 @@ func _on_animation_finished() -> void:
 		bongbong.play(FALL_AIR)
 		bongbong.set_frame_and_progress(0, 0.0)
 		_update_help()
+	elif _landing and bongbong.animation in [LAND_LOW, LAND_HIGH]:
+		_landing = false
+		_begin_idle(IDLE_DEFAULT)
 
 
 func _choose_idle() -> StringName:
@@ -494,11 +539,13 @@ func _update_help() -> void:
 	var mode := "Drag" if _dragging else ("Bouncy run" if bongbong.animation == RUN_BOUNCY else ("Light run" if bongbong.animation == RUN_LIGHT else ("Walk" if bongbong.animation == WALK else "Idle")))
 	if _falling:
 		mode = "Fall"
+	elif _landing:
+		mode = "Land"
 	if _auto_walk or _auto_run or _auto_run_bouncy:
 		mode = "Auto " + mode.to_lower()
 	help_label.text = "%s | Facing: %s\n1: Default    2: Pockets    3: Arms crossed\nLeft/Right: Walk    Shift + Left/Right: Light run\n4: Auto walk    5: Auto light run    6: Auto bouncy run    Space: Stop\nMouse: Grab Bongbong, lift, then release to test Fall" % [mode, "Left" if _facing < 0 else "Right"]
 	help_label.text += "\nF1: Test view    Esc: Quit"
-	help_label.text += "\nCurrent: %s | Loops: %d / %s" % [bongbong.animation, _completed_loops, "until floor" if _falling else ("infinite" if _is_moving() or _dragging else str(_target_loops))]
+	help_label.text += "\nCurrent: %s | Loops: %d / %s" % [bongbong.animation, _completed_loops, "until floor" if _falling else ("once" if _landing else ("infinite" if _is_moving() or _dragging else str(_target_loops)))]
 	if _requested_idle != &"":
 		var next := String(_requested_idle)
 		if not _is_moving() and bongbong.animation != IDLE_DEFAULT and _requested_idle != IDLE_DEFAULT and bongbong.animation != _requested_idle:

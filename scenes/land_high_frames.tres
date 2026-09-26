@@ -1,0 +1,271 @@
+[gd_resource type="SpriteFrames" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_01.png" id="1_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_02.png" id="2_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_03.png" id="3_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_04.png" id="4_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_05.png" id="5_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_06.png" id="6_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_07.png" id="7_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_08.png" id="8_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_09.png" id="9_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_10.png" id="10_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_11.png" id="11_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_12.png" id="12_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_13.png" id="13_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_14.png" id="14_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_15.png" id="15_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_16.png" id="16_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_17.png" id="17_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_18.png" id="18_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_19.png" id="19_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_20.png" id="20_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_21.png" id="21_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_22.png" id="22_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_23.png" id="23_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_24.png" id="24_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_25.png" id="25_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_26.png" id="26_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_27.png" id="27_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_28.png" id="28_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_29.png" id="29_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_30.png" id="30_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_31.png" id="31_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_32.png" id="32_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_33.png" id="33_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_34.png" id="34_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_35.png" id="35_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_36.png" id="36_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_37.png" id="37_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_38.png" id="38_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_39.png" id="39_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_40.png" id="40_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_41.png" id="41_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_42.png" id="42_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_43.png" id="43_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_44.png" id="44_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_45.png" id="45_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_46.png" id="46_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_47.png" id="47_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_48.png" id="48_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_49.png" id="49_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_50.png" id="50_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_51.png" id="51_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/high_grok_01/land_52.png" id="52_land"]
+
+[resource]
+animations = [{
+"frames": [
+{
+"duration": 1.0,
+"texture": ExtResource("1_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("2_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("3_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("4_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("5_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("6_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("7_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("8_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("9_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("10_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("11_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("12_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("13_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("14_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("15_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("16_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("17_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("18_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("19_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("20_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("21_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("22_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("23_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("24_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("25_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("26_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("27_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("28_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("29_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("30_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("31_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("32_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("33_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("34_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("35_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("36_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("37_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("38_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("39_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("40_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("41_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("42_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("43_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("44_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("45_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("46_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("47_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("48_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("49_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("50_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("51_land")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("52_land")
+}
+],
+"loop": 0,
+"name": &"land_high",
+"speed": 24.0
+}]

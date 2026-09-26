@@ -1,0 +1,62 @@
+[gd_resource type="SpriteFrames" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/character/land/low_grok_01/land_01.png" id="1_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/low_grok_01/land_02.png" id="2_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/low_grok_01/land_03.png" id="3_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/low_grok_01/land_04.png" id="4_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/low_grok_01/land_05.png" id="5_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/low_grok_01/land_06.png" id="6_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/low_grok_01/land_07.png" id="7_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/low_grok_01/land_08.png" id="8_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/low_grok_01/land_09.png" id="9_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/low_grok_01/land_10.png" id="10_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/low_grok_01/land_11.png" id="11_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/low_grok_01/land_12.png" id="12_land"]
+[ext_resource type="Texture2D" path="res://assets/character/land/low_grok_01/land_13.png" id="13_land"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_land")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_land")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_land")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_land")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_land")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_land")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_land")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_land")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_land")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_land")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_land")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_land")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_land")
+}],
+"loop": 0,
+"name": &"land_low",
+"speed": 24.0
+}]
