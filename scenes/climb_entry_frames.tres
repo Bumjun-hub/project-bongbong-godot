@@ -1,0 +1,93 @@
+[gd_resource type="SpriteFrames" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_001.png" id="entry_0"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_002.png" id="entry_1"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_003.png" id="entry_2"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_004.png" id="entry_3"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_005.png" id="entry_4"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_006.png" id="entry_5"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_007.png" id="entry_6"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_008.png" id="entry_7"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_009.png" id="entry_8"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_010.png" id="entry_9"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_011.png" id="entry_10"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_012.png" id="entry_11"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_013.png" id="entry_12"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_014.png" id="entry_13"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_015.png" id="entry_14"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_016.png" id="entry_15"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_017.png" id="entry_16"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_018.png" id="entry_17"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_019.png" id="entry_18"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_020.png" id="entry_19"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_021.png" id="entry_20"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_022.png" id="entry_21"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_023.png" id="entry_22"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_024.png" id="entry_23"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_025.png" id="entry_24"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_026.png" id="entry_25"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_027.png" id="entry_26"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_028.png" id="entry_27"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_029.png" id="entry_28"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_030.png" id="entry_29"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_031.png" id="entry_30"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_032.png" id="entry_31"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_033.png" id="entry_32"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_034.png" id="entry_33"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_035.png" id="entry_34"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_036.png" id="entry_35"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_037.png" id="entry_36"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_038.png" id="entry_37"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_039.png" id="entry_38"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_040.png" id="entry_39"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/entry_01/entry_041.png" id="entry_40"]
+
+[resource]
+animations = [{
+"frames": [
+{"duration": 1.0, "texture": ExtResource("entry_0")},
+{"duration": 1.0, "texture": ExtResource("entry_1")},
+{"duration": 1.0, "texture": ExtResource("entry_2")},
+{"duration": 1.0, "texture": ExtResource("entry_3")},
+{"duration": 1.0, "texture": ExtResource("entry_4")},
+{"duration": 1.0, "texture": ExtResource("entry_5")},
+{"duration": 1.0, "texture": ExtResource("entry_6")},
+{"duration": 1.0, "texture": ExtResource("entry_7")},
+{"duration": 1.0, "texture": ExtResource("entry_8")},
+{"duration": 1.0, "texture": ExtResource("entry_9")},
+{"duration": 1.0, "texture": ExtResource("entry_10")},
+{"duration": 1.0, "texture": ExtResource("entry_11")},
+{"duration": 1.0, "texture": ExtResource("entry_12")},
+{"duration": 1.0, "texture": ExtResource("entry_13")},
+{"duration": 1.0, "texture": ExtResource("entry_14")},
+{"duration": 1.0, "texture": ExtResource("entry_15")},
+{"duration": 1.0, "texture": ExtResource("entry_16")},
+{"duration": 1.0, "texture": ExtResource("entry_17")},
+{"duration": 1.0, "texture": ExtResource("entry_18")},
+{"duration": 1.0, "texture": ExtResource("entry_19")},
+{"duration": 1.0, "texture": ExtResource("entry_20")},
+{"duration": 1.0, "texture": ExtResource("entry_21")},
+{"duration": 1.0, "texture": ExtResource("entry_22")},
+{"duration": 1.0, "texture": ExtResource("entry_23")},
+{"duration": 1.0, "texture": ExtResource("entry_24")},
+{"duration": 1.0, "texture": ExtResource("entry_25")},
+{"duration": 1.0, "texture": ExtResource("entry_26")},
+{"duration": 1.0, "texture": ExtResource("entry_27")},
+{"duration": 1.0, "texture": ExtResource("entry_28")},
+{"duration": 1.0, "texture": ExtResource("entry_29")},
+{"duration": 1.0, "texture": ExtResource("entry_30")},
+{"duration": 1.0, "texture": ExtResource("entry_31")},
+{"duration": 1.0, "texture": ExtResource("entry_32")},
+{"duration": 1.0, "texture": ExtResource("entry_33")},
+{"duration": 1.0, "texture": ExtResource("entry_34")},
+{"duration": 1.0, "texture": ExtResource("entry_35")},
+{"duration": 1.0, "texture": ExtResource("entry_36")},
+{"duration": 1.0, "texture": ExtResource("entry_37")},
+{"duration": 1.0, "texture": ExtResource("entry_38")},
+{"duration": 1.0, "texture": ExtResource("entry_39")},
+{"duration": 1.0, "texture": ExtResource("entry_40")}
+],
+"loop": false,
+"name": &"climb_entry",
+"speed": 50.0
+}]

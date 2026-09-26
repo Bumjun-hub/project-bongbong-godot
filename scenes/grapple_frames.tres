@@ -1,0 +1,101 @@
+[gd_resource type="SpriteFrames" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_001.png" id="g0"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_002.png" id="g1"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_003.png" id="g2"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_004.png" id="g3"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_005.png" id="g4"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_006.png" id="g5"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_007.png" id="g6"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_008.png" id="g7"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_009.png" id="g8"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_010.png" id="g9"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_011.png" id="g10"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_012.png" id="g11"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_013.png" id="g12"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_014.png" id="g13"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_015.png" id="g14"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_016.png" id="g15"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_017.png" id="g16"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_018.png" id="g17"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_019.png" id="g18"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_020.png" id="g19"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_021.png" id="g20"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_022.png" id="g21"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_023.png" id="g22"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_024.png" id="g23"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_025.png" id="g24"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_026.png" id="g25"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_027.png" id="g26"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_028.png" id="g27"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_029.png" id="g28"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_030.png" id="g29"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_031.png" id="g30"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_032.png" id="g31"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_033.png" id="g32"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_034.png" id="g33"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_035.png" id="g34"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_036.png" id="g35"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_037.png" id="g36"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_038.png" id="g37"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_039.png" id="g38"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_040.png" id="g39"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_041.png" id="g40"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_042.png" id="g41"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_043.png" id="g42"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_044.png" id="g43"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/grapple_01/grapple_045.png" id="g44"]
+
+[resource]
+animations = [{
+"frames": [
+{"duration": 1.0, "texture": ExtResource("g0")},
+{"duration": 1.0, "texture": ExtResource("g1")},
+{"duration": 1.0, "texture": ExtResource("g2")},
+{"duration": 1.0, "texture": ExtResource("g3")},
+{"duration": 1.0, "texture": ExtResource("g4")},
+{"duration": 1.0, "texture": ExtResource("g5")},
+{"duration": 1.0, "texture": ExtResource("g6")},
+{"duration": 1.0, "texture": ExtResource("g7")},
+{"duration": 1.0, "texture": ExtResource("g8")},
+{"duration": 1.0, "texture": ExtResource("g9")},
+{"duration": 1.0, "texture": ExtResource("g10")},
+{"duration": 1.0, "texture": ExtResource("g11")},
+{"duration": 1.0, "texture": ExtResource("g12")},
+{"duration": 1.0, "texture": ExtResource("g13")},
+{"duration": 1.0, "texture": ExtResource("g14")},
+{"duration": 1.0, "texture": ExtResource("g15")},
+{"duration": 1.0, "texture": ExtResource("g16")},
+{"duration": 1.0, "texture": ExtResource("g17")},
+{"duration": 1.0, "texture": ExtResource("g18")},
+{"duration": 1.0, "texture": ExtResource("g19")},
+{"duration": 1.0, "texture": ExtResource("g20")},
+{"duration": 1.0, "texture": ExtResource("g21")},
+{"duration": 1.0, "texture": ExtResource("g22")},
+{"duration": 1.0, "texture": ExtResource("g23")},
+{"duration": 1.0, "texture": ExtResource("g24")},
+{"duration": 1.0, "texture": ExtResource("g25")},
+{"duration": 1.0, "texture": ExtResource("g26")},
+{"duration": 1.0, "texture": ExtResource("g27")},
+{"duration": 1.0, "texture": ExtResource("g28")},
+{"duration": 1.0, "texture": ExtResource("g29")},
+{"duration": 1.0, "texture": ExtResource("g30")},
+{"duration": 1.0, "texture": ExtResource("g31")},
+{"duration": 1.0, "texture": ExtResource("g32")},
+{"duration": 1.0, "texture": ExtResource("g33")},
+{"duration": 1.0, "texture": ExtResource("g34")},
+{"duration": 1.0, "texture": ExtResource("g35")},
+{"duration": 1.0, "texture": ExtResource("g36")},
+{"duration": 1.0, "texture": ExtResource("g37")},
+{"duration": 1.0, "texture": ExtResource("g38")},
+{"duration": 1.0, "texture": ExtResource("g39")},
+{"duration": 1.0, "texture": ExtResource("g40")},
+{"duration": 1.0, "texture": ExtResource("g41")},
+{"duration": 1.0, "texture": ExtResource("g42")},
+{"duration": 1.0, "texture": ExtResource("g43")},
+{"duration": 1.0, "texture": ExtResource("g44")}
+],
+"loop": false,
+"name": &"grapple",
+"speed": 24.0
+}]

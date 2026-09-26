@@ -1,0 +1,607 @@
+{
+  "provider": "Grok via Sprite-gen 2.6.0",
+  "clip": "experiments/grapple-01/grapple_poses.mp4",
+  "frames": 45,
+  "source_fps": 24,
+  "canvas": [
+    192,
+    192
+  ],
+  "foot_anchor": [
+    95,
+    174
+  ],
+  "aim_frame_zero_based": 21,
+  "hang_frame_zero_based": 30,
+  "loop": false,
+  "first_exact": "assets/character/idle/soft_three_quarter_right/default/idle_01.png",
+  "last_exact": "assets/character/climb/effort_03/side_grab.png",
+  "selection": [
+    {
+      "frame": 1,
+      "source_frame": 1,
+      "crop_origin": [
+        13,
+        99
+      ],
+      "hand": [
+        129,
+        82
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 2,
+      "source_frame": 2,
+      "crop_origin": [
+        13,
+        99
+      ],
+      "hand": [
+        131,
+        84
+      ],
+      "specks_removed": 3
+    },
+    {
+      "frame": 3,
+      "source_frame": 3,
+      "crop_origin": [
+        13,
+        99
+      ],
+      "hand": [
+        132,
+        87
+      ],
+      "specks_removed": 5
+    },
+    {
+      "frame": 4,
+      "source_frame": 4,
+      "crop_origin": [
+        13,
+        99
+      ],
+      "hand": [
+        134,
+        88
+      ],
+      "specks_removed": 5
+    },
+    {
+      "frame": 5,
+      "source_frame": 5,
+      "crop_origin": [
+        13,
+        99
+      ],
+      "hand": [
+        136,
+        90
+      ],
+      "specks_removed": 4
+    },
+    {
+      "frame": 6,
+      "source_frame": 6,
+      "crop_origin": [
+        13,
+        99
+      ],
+      "hand": [
+        136,
+        92
+      ],
+      "specks_removed": 5
+    },
+    {
+      "frame": 7,
+      "source_frame": 7,
+      "crop_origin": [
+        13,
+        99
+      ],
+      "hand": [
+        137,
+        92
+      ],
+      "specks_removed": 3
+    },
+    {
+      "frame": 8,
+      "source_frame": 8,
+      "crop_origin": [
+        13,
+        99
+      ],
+      "hand": [
+        137,
+        91
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 9,
+      "source_frame": 9,
+      "crop_origin": [
+        13,
+        99
+      ],
+      "hand": [
+        137,
+        91
+      ],
+      "specks_removed": 4
+    },
+    {
+      "frame": 10,
+      "source_frame": 10,
+      "crop_origin": [
+        13,
+        99
+      ],
+      "hand": [
+        137,
+        90
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 11,
+      "source_frame": 11,
+      "crop_origin": [
+        13,
+        99
+      ],
+      "hand": [
+        136,
+        92
+      ],
+      "specks_removed": 3
+    },
+    {
+      "frame": 12,
+      "source_frame": 12,
+      "crop_origin": [
+        13,
+        99
+      ],
+      "hand": [
+        136,
+        131
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 13,
+      "source_frame": 13,
+      "crop_origin": [
+        13,
+        99
+      ],
+      "hand": [
+        140,
+        125
+      ],
+      "specks_removed": 3
+    },
+    {
+      "frame": 14,
+      "source_frame": 14,
+      "crop_origin": [
+        13,
+        99
+      ],
+      "hand": [
+        141,
+        118
+      ],
+      "specks_removed": 3
+    },
+    {
+      "frame": 15,
+      "source_frame": 15,
+      "crop_origin": [
+        13,
+        99
+      ],
+      "hand": [
+        141,
+        114
+      ],
+      "specks_removed": 5
+    },
+    {
+      "frame": 16,
+      "source_frame": 16,
+      "crop_origin": [
+        13,
+        99
+      ],
+      "hand": [
+        141,
+        105
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 17,
+      "source_frame": 17,
+      "crop_origin": [
+        13,
+        99
+      ],
+      "hand": [
+        140,
+        102
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 18,
+      "source_frame": 18,
+      "crop_origin": [
+        13,
+        99
+      ],
+      "hand": [
+        139,
+        100
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 19,
+      "source_frame": 19,
+      "crop_origin": [
+        13,
+        99
+      ],
+      "hand": [
+        139,
+        99
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 20,
+      "source_frame": 20,
+      "crop_origin": [
+        13,
+        99
+      ],
+      "hand": [
+        139,
+        97
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 21,
+      "source_frame": 21,
+      "crop_origin": [
+        13,
+        99
+      ],
+      "hand": [
+        139,
+        97
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 22,
+      "source_frame": 22,
+      "crop_origin": [
+        13,
+        99
+      ],
+      "hand": [
+        139,
+        97
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 23,
+      "source_frame": 27,
+      "crop_origin": [
+        13,
+        97
+      ],
+      "hand": [
+        138,
+        94
+      ],
+      "specks_removed": 3
+    },
+    {
+      "frame": 24,
+      "source_frame": 28,
+      "crop_origin": [
+        13,
+        93
+      ],
+      "hand": [
+        137,
+        92
+      ],
+      "specks_removed": 3
+    },
+    {
+      "frame": 25,
+      "source_frame": 29,
+      "crop_origin": [
+        13,
+        90
+      ],
+      "hand": [
+        137,
+        91
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 26,
+      "source_frame": 30,
+      "crop_origin": [
+        13,
+        87
+      ],
+      "hand": [
+        137,
+        89
+      ],
+      "specks_removed": 6
+    },
+    {
+      "frame": 27,
+      "source_frame": 31,
+      "crop_origin": [
+        13,
+        84
+      ],
+      "hand": [
+        137,
+        88
+      ],
+      "specks_removed": 7
+    },
+    {
+      "frame": 28,
+      "source_frame": 32,
+      "crop_origin": [
+        13,
+        80
+      ],
+      "hand": [
+        137,
+        85
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 29,
+      "source_frame": 33,
+      "crop_origin": [
+        13,
+        79
+      ],
+      "hand": [
+        136,
+        84
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 30,
+      "source_frame": 34,
+      "crop_origin": [
+        13,
+        78
+      ],
+      "hand": [
+        136,
+        84
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 31,
+      "source_frame": 35,
+      "crop_origin": [
+        13,
+        78
+      ],
+      "hand": [
+        136,
+        83
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 32,
+      "source_frame": 36,
+      "crop_origin": [
+        13,
+        77
+      ],
+      "hand": [
+        136,
+        83
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 33,
+      "source_frame": 37,
+      "crop_origin": [
+        13,
+        78
+      ],
+      "hand": [
+        136,
+        82
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 34,
+      "source_frame": 38,
+      "crop_origin": [
+        13,
+        78
+      ],
+      "hand": [
+        136,
+        81
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 35,
+      "source_frame": 39,
+      "crop_origin": [
+        13,
+        78
+      ],
+      "hand": [
+        136,
+        82
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 36,
+      "source_frame": 40,
+      "crop_origin": [
+        13,
+        78
+      ],
+      "hand": [
+        135,
+        82
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 37,
+      "source_frame": 41,
+      "crop_origin": [
+        13,
+        78
+      ],
+      "hand": [
+        135,
+        82
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 38,
+      "source_frame": 42,
+      "crop_origin": [
+        13,
+        79
+      ],
+      "hand": [
+        135,
+        81
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 39,
+      "source_frame": 43,
+      "crop_origin": [
+        13,
+        81
+      ],
+      "hand": [
+        135,
+        82
+      ],
+      "specks_removed": 4
+    },
+    {
+      "frame": 40,
+      "source_frame": 44,
+      "crop_origin": [
+        13,
+        87
+      ],
+      "hand": [
+        134,
+        87
+      ],
+      "specks_removed": 4
+    },
+    {
+      "frame": 41,
+      "source_frame": 45,
+      "crop_origin": [
+        13,
+        91
+      ],
+      "hand": [
+        133,
+        92
+      ],
+      "specks_removed": 3
+    },
+    {
+      "frame": 42,
+      "source_frame": 46,
+      "crop_origin": [
+        13,
+        94
+      ],
+      "hand": [
+        135,
+        97
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 43,
+      "source_frame": 47,
+      "crop_origin": [
+        13,
+        97
+      ],
+      "hand": [
+        135,
+        98
+      ],
+      "specks_removed": 4
+    },
+    {
+      "frame": 44,
+      "source_frame": 48,
+      "crop_origin": [
+        13,
+        99
+      ],
+      "hand": [
+        135,
+        105
+      ],
+      "specks_removed": 4
+    },
+    {
+      "frame": 45,
+      "source_frame": 49,
+      "crop_origin": [
+        13,
+        100
+      ],
+      "hand": [
+        134,
+        112
+      ],
+      "specks_removed": 3
+    }
+  ],
+  "review": "Whole-pose registration only; source order preserved. Runtime cable follows the tracked hand. No synthetic poses, no frame reversal."
+}

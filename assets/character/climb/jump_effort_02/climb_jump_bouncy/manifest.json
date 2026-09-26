@@ -1,0 +1,445 @@
+{
+  "provider": "Grok via Sprite-gen 2.6.0",
+  "source_fps": 24,
+  "frames": 42,
+  "fps": 100,
+  "frame_duration_ticks": [
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    3,
+    4,
+    3,
+    4,
+    3,
+    4,
+    3,
+    4,
+    3,
+    4,
+    3,
+    4,
+    3,
+    4,
+    3
+  ],
+  "duration_seconds": 0.84,
+  "prepare_seconds": 0.32,
+  "takeoff_frame_zero_based": 26,
+  "canvas": [
+    192,
+    192
+  ],
+  "foot_anchor": [
+    95,
+    174
+  ],
+  "loop": false,
+  "first_exact": "assets/character/detail_matched_motions/run_bouncy/frame_04.png",
+  "last_exact": "assets/character/climb/effort_03/side_grab.png",
+  "selection": [
+    {
+      "frame": 1,
+      "source_frame": 1,
+      "crop_origin": [
+        0,
+        -1
+      ],
+      "specks_removed": 3
+    },
+    {
+      "frame": 2,
+      "source_frame": 2,
+      "crop_origin": [
+        0,
+        -1
+      ],
+      "specks_removed": 6
+    },
+    {
+      "frame": 3,
+      "source_frame": 3,
+      "crop_origin": [
+        0,
+        -1
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 4,
+      "source_frame": 4,
+      "crop_origin": [
+        0,
+        -1
+      ],
+      "specks_removed": 5
+    },
+    {
+      "frame": 5,
+      "source_frame": 5,
+      "crop_origin": [
+        0,
+        -1
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 6,
+      "source_frame": 6,
+      "crop_origin": [
+        0,
+        -1
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 7,
+      "source_frame": 7,
+      "crop_origin": [
+        0,
+        -3
+      ],
+      "specks_removed": 3
+    },
+    {
+      "frame": 8,
+      "source_frame": 8,
+      "crop_origin": [
+        0,
+        -10
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 9,
+      "source_frame": 9,
+      "crop_origin": [
+        0,
+        -9
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 10,
+      "source_frame": 10,
+      "crop_origin": [
+        0,
+        -7
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 11,
+      "source_frame": 11,
+      "crop_origin": [
+        0,
+        -5
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 12,
+      "source_frame": 12,
+      "crop_origin": [
+        0,
+        -2
+      ],
+      "specks_removed": 3
+    },
+    {
+      "frame": 13,
+      "source_frame": 13,
+      "crop_origin": [
+        0,
+        -2
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 14,
+      "source_frame": 14,
+      "crop_origin": [
+        0,
+        0
+      ],
+      "specks_removed": 5
+    },
+    {
+      "frame": 15,
+      "source_frame": 15,
+      "crop_origin": [
+        0,
+        0
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 16,
+      "source_frame": 16,
+      "crop_origin": [
+        0,
+        0
+      ],
+      "specks_removed": 3
+    },
+    {
+      "frame": 17,
+      "source_frame": 17,
+      "crop_origin": [
+        0,
+        0
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 18,
+      "source_frame": 18,
+      "crop_origin": [
+        0,
+        0
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 19,
+      "source_frame": 19,
+      "crop_origin": [
+        0,
+        0
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 20,
+      "source_frame": 51,
+      "crop_origin": [
+        0,
+        0
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 21,
+      "source_frame": 52,
+      "crop_origin": [
+        0,
+        0
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 22,
+      "source_frame": 53,
+      "crop_origin": [
+        0,
+        0
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 23,
+      "source_frame": 54,
+      "crop_origin": [
+        0,
+        0
+      ],
+      "specks_removed": 4
+    },
+    {
+      "frame": 24,
+      "source_frame": 55,
+      "crop_origin": [
+        0,
+        0
+      ],
+      "specks_removed": 3
+    },
+    {
+      "frame": 25,
+      "source_frame": 56,
+      "crop_origin": [
+        0,
+        0
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 26,
+      "source_frame": 57,
+      "crop_origin": [
+        0,
+        0
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 27,
+      "source_frame": 58,
+      "crop_origin": [
+        0,
+        0
+      ],
+      "specks_removed": 3
+    },
+    {
+      "frame": 28,
+      "source_frame": 59,
+      "crop_origin": [
+        0,
+        0
+      ],
+      "specks_removed": 3
+    },
+    {
+      "frame": 29,
+      "source_frame": 60,
+      "crop_origin": [
+        0,
+        0
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 30,
+      "source_frame": 61,
+      "crop_origin": [
+        0,
+        0
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 31,
+      "source_frame": 62,
+      "crop_origin": [
+        0,
+        0
+      ],
+      "specks_removed": 4
+    },
+    {
+      "frame": 32,
+      "source_frame": 63,
+      "crop_origin": [
+        0,
+        0
+      ],
+      "specks_removed": 3
+    },
+    {
+      "frame": 33,
+      "source_frame": 64,
+      "crop_origin": [
+        0,
+        0
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 34,
+      "source_frame": 65,
+      "crop_origin": [
+        0,
+        0
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 35,
+      "source_frame": 66,
+      "crop_origin": [
+        0,
+        0
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 36,
+      "source_frame": 67,
+      "crop_origin": [
+        0,
+        0
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 37,
+      "source_frame": 68,
+      "crop_origin": [
+        0,
+        0
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 38,
+      "source_frame": 69,
+      "crop_origin": [
+        0,
+        0
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 39,
+      "source_frame": 70,
+      "crop_origin": [
+        0,
+        0
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 40,
+      "source_frame": 71,
+      "crop_origin": [
+        0,
+        0
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 41,
+      "source_frame": 72,
+      "crop_origin": [
+        0,
+        0
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 42,
+      "source_frame": 73,
+      "crop_origin": [
+        0,
+        0
+      ],
+      "specks_removed": 2
+    }
+  ],
+  "review": "Original order, real bent-knee poses, no interpolated/morphed/reversed frames. Bouncy preparation registers the supporting shoe with a whole-pose translation. Tall normal clip removes whole-character vertical air drift so the Godot jump arc is applied once."
+}

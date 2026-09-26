@@ -1,0 +1,270 @@
+{
+  "provider": "Grok via Sprite-gen 2.6.0",
+  "source_video": "entry_v2.mp4",
+  "source_fps": 24.0,
+  "frames": 41,
+  "fps": 50.0,
+  "duration_seconds": 0.82,
+  "loop": false,
+  "canvas": [
+    192,
+    192
+  ],
+  "foot_anchor": [
+    95,
+    174
+  ],
+  "hand_anchor": [
+    139,
+    112
+  ],
+  "selection": [
+    {
+      "frame": 1,
+      "source_frame": 1,
+      "specks_removed": 1,
+      "exact_reference": "assets\\character\\idle\\soft_three_quarter_right\\default\\idle_01.png"
+    },
+    {
+      "frame": 2,
+      "source_frame": 2,
+      "specks_removed": 1,
+      "exact_reference": null
+    },
+    {
+      "frame": 3,
+      "source_frame": 3,
+      "specks_removed": 4,
+      "exact_reference": null
+    },
+    {
+      "frame": 4,
+      "source_frame": 4,
+      "specks_removed": 2,
+      "exact_reference": null
+    },
+    {
+      "frame": 5,
+      "source_frame": 5,
+      "specks_removed": 2,
+      "exact_reference": null
+    },
+    {
+      "frame": 6,
+      "source_frame": 6,
+      "specks_removed": 0,
+      "exact_reference": null
+    },
+    {
+      "frame": 7,
+      "source_frame": 7,
+      "specks_removed": 3,
+      "exact_reference": null
+    },
+    {
+      "frame": 8,
+      "source_frame": 8,
+      "specks_removed": 1,
+      "exact_reference": null
+    },
+    {
+      "frame": 9,
+      "source_frame": 9,
+      "specks_removed": 0,
+      "exact_reference": null
+    },
+    {
+      "frame": 10,
+      "source_frame": 25,
+      "specks_removed": 2,
+      "exact_reference": null
+    },
+    {
+      "frame": 11,
+      "source_frame": 26,
+      "specks_removed": 0,
+      "exact_reference": null
+    },
+    {
+      "frame": 12,
+      "source_frame": 27,
+      "specks_removed": 2,
+      "exact_reference": null
+    },
+    {
+      "frame": 13,
+      "source_frame": 28,
+      "specks_removed": 0,
+      "exact_reference": null
+    },
+    {
+      "frame": 14,
+      "source_frame": 29,
+      "specks_removed": 0,
+      "exact_reference": null
+    },
+    {
+      "frame": 15,
+      "source_frame": 30,
+      "specks_removed": 1,
+      "exact_reference": null
+    },
+    {
+      "frame": 16,
+      "source_frame": 31,
+      "specks_removed": 3,
+      "exact_reference": null
+    },
+    {
+      "frame": 17,
+      "source_frame": 32,
+      "specks_removed": 0,
+      "exact_reference": null
+    },
+    {
+      "frame": 18,
+      "source_frame": 33,
+      "specks_removed": 0,
+      "exact_reference": null
+    },
+    {
+      "frame": 19,
+      "source_frame": 34,
+      "specks_removed": 0,
+      "exact_reference": null
+    },
+    {
+      "frame": 20,
+      "source_frame": 35,
+      "specks_removed": 0,
+      "exact_reference": null
+    },
+    {
+      "frame": 21,
+      "source_frame": 36,
+      "specks_removed": 0,
+      "exact_reference": null
+    },
+    {
+      "frame": 22,
+      "source_frame": 37,
+      "specks_removed": 0,
+      "exact_reference": null
+    },
+    {
+      "frame": 23,
+      "source_frame": 55,
+      "specks_removed": 3,
+      "exact_reference": null
+    },
+    {
+      "frame": 24,
+      "source_frame": 56,
+      "specks_removed": 1,
+      "exact_reference": null
+    },
+    {
+      "frame": 25,
+      "source_frame": 57,
+      "specks_removed": 0,
+      "exact_reference": null
+    },
+    {
+      "frame": 26,
+      "source_frame": 58,
+      "specks_removed": 0,
+      "exact_reference": null
+    },
+    {
+      "frame": 27,
+      "source_frame": 59,
+      "specks_removed": 0,
+      "exact_reference": null
+    },
+    {
+      "frame": 28,
+      "source_frame": 60,
+      "specks_removed": 0,
+      "exact_reference": null
+    },
+    {
+      "frame": 29,
+      "source_frame": 61,
+      "specks_removed": 0,
+      "exact_reference": null
+    },
+    {
+      "frame": 30,
+      "source_frame": 62,
+      "specks_removed": 0,
+      "exact_reference": null
+    },
+    {
+      "frame": 31,
+      "source_frame": 63,
+      "specks_removed": 0,
+      "exact_reference": null
+    },
+    {
+      "frame": 32,
+      "source_frame": 64,
+      "specks_removed": 0,
+      "exact_reference": null
+    },
+    {
+      "frame": 33,
+      "source_frame": 65,
+      "specks_removed": 0,
+      "exact_reference": null
+    },
+    {
+      "frame": 34,
+      "source_frame": 66,
+      "specks_removed": 0,
+      "exact_reference": null
+    },
+    {
+      "frame": 35,
+      "source_frame": 67,
+      "specks_removed": 1,
+      "exact_reference": null
+    },
+    {
+      "frame": 36,
+      "source_frame": 68,
+      "specks_removed": 0,
+      "exact_reference": null
+    },
+    {
+      "frame": 37,
+      "source_frame": 69,
+      "specks_removed": 0,
+      "exact_reference": null
+    },
+    {
+      "frame": 38,
+      "source_frame": 70,
+      "specks_removed": 0,
+      "exact_reference": null
+    },
+    {
+      "frame": 39,
+      "source_frame": 71,
+      "specks_removed": 0,
+      "exact_reference": null
+    },
+    {
+      "frame": 40,
+      "source_frame": 72,
+      "specks_removed": 0,
+      "exact_reference": null
+    },
+    {
+      "frame": 41,
+      "source_frame": 73,
+      "specks_removed": 1,
+      "exact_reference": "assets\\character\\climb\\effort_03\\side_grab.png"
+    }
+  ],
+  "review": "First 1-second candidate rejected for a pose pop. Second 3-second clip has arm reach before knee bend. Removed two waiting sections, preserved changing poses in forward order. No interpolated or blended frames."
+}

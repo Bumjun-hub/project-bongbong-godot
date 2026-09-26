@@ -1,0 +1,1413 @@
+{
+  "provider": "Grok via Sprite-gen 2.6.0",
+  "source_fps": 24.0,
+  "frames": 97,
+  "loop": false,
+  "duration_weights": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.1,
+    1.2,
+    1.35,
+    1.5,
+    1.65,
+    1.8,
+    1.8,
+    1.8,
+    1.65,
+    1.5,
+    1.35,
+    1.2,
+    1.1,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "duration_seconds": 4.291666666666667,
+  "source_canvas": [
+    320,
+    320
+  ],
+  "corner": [
+    190,
+    200
+  ],
+  "canvas": [
+    192,
+    192
+  ],
+  "foot_anchor": [
+    95,
+    174
+  ],
+  "first_exact": "effort_03/climb_15.png",
+  "last_exact": "idle/soft_three_quarter_right/default/idle_01.png",
+  "phase_frames": {
+    "reach": [
+      1,
+      16
+    ],
+    "press_both_hands": [
+      17,
+      40
+    ],
+    "first_leg": [
+      41,
+      58
+    ],
+    "second_leg": [
+      59,
+      76
+    ],
+    "stand": [
+      77,
+      88
+    ],
+    "settle": [
+      89,
+      97
+    ]
+  },
+  "selection": [
+    {
+      "frame": 1,
+      "source": "frame-0001.png",
+      "crop_origin": [
+        51,
+        102
+      ],
+      "root_from_corner": [
+        -44,
+        76
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 2,
+      "source": "frame-0002.png",
+      "crop_origin": [
+        55,
+        101
+      ],
+      "root_from_corner": [
+        -40,
+        75
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 3,
+      "source": "frame-0003.png",
+      "crop_origin": [
+        58,
+        100
+      ],
+      "root_from_corner": [
+        -37,
+        74
+      ],
+      "specks_removed": 8
+    },
+    {
+      "frame": 4,
+      "source": "frame-0004.png",
+      "crop_origin": [
+        59,
+        100
+      ],
+      "root_from_corner": [
+        -36,
+        74
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 5,
+      "source": "frame-0005.png",
+      "crop_origin": [
+        60,
+        99
+      ],
+      "root_from_corner": [
+        -35,
+        73
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 6,
+      "source": "frame-0006.png",
+      "crop_origin": [
+        61,
+        99
+      ],
+      "root_from_corner": [
+        -34,
+        73
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 7,
+      "source": "frame-0007.png",
+      "crop_origin": [
+        62,
+        99
+      ],
+      "root_from_corner": [
+        -33,
+        73
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 8,
+      "source": "frame-0008.png",
+      "crop_origin": [
+        62,
+        99
+      ],
+      "root_from_corner": [
+        -33,
+        73
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 9,
+      "source": "frame-0009.png",
+      "crop_origin": [
+        62,
+        99
+      ],
+      "root_from_corner": [
+        -33,
+        73
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 10,
+      "source": "frame-0010.png",
+      "crop_origin": [
+        63,
+        99
+      ],
+      "root_from_corner": [
+        -32,
+        73
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 11,
+      "source": "frame-0011.png",
+      "crop_origin": [
+        63,
+        99
+      ],
+      "root_from_corner": [
+        -32,
+        73
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 12,
+      "source": "frame-0012.png",
+      "crop_origin": [
+        63,
+        99
+      ],
+      "root_from_corner": [
+        -32,
+        73
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 13,
+      "source": "frame-0013.png",
+      "crop_origin": [
+        63,
+        99
+      ],
+      "root_from_corner": [
+        -32,
+        73
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 14,
+      "source": "frame-0014.png",
+      "crop_origin": [
+        65,
+        99
+      ],
+      "root_from_corner": [
+        -30,
+        73
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 15,
+      "source": "frame-0015.png",
+      "crop_origin": [
+        68,
+        96
+      ],
+      "root_from_corner": [
+        -27,
+        70
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 16,
+      "source": "frame-0016.png",
+      "crop_origin": [
+        70,
+        94
+      ],
+      "root_from_corner": [
+        -25,
+        68
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 17,
+      "source": "frame-0017.png",
+      "crop_origin": [
+        72,
+        91
+      ],
+      "root_from_corner": [
+        -23,
+        65
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 18,
+      "source": "frame-0018.png",
+      "crop_origin": [
+        75,
+        87
+      ],
+      "root_from_corner": [
+        -20,
+        61
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 19,
+      "source": "frame-0019.png",
+      "crop_origin": [
+        81,
+        80
+      ],
+      "root_from_corner": [
+        -14,
+        54
+      ],
+      "specks_removed": 6
+    },
+    {
+      "frame": 20,
+      "source": "frame-0020.png",
+      "crop_origin": [
+        84,
+        76
+      ],
+      "root_from_corner": [
+        -11,
+        50
+      ],
+      "specks_removed": 5
+    },
+    {
+      "frame": 21,
+      "source": "frame-0021.png",
+      "crop_origin": [
+        87,
+        73
+      ],
+      "root_from_corner": [
+        -8,
+        47
+      ],
+      "specks_removed": 3
+    },
+    {
+      "frame": 22,
+      "source": "frame-0022.png",
+      "crop_origin": [
+        91,
+        69
+      ],
+      "root_from_corner": [
+        -4,
+        43
+      ],
+      "specks_removed": 7
+    },
+    {
+      "frame": 23,
+      "source": "frame-0023.png",
+      "crop_origin": [
+        96,
+        60
+      ],
+      "root_from_corner": [
+        1,
+        34
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 24,
+      "source": "frame-0024.png",
+      "crop_origin": [
+        98,
+        58
+      ],
+      "root_from_corner": [
+        3,
+        32
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 25,
+      "source": "frame-0025.png",
+      "crop_origin": [
+        98,
+        57
+      ],
+      "root_from_corner": [
+        3,
+        31
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 26,
+      "source": "frame-0026.png",
+      "crop_origin": [
+        98,
+        56
+      ],
+      "root_from_corner": [
+        3,
+        30
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 27,
+      "source": "frame-0027.png",
+      "crop_origin": [
+        98,
+        55
+      ],
+      "root_from_corner": [
+        3,
+        29
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 28,
+      "source": "frame-0028.png",
+      "crop_origin": [
+        99,
+        55
+      ],
+      "root_from_corner": [
+        4,
+        29
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 29,
+      "source": "frame-0029.png",
+      "crop_origin": [
+        99,
+        55
+      ],
+      "root_from_corner": [
+        4,
+        29
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 30,
+      "source": "frame-0030.png",
+      "crop_origin": [
+        100,
+        55
+      ],
+      "root_from_corner": [
+        5,
+        29
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 31,
+      "source": "frame-0031.png",
+      "crop_origin": [
+        101,
+        55
+      ],
+      "root_from_corner": [
+        6,
+        29
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 32,
+      "source": "frame-0032.png",
+      "crop_origin": [
+        101,
+        55
+      ],
+      "root_from_corner": [
+        6,
+        29
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 33,
+      "source": "frame-0033.png",
+      "crop_origin": [
+        101,
+        55
+      ],
+      "root_from_corner": [
+        6,
+        29
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 34,
+      "source": "frame-0034.png",
+      "crop_origin": [
+        101,
+        55
+      ],
+      "root_from_corner": [
+        6,
+        29
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 35,
+      "source": "frame-0035.png",
+      "crop_origin": [
+        102,
+        55
+      ],
+      "root_from_corner": [
+        7,
+        29
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 36,
+      "source": "frame-0036.png",
+      "crop_origin": [
+        103,
+        55
+      ],
+      "root_from_corner": [
+        8,
+        29
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 37,
+      "source": "frame-0037.png",
+      "crop_origin": [
+        105,
+        55
+      ],
+      "root_from_corner": [
+        10,
+        29
+      ],
+      "specks_removed": 3
+    },
+    {
+      "frame": 38,
+      "source": "frame-0038.png",
+      "crop_origin": [
+        106,
+        55
+      ],
+      "root_from_corner": [
+        11,
+        29
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 39,
+      "source": "frame-0039.png",
+      "crop_origin": [
+        111,
+        50
+      ],
+      "root_from_corner": [
+        16,
+        24
+      ],
+      "specks_removed": 5
+    },
+    {
+      "frame": 40,
+      "source": "frame-0040.png",
+      "crop_origin": [
+        112,
+        47
+      ],
+      "root_from_corner": [
+        17,
+        21
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 41,
+      "source": "frame-0041.png",
+      "crop_origin": [
+        114,
+        48
+      ],
+      "root_from_corner": [
+        19,
+        22
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 42,
+      "source": "frame-0042.png",
+      "crop_origin": [
+        116,
+        48
+      ],
+      "root_from_corner": [
+        21,
+        22
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 43,
+      "source": "frame-0043.png",
+      "crop_origin": [
+        119,
+        47
+      ],
+      "root_from_corner": [
+        24,
+        21
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 44,
+      "source": "frame-0044.png",
+      "crop_origin": [
+        119,
+        47
+      ],
+      "root_from_corner": [
+        24,
+        21
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 45,
+      "source": "frame-0045.png",
+      "crop_origin": [
+        119,
+        48
+      ],
+      "root_from_corner": [
+        24,
+        22
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 46,
+      "source": "frame-0046.png",
+      "crop_origin": [
+        121,
+        49
+      ],
+      "root_from_corner": [
+        26,
+        23
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 47,
+      "source": "frame-0047.png",
+      "crop_origin": [
+        123,
+        49
+      ],
+      "root_from_corner": [
+        28,
+        23
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 48,
+      "source": "frame-0048.png",
+      "crop_origin": [
+        125,
+        49
+      ],
+      "root_from_corner": [
+        30,
+        23
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 49,
+      "source": "frame-0049.png",
+      "crop_origin": [
+        126,
+        48
+      ],
+      "root_from_corner": [
+        31,
+        22
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 50,
+      "source": "frame-0050.png",
+      "crop_origin": [
+        127,
+        48
+      ],
+      "root_from_corner": [
+        32,
+        22
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 51,
+      "source": "frame-0051.png",
+      "crop_origin": [
+        129,
+        48
+      ],
+      "root_from_corner": [
+        34,
+        22
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 52,
+      "source": "frame-0052.png",
+      "crop_origin": [
+        129,
+        48
+      ],
+      "root_from_corner": [
+        34,
+        22
+      ],
+      "specks_removed": 3
+    },
+    {
+      "frame": 53,
+      "source": "frame-0053.png",
+      "crop_origin": [
+        131,
+        48
+      ],
+      "root_from_corner": [
+        36,
+        22
+      ],
+      "specks_removed": 6
+    },
+    {
+      "frame": 54,
+      "source": "frame-0054.png",
+      "crop_origin": [
+        131,
+        48
+      ],
+      "root_from_corner": [
+        36,
+        22
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 55,
+      "source": "frame-0055.png",
+      "crop_origin": [
+        131,
+        48
+      ],
+      "root_from_corner": [
+        36,
+        22
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 56,
+      "source": "frame-0056.png",
+      "crop_origin": [
+        131,
+        48
+      ],
+      "root_from_corner": [
+        36,
+        22
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 57,
+      "source": "frame-0057.png",
+      "crop_origin": [
+        131,
+        48
+      ],
+      "root_from_corner": [
+        36,
+        22
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 58,
+      "source": "frame-0058.png",
+      "crop_origin": [
+        131,
+        47
+      ],
+      "root_from_corner": [
+        36,
+        21
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 59,
+      "source": "frame-0059.png",
+      "crop_origin": [
+        133,
+        44
+      ],
+      "root_from_corner": [
+        38,
+        18
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 60,
+      "source": "frame-0060.png",
+      "crop_origin": [
+        134,
+        42
+      ],
+      "root_from_corner": [
+        39,
+        16
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 61,
+      "source": "frame-0061.png",
+      "crop_origin": [
+        135,
+        40
+      ],
+      "root_from_corner": [
+        40,
+        14
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 62,
+      "source": "frame-0062.png",
+      "crop_origin": [
+        137,
+        37
+      ],
+      "root_from_corner": [
+        42,
+        11
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 63,
+      "source": "frame-0063.png",
+      "crop_origin": [
+        141,
+        38
+      ],
+      "root_from_corner": [
+        46,
+        12
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 64,
+      "source": "frame-0064.png",
+      "crop_origin": [
+        142,
+        38
+      ],
+      "root_from_corner": [
+        47,
+        12
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 65,
+      "source": "frame-0065.png",
+      "crop_origin": [
+        143,
+        37
+      ],
+      "root_from_corner": [
+        48,
+        11
+      ],
+      "specks_removed": 4
+    },
+    {
+      "frame": 66,
+      "source": "frame-0066.png",
+      "crop_origin": [
+        143,
+        36
+      ],
+      "root_from_corner": [
+        48,
+        10
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 67,
+      "source": "frame-0067.png",
+      "crop_origin": [
+        143,
+        33
+      ],
+      "root_from_corner": [
+        48,
+        7
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 68,
+      "source": "frame-0068.png",
+      "crop_origin": [
+        144,
+        32
+      ],
+      "root_from_corner": [
+        49,
+        6
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 69,
+      "source": "frame-0069.png",
+      "crop_origin": [
+        145,
+        31
+      ],
+      "root_from_corner": [
+        50,
+        5
+      ],
+      "specks_removed": 3
+    },
+    {
+      "frame": 70,
+      "source": "frame-0070.png",
+      "crop_origin": [
+        145,
+        30
+      ],
+      "root_from_corner": [
+        50,
+        4
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 71,
+      "source": "frame-0071.png",
+      "crop_origin": [
+        147,
+        28
+      ],
+      "root_from_corner": [
+        52,
+        2
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 72,
+      "source": "frame-0072.png",
+      "crop_origin": [
+        147,
+        28
+      ],
+      "root_from_corner": [
+        52,
+        2
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 73,
+      "source": "frame-0073.png",
+      "crop_origin": [
+        149,
+        28
+      ],
+      "root_from_corner": [
+        54,
+        2
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 74,
+      "source": "frame-0074.png",
+      "crop_origin": [
+        149,
+        28
+      ],
+      "root_from_corner": [
+        54,
+        2
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 75,
+      "source": "frame-0075.png",
+      "crop_origin": [
+        150,
+        28
+      ],
+      "root_from_corner": [
+        55,
+        2
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 76,
+      "source": "frame-0076.png",
+      "crop_origin": [
+        150,
+        28
+      ],
+      "root_from_corner": [
+        55,
+        2
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 77,
+      "source": "frame-0077.png",
+      "crop_origin": [
+        150,
+        28
+      ],
+      "root_from_corner": [
+        55,
+        2
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 78,
+      "source": "frame-0078.png",
+      "crop_origin": [
+        152,
+        28
+      ],
+      "root_from_corner": [
+        57,
+        2
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 79,
+      "source": "frame-0079.png",
+      "crop_origin": [
+        156,
+        28
+      ],
+      "root_from_corner": [
+        61,
+        2
+      ],
+      "specks_removed": 4
+    },
+    {
+      "frame": 80,
+      "source": "frame-0080.png",
+      "crop_origin": [
+        157,
+        28
+      ],
+      "root_from_corner": [
+        62,
+        2
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 81,
+      "source": "frame-0081.png",
+      "crop_origin": [
+        159,
+        28
+      ],
+      "root_from_corner": [
+        64,
+        2
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 82,
+      "source": "frame-0082.png",
+      "crop_origin": [
+        159,
+        27
+      ],
+      "root_from_corner": [
+        64,
+        1
+      ],
+      "specks_removed": 6
+    },
+    {
+      "frame": 83,
+      "source": "frame-0083.png",
+      "crop_origin": [
+        154,
+        27
+      ],
+      "root_from_corner": [
+        59,
+        1
+      ],
+      "specks_removed": 3
+    },
+    {
+      "frame": 84,
+      "source": "frame-0084.png",
+      "crop_origin": [
+        151,
+        27
+      ],
+      "root_from_corner": [
+        56,
+        1
+      ],
+      "specks_removed": 3
+    },
+    {
+      "frame": 85,
+      "source": "frame-0085.png",
+      "crop_origin": [
+        149,
+        27
+      ],
+      "root_from_corner": [
+        54,
+        1
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 86,
+      "source": "frame-0086.png",
+      "crop_origin": [
+        146,
+        27
+      ],
+      "root_from_corner": [
+        51,
+        1
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 87,
+      "source": "frame-0087.png",
+      "crop_origin": [
+        143,
+        27
+      ],
+      "root_from_corner": [
+        48,
+        1
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 88,
+      "source": "frame-0088.png",
+      "crop_origin": [
+        141,
+        27
+      ],
+      "root_from_corner": [
+        46,
+        1
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 89,
+      "source": "frame-0089.png",
+      "crop_origin": [
+        142,
+        27
+      ],
+      "root_from_corner": [
+        47,
+        1
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 90,
+      "source": "frame-0090.png",
+      "crop_origin": [
+        141,
+        27
+      ],
+      "root_from_corner": [
+        46,
+        1
+      ],
+      "specks_removed": 2
+    },
+    {
+      "frame": 91,
+      "source": "frame-0091.png",
+      "crop_origin": [
+        142,
+        27
+      ],
+      "root_from_corner": [
+        47,
+        1
+      ],
+      "specks_removed": 0
+    },
+    {
+      "frame": 92,
+      "source": "frame-0092.png",
+      "crop_origin": [
+        142,
+        27
+      ],
+      "root_from_corner": [
+        47,
+        1
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 93,
+      "source": "frame-0093.png",
+      "crop_origin": [
+        142,
+        27
+      ],
+      "root_from_corner": [
+        47,
+        1
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 94,
+      "source": "frame-0094.png",
+      "crop_origin": [
+        142,
+        27
+      ],
+      "root_from_corner": [
+        47,
+        1
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 95,
+      "source": "frame-0095.png",
+      "crop_origin": [
+        142,
+        27
+      ],
+      "root_from_corner": [
+        47,
+        1
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 96,
+      "source": "frame-0096.png",
+      "crop_origin": [
+        142,
+        27
+      ],
+      "root_from_corner": [
+        47,
+        1
+      ],
+      "specks_removed": 1
+    },
+    {
+      "frame": 97,
+      "source": "frame-0097.png",
+      "crop_origin": [
+        142,
+        26
+      ],
+      "root_from_corner": [
+        47,
+        0
+      ],
+      "specks_removed": 2
+    }
+  ]
+}

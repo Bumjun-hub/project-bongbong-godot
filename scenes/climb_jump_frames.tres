@@ -1,0 +1,182 @@
+[gd_resource type="SpriteFrames" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_001.png" id="climb_jump_0"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_002.png" id="climb_jump_1"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_003.png" id="climb_jump_2"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_004.png" id="climb_jump_3"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_005.png" id="climb_jump_4"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_006.png" id="climb_jump_5"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_007.png" id="climb_jump_6"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_008.png" id="climb_jump_7"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_009.png" id="climb_jump_8"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_010.png" id="climb_jump_9"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_011.png" id="climb_jump_10"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_012.png" id="climb_jump_11"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_013.png" id="climb_jump_12"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_014.png" id="climb_jump_13"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_015.png" id="climb_jump_14"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_016.png" id="climb_jump_15"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_017.png" id="climb_jump_16"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_018.png" id="climb_jump_17"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_019.png" id="climb_jump_18"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_020.png" id="climb_jump_19"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_021.png" id="climb_jump_20"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_022.png" id="climb_jump_21"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_023.png" id="climb_jump_22"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_024.png" id="climb_jump_23"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_025.png" id="climb_jump_24"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_026.png" id="climb_jump_25"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_027.png" id="climb_jump_26"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_028.png" id="climb_jump_27"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_029.png" id="climb_jump_28"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_030.png" id="climb_jump_29"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_031.png" id="climb_jump_30"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_032.png" id="climb_jump_31"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_033.png" id="climb_jump_32"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_034.png" id="climb_jump_33"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_035.png" id="climb_jump_34"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_036.png" id="climb_jump_35"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_037.png" id="climb_jump_36"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_038.png" id="climb_jump_37"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump/jump_039.png" id="climb_jump_38"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_001.png" id="climb_jump_bouncy_0"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_002.png" id="climb_jump_bouncy_1"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_003.png" id="climb_jump_bouncy_2"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_004.png" id="climb_jump_bouncy_3"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_005.png" id="climb_jump_bouncy_4"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_006.png" id="climb_jump_bouncy_5"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_007.png" id="climb_jump_bouncy_6"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_008.png" id="climb_jump_bouncy_7"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_009.png" id="climb_jump_bouncy_8"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_010.png" id="climb_jump_bouncy_9"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_011.png" id="climb_jump_bouncy_10"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_012.png" id="climb_jump_bouncy_11"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_013.png" id="climb_jump_bouncy_12"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_014.png" id="climb_jump_bouncy_13"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_015.png" id="climb_jump_bouncy_14"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_016.png" id="climb_jump_bouncy_15"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_017.png" id="climb_jump_bouncy_16"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_018.png" id="climb_jump_bouncy_17"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_019.png" id="climb_jump_bouncy_18"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_020.png" id="climb_jump_bouncy_19"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_021.png" id="climb_jump_bouncy_20"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_022.png" id="climb_jump_bouncy_21"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_023.png" id="climb_jump_bouncy_22"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_024.png" id="climb_jump_bouncy_23"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_025.png" id="climb_jump_bouncy_24"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_026.png" id="climb_jump_bouncy_25"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_027.png" id="climb_jump_bouncy_26"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_028.png" id="climb_jump_bouncy_27"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_029.png" id="climb_jump_bouncy_28"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_030.png" id="climb_jump_bouncy_29"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_031.png" id="climb_jump_bouncy_30"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_032.png" id="climb_jump_bouncy_31"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_033.png" id="climb_jump_bouncy_32"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_034.png" id="climb_jump_bouncy_33"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_035.png" id="climb_jump_bouncy_34"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_036.png" id="climb_jump_bouncy_35"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_037.png" id="climb_jump_bouncy_36"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_038.png" id="climb_jump_bouncy_37"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_039.png" id="climb_jump_bouncy_38"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_040.png" id="climb_jump_bouncy_39"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_041.png" id="climb_jump_bouncy_40"]
+[ext_resource type="Texture2D" path="res://assets/character/climb/jump_effort_02/climb_jump_bouncy/jump_042.png" id="climb_jump_bouncy_41"]
+
+[resource]
+animations = [
+{
+"frames": [
+{"duration": 2, "texture": ExtResource("climb_jump_0")},
+{"duration": 2, "texture": ExtResource("climb_jump_1")},
+{"duration": 1, "texture": ExtResource("climb_jump_2")},
+{"duration": 2, "texture": ExtResource("climb_jump_3")},
+{"duration": 2, "texture": ExtResource("climb_jump_4")},
+{"duration": 2, "texture": ExtResource("climb_jump_5")},
+{"duration": 1, "texture": ExtResource("climb_jump_6")},
+{"duration": 2, "texture": ExtResource("climb_jump_7")},
+{"duration": 2, "texture": ExtResource("climb_jump_8")},
+{"duration": 2, "texture": ExtResource("climb_jump_9")},
+{"duration": 2, "texture": ExtResource("climb_jump_10")},
+{"duration": 1, "texture": ExtResource("climb_jump_11")},
+{"duration": 2, "texture": ExtResource("climb_jump_12")},
+{"duration": 2, "texture": ExtResource("climb_jump_13")},
+{"duration": 2, "texture": ExtResource("climb_jump_14")},
+{"duration": 1, "texture": ExtResource("climb_jump_15")},
+{"duration": 2, "texture": ExtResource("climb_jump_16")},
+{"duration": 2, "texture": ExtResource("climb_jump_17")},
+{"duration": 2, "texture": ExtResource("climb_jump_18")},
+{"duration": 3, "texture": ExtResource("climb_jump_19")},
+{"duration": 2, "texture": ExtResource("climb_jump_20")},
+{"duration": 3, "texture": ExtResource("climb_jump_21")},
+{"duration": 2, "texture": ExtResource("climb_jump_22")},
+{"duration": 3, "texture": ExtResource("climb_jump_23")},
+{"duration": 2, "texture": ExtResource("climb_jump_24")},
+{"duration": 3, "texture": ExtResource("climb_jump_25")},
+{"duration": 2, "texture": ExtResource("climb_jump_26")},
+{"duration": 3, "texture": ExtResource("climb_jump_27")},
+{"duration": 2, "texture": ExtResource("climb_jump_28")},
+{"duration": 3, "texture": ExtResource("climb_jump_29")},
+{"duration": 2, "texture": ExtResource("climb_jump_30")},
+{"duration": 3, "texture": ExtResource("climb_jump_31")},
+{"duration": 2, "texture": ExtResource("climb_jump_32")},
+{"duration": 3, "texture": ExtResource("climb_jump_33")},
+{"duration": 2, "texture": ExtResource("climb_jump_34")},
+{"duration": 3, "texture": ExtResource("climb_jump_35")},
+{"duration": 2, "texture": ExtResource("climb_jump_36")},
+{"duration": 3, "texture": ExtResource("climb_jump_37")},
+{"duration": 2, "texture": ExtResource("climb_jump_38")}
+],
+"loop": false,
+"name": &"climb_jump",
+"speed": 100.0
+},
+{
+"frames": [
+{"duration": 1, "texture": ExtResource("climb_jump_bouncy_0")},
+{"duration": 1, "texture": ExtResource("climb_jump_bouncy_1")},
+{"duration": 2, "texture": ExtResource("climb_jump_bouncy_2")},
+{"duration": 1, "texture": ExtResource("climb_jump_bouncy_3")},
+{"duration": 1, "texture": ExtResource("climb_jump_bouncy_4")},
+{"duration": 1, "texture": ExtResource("climb_jump_bouncy_5")},
+{"duration": 1, "texture": ExtResource("climb_jump_bouncy_6")},
+{"duration": 1, "texture": ExtResource("climb_jump_bouncy_7")},
+{"duration": 2, "texture": ExtResource("climb_jump_bouncy_8")},
+{"duration": 1, "texture": ExtResource("climb_jump_bouncy_9")},
+{"duration": 1, "texture": ExtResource("climb_jump_bouncy_10")},
+{"duration": 1, "texture": ExtResource("climb_jump_bouncy_11")},
+{"duration": 1, "texture": ExtResource("climb_jump_bouncy_12")},
+{"duration": 2, "texture": ExtResource("climb_jump_bouncy_13")},
+{"duration": 1, "texture": ExtResource("climb_jump_bouncy_14")},
+{"duration": 1, "texture": ExtResource("climb_jump_bouncy_15")},
+{"duration": 1, "texture": ExtResource("climb_jump_bouncy_16")},
+{"duration": 1, "texture": ExtResource("climb_jump_bouncy_17")},
+{"duration": 2, "texture": ExtResource("climb_jump_bouncy_18")},
+{"duration": 1, "texture": ExtResource("climb_jump_bouncy_19")},
+{"duration": 1, "texture": ExtResource("climb_jump_bouncy_20")},
+{"duration": 1, "texture": ExtResource("climb_jump_bouncy_21")},
+{"duration": 1, "texture": ExtResource("climb_jump_bouncy_22")},
+{"duration": 1, "texture": ExtResource("climb_jump_bouncy_23")},
+{"duration": 2, "texture": ExtResource("climb_jump_bouncy_24")},
+{"duration": 1, "texture": ExtResource("climb_jump_bouncy_25")},
+{"duration": 1, "texture": ExtResource("climb_jump_bouncy_26")},
+{"duration": 3, "texture": ExtResource("climb_jump_bouncy_27")},
+{"duration": 4, "texture": ExtResource("climb_jump_bouncy_28")},
+{"duration": 3, "texture": ExtResource("climb_jump_bouncy_29")},
+{"duration": 4, "texture": ExtResource("climb_jump_bouncy_30")},
+{"duration": 3, "texture": ExtResource("climb_jump_bouncy_31")},
+{"duration": 4, "texture": ExtResource("climb_jump_bouncy_32")},
+{"duration": 3, "texture": ExtResource("climb_jump_bouncy_33")},
+{"duration": 4, "texture": ExtResource("climb_jump_bouncy_34")},
+{"duration": 3, "texture": ExtResource("climb_jump_bouncy_35")},
+{"duration": 4, "texture": ExtResource("climb_jump_bouncy_36")},
+{"duration": 3, "texture": ExtResource("climb_jump_bouncy_37")},
+{"duration": 4, "texture": ExtResource("climb_jump_bouncy_38")},
+{"duration": 3, "texture": ExtResource("climb_jump_bouncy_39")},
+{"duration": 4, "texture": ExtResource("climb_jump_bouncy_40")},
+{"duration": 3, "texture": ExtResource("climb_jump_bouncy_41")}
+],
+"loop": false,
+"name": &"climb_jump_bouncy",
+"speed": 100.0
+}
+]
