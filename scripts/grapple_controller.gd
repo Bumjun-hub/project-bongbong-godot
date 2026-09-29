@@ -8,6 +8,7 @@ const PREPARE_TIME := 0.38
 const TENSION_TIME := 0.14
 const CATCH_TIME := 0.20
 const PULL_SPEED := 230.0
+const HANG_VARIATION := 72.0
 
 var pet: Node2D
 var motion: Script
@@ -42,9 +43,28 @@ func find_approach(direction: int, reach: float) -> Dictionary:
 		var top: Dictionary = pet._platform_surfaces.pull_up_target(approach["hold"],pet.TOP_INSET)
 		if top.is_empty() or not pet._position_fits(top["point"]) or not pet._position_fits(catch_point) or not pet._position_fits(point,true):
 			continue
-		var anchor: Vector2 = top["corner"]
+		# Catch on an exposed part of the side, with a different hand height
+		# for each launch. The rope and final side hold share this point.
+		var hold: Dictionary = approach["hold"].duplicate()
+		var margin: float = pet.SIDE_HAND_MARGIN * pet.CHARACTER_SCALE
+		var max_extra := minf(HANG_VARIATION, MAX_RISE - float(approach["rise"]))
+		for window in pet._platform_surfaces.windows:
+			if window["id"] != hold["id"]:
+				continue
+			for side in window.get("sides", []):
+				if side["edge"] == hold["edge"] and absf(float(side["x"]) - float(top["corner"].x)) < 0.75:
+					var base_y: float = window["bounds"].position.y + float(hold["height"])
+					max_extra = minf(max_extra, base_y - float(side["span"].x) - margin)
+		var extra: float = pet._rng.randf_range(0.25, 1.0) * maxf(0.0, max_extra)
+		hold["height"] = float(hold["height"]) - extra
+		catch_point.y -= extra
+		var grip: Dictionary = pet._platform_surfaces.side_grip(hold, margin)
+		if grip.is_empty() or not pet._position_fits(catch_point):
+			continue
+		var anchor: Vector2 = grip["point"]
 		if point.distance_to(anchor)>MAX_ROPE or not clear_route(approach["hold"],point,catch_point,anchor):
 			continue
+		approach["hold"] = hold
 		approach["point"] = point
 		approach["catch_point"] = catch_point
 		approach["anchor"] = anchor
@@ -121,11 +141,11 @@ func target_valid() -> bool:
 	var offset: Vector2=(pet.SIDE_HAND_ANCHOR-pet.FOOT_ANCHOR)*pet.CHARACTER_SCALE
 	var target: Vector2=grip["point"]-Vector2(offset.x*int(grip["facing"]),offset.y)
 	# A fixed cable cannot silently warp onto a relocated/resized window.
-	if target.distance_to(state["target"])>0.75 or Vector2(top["corner"]).distance_to(state["anchor"])>0.75:
+	if target.distance_to(state["target"])>0.75 or Vector2(grip["point"]).distance_to(state["anchor"])>0.75:
 		return false
 	var route_exists:=false
 	for route in pet._platform_surfaces.climb_approaches(state["start"],offset,pet.SIDE_HAND_MARGIN*pet.CHARACTER_SCALE,MAX_RISE):
-		if route["hold"]["id"]==hold["id"] and route["hold"]["edge"]==hold["edge"] and absf(float(route["hold"]["height"])-float(hold["height"]))<=0.75:
+		if route["hold"]["id"]==hold["id"] and route["hold"]["edge"]==hold["edge"] and float(route["hold"]["height"]) + 0.75 >= float(hold["height"]):
 			route_exists=true
 	return route_exists and clear_route(hold,state["start"],state["target"],state["anchor"])
 

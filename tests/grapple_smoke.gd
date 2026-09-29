@@ -20,6 +20,17 @@ func run() -> void:
 		for gait in [&"walk",&"run_light",&"run_bouncy"]:
 			reset(Vector2(690 if right else 100,690),right,gait)
 			snapshot([window(Rect2(300,180,200,190))])
+			var hang_heights: Array[float] = []
+			for sample in 8:
+				var candidate: Dictionary = pet._grapple.find_approach(-1 if right else 1, 320)
+				check(not candidate.is_empty(), "No grapple location on the exposed side")
+				if candidate.is_empty(): break
+				var selected_grip: Dictionary = pet._platform_surfaces.side_grip(candidate["hold"], pet.SIDE_HAND_MARGIN * pet.CHARACTER_SCALE)
+				check(not selected_grip.is_empty() and Vector2(candidate["anchor"]).distance_to(selected_grip["point"]) < 0.75, "Hook and hand picked different places")
+				check(float(candidate["anchor"].y) > 185.0, "Hook still aims at the window corner")
+				hang_heights.append(float(candidate["anchor"].y))
+			if hang_heights.size() == 8:
+				check(hang_heights.max() - hang_heights.min() > 2.0, "Hanging position never varies")
 			for frame in 280:
 				var before:=sprite.position
 				await tick(1)
@@ -106,7 +117,7 @@ func run() -> void:
 			match interruption:
 				"remove": pet.set_window_platforms([])
 				"move": snapshot([window(Rect2(330,180,200,190))])
-				"resize": snapshot([window(Rect2(300,180,200,130))])
+				"resize": snapshot([window(Rect2(300,180,200,80))])
 				"cover": snapshot([window(Rect2(235,300,35,110),"cover",false),window(Rect2(300,180,200,190))])
 				"space":
 					var key:=InputEventKey.new()
