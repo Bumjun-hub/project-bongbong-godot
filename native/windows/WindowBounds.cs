@@ -5,7 +5,8 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
 
-// Reads window geometry only. No process-memory access, input hooks or injection.
+// Reads window geometry and this Windows session's last input time.
+// No process-memory access, input hooks or injection.
 internal static class WindowBounds
 {
     private const long Caption = 0x00C00000L;
@@ -20,6 +21,8 @@ internal static class WindowBounds
     private struct Rect { public int Left, Top, Right, Bottom; }
     [StructLayout(LayoutKind.Sequential)]
     private struct Point { public int X, Y; }
+    [StructLayout(LayoutKind.Sequential)]
+    private struct LastInputInfo { public uint Size; public uint Time; }
     private sealed class Entry { public IntPtr Handle; public Rect Bounds; public bool Platform; }
     private delegate bool EnumWindowProc(IntPtr window, IntPtr parameter);
 
@@ -36,6 +39,16 @@ internal static class WindowBounds
     [DllImport("user32.dll", EntryPoint = "GetWindowLongW")] private static extern int GetWindowLong32(IntPtr window, int index);
     [DllImport("dwmapi.dll", EntryPoint = "DwmGetWindowAttribute")] private static extern int GetFrameBounds(IntPtr window, int attribute, out Rect bounds, int size);
     [DllImport("dwmapi.dll", EntryPoint = "DwmGetWindowAttribute")] private static extern int GetCloaked(IntPtr window, int attribute, out uint value, int size);
+    [DllImport("user32.dll")] private static extern bool GetLastInputInfo(ref LastInputInfo info);
+    [DllImport("kernel32.dll")] private static extern uint GetTickCount();
+
+    private static long IdleMilliseconds()
+    {
+        var info = new LastInputInfo { Size = (uint)Marshal.SizeOf(typeof(LastInputInfo)) };
+        if (!GetLastInputInfo(ref info)) return -1;
+        uint elapsed = unchecked(GetTickCount() - info.Time);
+        return elapsed <= int.MaxValue ? elapsed : 0;
+    }
 
     private static long Style(IntPtr window, int index)
     {
@@ -107,8 +120,8 @@ internal static class WindowBounds
         if (!GetClientRect(excluded, out client) || !ClientToScreen(excluded, ref clientOrigin)) client = new Rect();
         var json = new StringBuilder();
         json.AppendFormat(CultureInfo.InvariantCulture,
-            "{{\"version\":1,\"client\":{{\"x\":{0},\"y\":{1},\"width\":{2},\"height\":{3}}},\"windows\":[",
-            clientOrigin.X, clientOrigin.Y, client.Right - client.Left, client.Bottom - client.Top);
+            "{{\"version\":1,\"client\":{{\"x\":{0},\"y\":{1},\"width\":{2},\"height\":{3}}},\"idle_ms\":{4},\"windows\":[",
+            clientOrigin.X, clientOrigin.Y, client.Right - client.Left, client.Bottom - client.Top, IdleMilliseconds());
         for (int index = 0; index < ordered.Count; index++)
         {
             Entry entry = ordered[index];

@@ -20,7 +20,13 @@ func _initialize() -> void:
 	var too_high := {"x": 200, "y": 80, "width": 400, "height": 300, "platform": true}
 	if not _expect(WindowsPlatforms.visible_tops([too_high], Vector2.ZERO, Vector2(1920, 1080), 140, 1030, 60).is_empty(), "Window tops without headroom should not be platforms"):
 		return
-	print("Window surfaces passed: negative monitor origin, overlapping top segments, fullscreen coverage, headroom")
+	var provider := WindowsPlatforms.new()
+	provider.host_window = root
+	var snapshot := JSON.stringify({"version": 1, "client": {"x": 0, "y": 0, "width": 640, "height": 480}, "idle_ms": 21000, "windows": []})
+	if not _expect(provider.call("_accept_snapshot", snapshot) and is_equal_approx(provider.input_idle_seconds, 21.0), "Windows input idle time was not read from the native snapshot"):
+		return
+	provider.free()
+	print("Window surfaces passed: negative monitor origin, overlapping top segments, fullscreen coverage, headroom, Windows input idle time")
 	quit()
 
 

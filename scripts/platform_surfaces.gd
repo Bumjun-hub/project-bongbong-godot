@@ -110,6 +110,23 @@ func climb_height(hold: Dictionary, rise: float, hand_margin: float) -> float:
 	return float(hold["height"])
 
 
+func descend_height(hold: Dictionary, distance: float, hand_margin: float) -> Dictionary:
+	var grip := side_grip(hold, hand_margin)
+	if grip.is_empty():
+		return {}
+	for window in windows:
+		if window["id"] != hold.get("id"):
+			continue
+		var bounds: Rect2 = window["bounds"]
+		var hand: Vector2 = grip["point"]
+		for side in window.get("sides", []):
+			var span: Vector2 = side["span"]
+			if side["edge"] == hold["edge"] and hand.y - hand_margin >= span.x - 0.01 and hand.y + hand_margin <= span.y + 0.01:
+				return {"height": minf(span.y - hand_margin, hand.y + distance) - bounds.position.y,
+					"at_bottom": absf(span.y - bounds.end.y) <= 0.01}
+	return {}
+
+
 func pull_up_target(hold: Dictionary, inset: float) -> Dictionary:
 	for window in windows:
 		if window["id"] != hold.get("id"):

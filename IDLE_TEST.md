@@ -1,5 +1,13 @@
 # Idle 3종 랜덤 순환 테스트
 
+## 현재 에셋 위치 (2026-09-27)
+
+- 기본: `assets/character/idle/soft_three_quarter_right/default/`
+- 주머니: `assets/character/idle/color_matched/pockets/`
+- 팔짱: `assets/character/idle/color_matched/arms_crossed/`
+
+현재 PNG·Aseprite·GIF는 위 폴더에 보관합니다. 아래 과거 검수 기록에 나오는 이전 에셋과 중간 비교 이미지는 정리했습니다. 캐릭터 제작용 베이스는 `assets/character/source/`에 유지합니다.
+
 > 현재 테스트 씬에는 Walk와 좌우 이동이 추가되었다. 최신 조작·가장자리 검수 방법은 [WALK_TEST.md](WALK_TEST.md)를 따른다. 아래 내용은 Idle 자체의 재생 규칙과 기존 검수 기록이며, Idle끼리의 루프 경계 전환은 유지된다. 이동을 시작하거나 멈출 때는 Walk와 기본 Idle이 즉시 전환된다.
 
 Godot 4.7.2에서 오른쪽 3/4 방향 Idle 3종을 원본 크기로 비교하고, 호흡 루프가 끝날 때만 자세를 바꾸는 최소 씬이다. 컨트롤러는 기존 `scripts/main.gd` 안에 있으며 별도 클래스·노드·Timer를 추가하지 않았다.

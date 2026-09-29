@@ -2,6 +2,7 @@ extends Node
 
 signal surfaces_changed(rectangles: Array[Rect2])
 signal windows_changed(windows: Array)
+signal input_idle_changed(seconds: float)
 
 const HELPER_PATH := "res://native/windows/bin/Bongbong.WindowBounds.exe"
 const POLL_MSEC := 33
@@ -18,6 +19,7 @@ var native_client_rect := Rect2()
 var surfaces: Array[Rect2] = []
 var platforms: Array = []
 var status := "starting"
+var input_idle_seconds := -1.0
 var helper_pid := -1
 var _io: FileAccess
 var _stderr: FileAccess
@@ -78,6 +80,8 @@ func _accept_snapshot(line: String) -> bool:
 		_fail("창 위치 응답을 읽지 못했습니다.")
 		return false
 	last_windows = document["windows"]
+	input_idle_seconds = maxf(-1.0, float(document.get("idle_ms", -1000)) / 1000.0)
+	input_idle_changed.emit(input_idle_seconds)
 	var client = document.get("client")
 	if not client is Dictionary:
 		_fail("봉봉이 창의 화면 기준점을 읽지 못했습니다.")
@@ -192,6 +196,8 @@ func stop() -> void:
 
 func _fail(message: String) -> void:
 	status = message
+	input_idle_seconds = -1.0
+	input_idle_changed.emit(input_idle_seconds)
 	push_warning(message)
 	stop()
 	platforms.clear()

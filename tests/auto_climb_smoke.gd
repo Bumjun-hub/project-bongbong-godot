@@ -49,7 +49,7 @@ func run() -> void:
 		check(saw_climb and saw_pull and sprite.position.y == 180 and main._has_support(), "Autonomous climb did not finish on the top")
 		check(sprite.animation == &"idle_default", "Climb did not finish with Idle")
 		await tick(310)
-		check(main._wander_moving and main._has_support() and not main._falling, "Roaming did not resume safely on the top")
+		check((main._wander_moving or main._sitting) and main._has_support() and not main._falling, "Autonomous activity did not stay safely on the top: animation=%s sitting=%s moving=%s supported=%s falling=%s" % [sprite.animation, main._sitting, main._wander_moving, main._has_support(), main._falling])
 
 	# Walking and both runs brake before contact, with the gait slowed by the
 	# same ratio as translation. Bouncy run keeps its raised-arm pose.
@@ -185,7 +185,7 @@ func run() -> void:
 	check(main._auto_climb_cooldown > 0.0 and main._find_climb_approach().is_empty(), "Detached pet can reattach immediately")
 
 	if not failed:
-		print("Auto climb passed: autonomous approach, both sides, floor contact, full top-out and roaming, both runs, swept nearest contact, occlusion/headroom/reach, manual control, higher window, pause/resume and drag")
+		print("Auto climb passed: autonomous approach, both sides, floor contact, full top-out and safe roaming or sitting, both runs, swept nearest contact, occlusion/headroom/reach, manual control, higher window, pause/resume and drag")
 	quit(1 if failed else 0)
 
 
@@ -193,6 +193,7 @@ func reset(position: Vector2) -> void:
 	main._clear_side_motion()
 	main._stop_walking()
 	main._dragging = false
+	main._greeting = false
 	main._falling = false
 	main._landing = false
 	main._auto_climb_cooldown = 0.0

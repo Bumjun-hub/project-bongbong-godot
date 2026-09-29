@@ -1,0 +1,704 @@
+{
+  "name": "greet_wave",
+  "canvas": [
+    192,
+    192
+  ],
+  "fps": 24,
+  "loop": false,
+  "anchor": [
+    95,
+    174
+  ],
+  "frames": [
+    "greet_01.png",
+    "greet_02.png",
+    "greet_03.png",
+    "greet_04.png",
+    "greet_05.png",
+    "greet_06.png",
+    "greet_07.png",
+    "greet_08.png",
+    "greet_09.png",
+    "greet_10.png",
+    "greet_11.png",
+    "greet_12.png",
+    "greet_13.png",
+    "greet_14.png",
+    "greet_15.png",
+    "greet_16.png",
+    "greet_17.png",
+    "greet_18.png",
+    "greet_19.png",
+    "greet_20.png",
+    "greet_21.png",
+    "greet_22.png",
+    "greet_23.png",
+    "greet_24.png",
+    "greet_25.png",
+    "greet_26.png",
+    "greet_27.png",
+    "greet_28.png",
+    "greet_29.png",
+    "greet_30.png",
+    "greet_31.png",
+    "greet_32.png",
+    "greet_33.png",
+    "greet_34.png",
+    "greet_35.png",
+    "greet_36.png",
+    "greet_37.png",
+    "greet_38.png",
+    "greet_39.png",
+    "greet_40.png",
+    "greet_41.png",
+    "greet_42.png",
+    "greet_43.png",
+    "greet_44.png",
+    "greet_45.png",
+    "greet_46.png",
+    "greet_47.png",
+    "greet_48.png",
+    "greet_49.png",
+    "greet_50.png",
+    "greet_51.png",
+    "greet_52.png",
+    "greet_53.png",
+    "greet_54.png"
+  ],
+  "source_video": "experiments/sprite-gen-greet/grok-wave-02/clip.mp4",
+  "non_waving_arm_pose": 12,
+  "non_waving_arm_patch_range": [
+    13,
+    64
+  ],
+  "removed_wave_frames": [
+    37,
+    55
+  ],
+  "frame_selection": [
+    {
+      "source": "idle_default/idle_01.png",
+      "bounds": [
+        44,
+        18,
+        146,
+        174
+      ]
+    },
+    {
+      "video_frame": 2,
+      "bounds": [
+        42,
+        16,
+        149,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 2
+    },
+    {
+      "video_frame": 3,
+      "bounds": [
+        42,
+        16,
+        149,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 2
+    },
+    {
+      "video_frame": 4,
+      "bounds": [
+        42,
+        16,
+        149,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 5
+    },
+    {
+      "video_frame": 5,
+      "bounds": [
+        44,
+        16,
+        151,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 3
+    },
+    {
+      "video_frame": 6,
+      "bounds": [
+        46,
+        16,
+        152,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 5
+    },
+    {
+      "video_frame": 7,
+      "bounds": [
+        46,
+        15,
+        153,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 9
+    },
+    {
+      "video_frame": 8,
+      "bounds": [
+        45,
+        15,
+        153,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 8
+    },
+    {
+      "video_frame": 9,
+      "bounds": [
+        47,
+        15,
+        152,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 5
+    },
+    {
+      "video_frame": 10,
+      "bounds": [
+        47,
+        15,
+        151,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 10
+    },
+    {
+      "video_frame": 11,
+      "bounds": [
+        46,
+        15,
+        150,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 4
+    },
+    {
+      "video_frame": 12,
+      "bounds": [
+        45,
+        15,
+        149,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 7
+    },
+    {
+      "video_frame": 13,
+      "bounds": [
+        44,
+        15,
+        148,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 3,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 14,
+      "bounds": [
+        44,
+        15,
+        148,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 3,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 15,
+      "bounds": [
+        44,
+        15,
+        149,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 6,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 16,
+      "bounds": [
+        44,
+        15,
+        149,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 7,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 17,
+      "bounds": [
+        45,
+        15,
+        150,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 7,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 18,
+      "bounds": [
+        46,
+        15,
+        150,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 5,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 19,
+      "bounds": [
+        46,
+        15,
+        150,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 5,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 20,
+      "bounds": [
+        46,
+        15,
+        150,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 5,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 21,
+      "bounds": [
+        45,
+        15,
+        150,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 2,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 22,
+      "bounds": [
+        45,
+        15,
+        149,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 9,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 23,
+      "bounds": [
+        44,
+        15,
+        149,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 10,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 24,
+      "bounds": [
+        44,
+        15,
+        149,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 8,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 25,
+      "bounds": [
+        45,
+        15,
+        150,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 5,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 26,
+      "bounds": [
+        46,
+        15,
+        150,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 4,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 27,
+      "bounds": [
+        47,
+        15,
+        151,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 4,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 28,
+      "bounds": [
+        47,
+        15,
+        151,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 11,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 29,
+      "bounds": [
+        47,
+        15,
+        151,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 9,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 30,
+      "bounds": [
+        47,
+        15,
+        151,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 5,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 31,
+      "bounds": [
+        46,
+        15,
+        150,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 3,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 32,
+      "bounds": [
+        45,
+        15,
+        150,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 5,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 33,
+      "bounds": [
+        44,
+        15,
+        149,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 6,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 34,
+      "bounds": [
+        44,
+        15,
+        149,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 4,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 35,
+      "bounds": [
+        44,
+        15,
+        149,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 5,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 36,
+      "bounds": [
+        45,
+        15,
+        149,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 9,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 56,
+      "bounds": [
+        45,
+        15,
+        150,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 6,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 57,
+      "bounds": [
+        44,
+        15,
+        149,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 3,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 58,
+      "bounds": [
+        44,
+        15,
+        149,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 3,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 59,
+      "bounds": [
+        43,
+        15,
+        148,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 11,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 60,
+      "bounds": [
+        43,
+        15,
+        148,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 10,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 61,
+      "bounds": [
+        42,
+        15,
+        147,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 5,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 62,
+      "bounds": [
+        42,
+        15,
+        147,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 8,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 63,
+      "bounds": [
+        40,
+        15,
+        147,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 7,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 64,
+      "bounds": [
+        40,
+        15,
+        146,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 4,
+      "non_waving_arm": "frame-0012 still arm"
+    },
+    {
+      "video_frame": 65,
+      "bounds": [
+        40,
+        15,
+        147,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 4
+    },
+    {
+      "video_frame": 66,
+      "bounds": [
+        40,
+        16,
+        148,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 3
+    },
+    {
+      "video_frame": 67,
+      "bounds": [
+        41,
+        16,
+        148,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 3
+    },
+    {
+      "video_frame": 68,
+      "bounds": [
+        42,
+        16,
+        149,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 1
+    },
+    {
+      "video_frame": 69,
+      "bounds": [
+        42,
+        16,
+        149,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 1
+    },
+    {
+      "video_frame": 70,
+      "bounds": [
+        42,
+        16,
+        149,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 0
+    },
+    {
+      "video_frame": 71,
+      "bounds": [
+        42,
+        16,
+        149,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 0
+    },
+    {
+      "video_frame": 72,
+      "bounds": [
+        42,
+        16,
+        149,
+        174
+      ],
+      "shift_y": 0,
+      "pale_matte_pixels_removed": 2
+    },
+    {
+      "source": "idle_default/idle_01.png",
+      "bounds": [
+        44,
+        18,
+        146,
+        174
+      ]
+    }
+  ]
+}

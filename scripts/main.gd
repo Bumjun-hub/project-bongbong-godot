@@ -3,6 +3,8 @@ extends Node2D
 const PlatformSurfaces = preload("res://scripts/platform_surfaces.gd")
 const WindowsPlatforms = preload("res://scripts/windows_platforms.gd")
 const GrappleController = preload("res://scripts/grapple_controller.gd")
+const DescentController = preload("res://scripts/descent_controller.gd")
+const DescentMotion = preload("res://scripts/climb_down_motion.gd")
 
 @export var platform_demo := false
 @export var native_windows_enabled := true
@@ -26,6 +28,15 @@ const LAND_LOW: StringName = &"land_low"
 const LAND_FRAMES: SpriteFrames = preload("res://scenes/land_frames.tres")
 const LAND_HIGH: StringName = &"land_high"
 const LAND_HIGH_FRAMES: SpriteFrames = preload("res://scenes/land_high_frames.tres")
+const GREET_WAVE: StringName = &"greet_wave"
+const GREET_FRAMES: SpriteFrames = preload("res://scenes/greet_frames.tres")
+const SIT_DOWN: StringName = &"sit_down"
+const SIT_REST: StringName = &"sit_rest"
+const SIT_SLEEP_ENTER: StringName = &"sit_sleep_enter"
+const SIT_SLEEP_LOOP: StringName = &"sit_sleep_loop"
+const SIT_SLEEP_WAKE: StringName = &"sit_sleep_wake"
+const SIT_UP: StringName = &"sit_up"
+const SIT_FRAMES: SpriteFrames = preload("res://scenes/sit_frames.tres")
 const SIDE_HOLD: StringName = &"side_hold"
 const SIDE_HOLD_TEXTURE: Texture2D = preload("res://assets/character/climb/effort_03/side_grab.png")
 const CLIMB_ENTRY: StringName = &"climb_entry"
@@ -60,6 +71,7 @@ const JumpMotion = preload("res://scripts/jump_motion.gd")
 const CANVAS_SIZE := Vector2(192, 192)
 const FOOT_ANCHOR := Vector2(95, 174)
 const CHARACTER_SCALE := 0.72
+const CLICK_DRAG_THRESHOLD := 7.0
 # Translation is 60 px/s for walking and 135 px/s for either run.
 const WALK_SPEED := 48.0
 const LIGHT_RUN_SPEED := 108.0
@@ -74,6 +86,15 @@ const MAX_FALL_SPEED := 1000.0
 const HIGH_LAND_SPEED := 380.0
 const WANDER_REST_SECONDS := Vector2(2.5, 5.0)
 const WANDER_MOVE_SECONDS := Vector2(4.0, 12.0)
+const SIT_REST_SECONDS := Vector2(4.0, 7.0)
+const SIT_CHANCE := 0.35
+const SLEEP_AFTER_NO_INPUT_SECONDS := 20.0
+const SLEEP_Z_STAGES := [0, 1, 1, 2, 2, 3, 3, 3, 3, 2, 1]
+const SLEEP_ENTER_WAKE_FRAMES := [15, 14, 13, 12, 11, 10, 9, 8]
+const SLEEP_LOOP_WAKE_FRAMES := [8, 7, 6, 5, 4, 3, 2, 1, 0, 3, 6]
+const SLEEP_Z_GLYPH := ["11111", "00010", "00100", "01000", "11111"]
+const SIT_SEAT_ANCHOR_Y := 140.0
+const SIT_DOWN_ANCHOR_Y := [174.0, 174.0, 174.0, 174.0, 174.0, 174.0, 174.0, 174.0, 174.0, 174.0, 164.0, 150.0, 140.0, 140.0, 140.0, 140.0]
 
 # Weights apply only when the default Idle completes its allotted loops.
 const DEFAULT_WEIGHT := 60
@@ -102,7 +123,14 @@ var _edge_inset := 64.0
 var _play_area_size := Vector2(640, 400)
 var _test_view := false
 var _dragging := false
+var _press_pending := false
+var _press_position := Vector2.ZERO
 var _drag_grab_offset := Vector2.ZERO
+var _greeting := false
+var _sitting := false
+var _sit_time_left := 0.0
+var _system_idle_seconds := -1.0
+var _sleep_wake_requested := false
 var _falling := false
 var _landing := false
 var _fall_velocity := 0.0
@@ -122,6 +150,7 @@ var _auto_climb_cooldown := 0.0
 var _bouncy_approach: Dictionary = {}
 var _climb_jump: Dictionary = {}
 var _grapple: Node2D
+var _descent = DescentController.new()
 
 @onready var bongbong: AnimatedSprite2D = $Bongbong
 @onready var help_label: Label = $Help
@@ -163,6 +192,17 @@ func _ready() -> void:
 		bongbong.sprite_frames.set_animation_loop(landing_animation, false)
 		for index in landing_frames.get_frame_count(landing_animation):
 			bongbong.sprite_frames.add_frame(landing_animation, landing_frames.get_frame_texture(landing_animation, index), landing_frames.get_frame_duration(landing_animation, index))
+	bongbong.sprite_frames.add_animation(GREET_WAVE)
+	bongbong.sprite_frames.set_animation_speed(GREET_WAVE, GREET_FRAMES.get_animation_speed(GREET_WAVE))
+	bongbong.sprite_frames.set_animation_loop(GREET_WAVE, false)
+	for index in GREET_FRAMES.get_frame_count(GREET_WAVE):
+		bongbong.sprite_frames.add_frame(GREET_WAVE, GREET_FRAMES.get_frame_texture(GREET_WAVE, index), GREET_FRAMES.get_frame_duration(GREET_WAVE, index))
+	for animation_name in [SIT_DOWN, SIT_REST, SIT_SLEEP_ENTER, SIT_SLEEP_LOOP, SIT_SLEEP_WAKE, SIT_UP]:
+		bongbong.sprite_frames.add_animation(animation_name)
+		bongbong.sprite_frames.set_animation_speed(animation_name, SIT_FRAMES.get_animation_speed(animation_name))
+		bongbong.sprite_frames.set_animation_loop(animation_name, SIT_FRAMES.get_animation_loop(animation_name))
+		for index in SIT_FRAMES.get_frame_count(animation_name):
+			bongbong.sprite_frames.add_frame(animation_name, SIT_FRAMES.get_frame_texture(animation_name, index), SIT_FRAMES.get_frame_duration(animation_name, index))
 	bongbong.sprite_frames.add_animation(SIDE_HOLD)
 	bongbong.sprite_frames.set_animation_loop(SIDE_HOLD, false)
 	bongbong.sprite_frames.add_frame(SIDE_HOLD, SIDE_HOLD_TEXTURE)
@@ -192,6 +232,21 @@ func _ready() -> void:
 	bongbong.sprite_frames.set_animation_loop(grapple_animation, false)
 	for index in grapple_frames.get_frame_count(grapple_animation):
 		bongbong.sprite_frames.add_frame(grapple_animation, grapple_frames.get_frame_texture(grapple_animation,index), grapple_frames.get_frame_duration(grapple_animation,index))
+	_descent.pet = self
+	_descent.motion = DescentMotion
+	var dust_renderer: Node2D = load("res://scripts/slide_dust_renderer.gd").new()
+	dust_renderer.controller = _descent
+	dust_renderer.z_index = 1
+	add_child(dust_renderer)
+	_descent.dust_renderer = dust_renderer
+	for animation_name in DescentMotion.FRAMES.get_animation_names():
+		if animation_name == &"default":
+			continue
+		bongbong.sprite_frames.add_animation(animation_name)
+		bongbong.sprite_frames.set_animation_speed(animation_name, DescentMotion.FRAMES.get_animation_speed(animation_name))
+		bongbong.sprite_frames.set_animation_loop(animation_name, DescentMotion.FRAMES.get_animation_loop(animation_name))
+		for index in DescentMotion.FRAMES.get_frame_count(animation_name):
+			bongbong.sprite_frames.add_frame(animation_name, DescentMotion.FRAMES.get_frame_texture(animation_name, index), DescentMotion.FRAMES.get_frame_duration(animation_name, index))
 	bongbong.scale = Vector2.ONE * CHARACTER_SCALE
 	# Use every pose's visible bounds, in both directions, so a turn cannot clip.
 	var extent := 0.0
@@ -229,7 +284,16 @@ func _start_windows_provider() -> void:
 	_windows_provider.desktop_floor = _floor_y
 	_windows_provider.edge_inset = _edge_inset
 	_windows_provider.windows_changed.connect(set_window_platforms)
+	_windows_provider.input_idle_changed.connect(_on_system_idle_changed)
 	add_child(_windows_provider)
+
+
+func _on_system_idle_changed(seconds: float) -> void:
+	_system_idle_seconds = seconds
+	if _sitting and seconds >= 0.0 and seconds < SLEEP_AFTER_NO_INPUT_SECONDS:
+		if bongbong.animation == SIT_SLEEP_ENTER or bongbong.animation == SIT_SLEEP_LOOP:
+			_sleep_wake_requested = true
+			_start_sit_wake()
 
 
 func _configure_desktop_window() -> void:
@@ -301,6 +365,13 @@ func _has_support() -> bool:
 
 
 func set_window_platforms(windows: Array) -> void:
+	if _descent.active():
+		_platform_surfaces.set_windows(windows)
+		_descent.refresh()
+		_update_mouse_region()
+		_update_help()
+		queue_redraw()
+		return
 	if _grapple != null and _grapple.active():
 		_platform_surfaces.set_windows(windows)
 		if not _grapple.target_valid():
@@ -419,6 +490,7 @@ func _begin_climb_jump(approach: Dictionary) -> bool:
 	_fall_position_y = start.y
 	_falling = false
 	_landing = false
+	_greeting = false
 	_requested_idle = &""
 	_climb_jump = {"hold": approach["hold"].duplicate(), "start": start, "target": target,
 		"elapsed": 0.0, "duration": duration, "launch_speed": launch_speed, "animation": entry,
@@ -526,6 +598,7 @@ func _begin_side_hold(candidate: Dictionary, from_movement: bool = false) -> boo
 		_side_hold.clear()
 		return false
 	_stop_walking()
+	_greeting = false
 	_landing = false
 	_falling = false
 	_fall_velocity = 0.0
@@ -646,6 +719,14 @@ func _sync_pull_up(finished: bool = false) -> bool:
 
 
 func _on_sprite_frame_changed() -> void:
+	if _sitting:
+		_set_facing(_facing)
+		_update_mouse_region()
+		queue_redraw()
+	if _descent.active():
+		_descent.refresh()
+		_update_mouse_region()
+		return
 	# AnimatedSprite2D can advance after the parent's process callback.
 	# Update contact in the same rendered frame, including on moving windows.
 	if _pulling_up and bongbong.animation == PULL_UP:
@@ -655,10 +736,11 @@ func _on_sprite_frame_changed() -> void:
 
 
 func _clear_side_motion() -> void:
-	if not _side_hold.is_empty() or not _climb_jump.is_empty() or (_grapple != null and _grapple.active()):
+	if _descent.active() or not _side_hold.is_empty() or not _climb_jump.is_empty() or (_grapple != null and _grapple.active()):
 		_auto_climb_cooldown = AUTO_CLIMB_COOLDOWN
 	if _grapple != null:
 		_grapple.clear()
+	_descent.clear()
 	_climb_jump.clear()
 	_side_hold.clear()
 	_climbing = false
@@ -679,6 +761,8 @@ func _walking_limits(automatic: bool) -> Vector2:
 
 
 func _draw() -> void:
+	if _sitting and bongbong.animation == SIT_SLEEP_LOOP:
+		_draw_sleep_z()
 	if not platform_demo:
 		return
 	for index in _platform_surfaces.rectangles.size():
@@ -688,6 +772,27 @@ func _draw() -> void:
 		draw_line(rectangle.position, Vector2(rectangle.end.x, rectangle.position.y), Color("83d6b0"), 3.0)
 		draw_string(ThemeDB.fallback_font, rectangle.position + Vector2(16, 30), "TEST WINDOW %d" % (index + 1), HORIZONTAL_ALIGNMENT_LEFT, -1, 18, Color("dbe5ef"))
 	draw_line(Vector2(24, _floor_y), Vector2(_play_area_size.x - 24, _floor_y), Color("64748b"), 2.0)
+
+
+func _draw_sleep_z() -> void:
+	var count: int = SLEEP_Z_STAGES[clampi(bongbong.frame, 0, SLEEP_Z_STAGES.size() - 1)]
+	if count == 0:
+		return
+	var origin := bongbong.position + bongbong.offset * CHARACTER_SCALE
+	draw_set_transform(origin, 0.0, Vector2.ONE * CHARACTER_SCALE)
+	for letter in count:
+		var x: int = [164, 172, 180][letter]
+		if _facing < 0:
+			x = 192 - x - 11
+		var y: int = [80, 62, 44][letter]
+		for row in 5:
+			for column in 5:
+				if SLEEP_Z_GLYPH[row].substr(column, 1) != "1":
+					continue
+				var pixel := Vector2(x + column * 2, y + row * 2)
+				draw_rect(Rect2(pixel + Vector2.ONE, Vector2(2, 2)), Color("3d536a"))
+				draw_rect(Rect2(pixel, Vector2(2, 2)), Color("daeefa"))
+	draw_set_transform(Vector2.ZERO, 0.0, Vector2.ONE)
 
 
 func _update_mouse_region() -> void:
@@ -706,6 +811,10 @@ func _update_mouse_region() -> void:
 		region.position.x = CANVAS_SIZE.x - region.end.x
 	region = Rect2(Vector2(region.position) * CHARACTER_SCALE, Vector2(region.size) * CHARACTER_SCALE)
 	region.position += bongbong.position + bongbong.offset * CHARACTER_SCALE
+	if _sitting and bongbong.animation == SIT_SLEEP_LOOP:
+		var effect_origin := bongbong.position + bongbong.offset * CHARACTER_SCALE
+		var effect_left := 2.0 if _facing < 0 else 164.0
+		region = region.merge(Rect2(effect_origin + Vector2(effect_left, 44.0) * CHARACTER_SCALE, Vector2(27.0, 48.0) * CHARACTER_SCALE))
 	region = region.grow(2.0)
 	if region == _last_mouse_region and not _grapple.active():
 		return
@@ -724,12 +833,23 @@ func _update_mouse_region() -> void:
 
 
 func _unhandled_input(event: InputEvent) -> void:
+	if event is InputEventMouseMotion and _press_pending:
+		if event.position.distance_to(_press_position) >= CLICK_DRAG_THRESHOLD:
+			_press_pending = false
+			_begin_drag(_press_position)
+			get_viewport().set_input_as_handled()
+		return
 	if not event is InputEventMouseButton or event.button_index != MOUSE_BUTTON_LEFT:
 		return
 	if event.pressed:
 		if _dragging or not _is_character_hit(event.position):
 			return
-		_begin_drag(event.position)
+		_press_pending = true
+		_press_position = event.position
+	elif _press_pending:
+		_press_pending = false
+		if not _falling and not _landing and _side_hold.is_empty() and _climb_jump.is_empty() and not _grapple.active() and not _descent.active():
+			_begin_greeting()
 	elif _dragging:
 		_end_drag()
 	else:
@@ -749,8 +869,10 @@ func _is_character_hit(mouse_position: Vector2) -> bool:
 
 
 func _begin_drag(mouse_position: Vector2) -> void:
+	_cancel_sit()
 	_clear_side_motion()
 	_stop_walking()
+	_greeting = false
 	_falling = false
 	_landing = false
 	_fall_velocity = 0.0
@@ -760,6 +882,18 @@ func _begin_drag(mouse_position: Vector2) -> void:
 	_completed_loops = 0
 	bongbong.speed_scale = 1.0
 	bongbong.play(DRAG)
+	bongbong.set_frame_and_progress(0, 0.0)
+	_update_help()
+
+
+func _begin_greeting() -> void:
+	_cancel_sit()
+	_stop_walking()
+	_greeting = true
+	_requested_idle = &""
+	_completed_loops = 0
+	bongbong.speed_scale = 1.0
+	bongbong.play(GREET_WAVE)
 	bongbong.set_frame_and_progress(0, 0.0)
 	_update_help()
 
@@ -784,8 +918,10 @@ func _end_drag() -> void:
 
 
 func _begin_fall() -> void:
+	_cancel_sit()
 	_clear_side_motion()
 	_stop_walking()
+	_greeting = false
 	_landing = false
 	_falling = true
 	_fall_velocity = 0.0
@@ -818,7 +954,12 @@ func _unhandled_key_input(event: InputEvent) -> void:
 	if event.is_pressed() and event.keycode == KEY_SPACE:
 		_wander_enabled = false
 		_stop_walking()
-		if _grapple.active():
+		if _sitting:
+			_start_sit_up()
+			return
+		if _descent.active():
+			_descent.abort()
+		elif _grapple.active():
 			_grapple.abort()
 		elif not _climb_jump.is_empty():
 			_abort_climb_jump()
@@ -830,8 +971,13 @@ func _unhandled_key_input(event: InputEvent) -> void:
 	if event.is_pressed() and event.keycode == KEY_R:
 		_wander_enabled = not _wander_enabled
 		_stop_walking()
+		if _sitting:
+			_start_sit_up()
 		if _wander_enabled:
 			_wander_time_left = 0.5
+		return
+	if event.is_pressed() and event.keycode == KEY_D and not _dragging:
+		_descent.request()
 		return
 	if _dragging:
 		if event.is_pressed():
@@ -841,7 +987,7 @@ func _unhandled_key_input(event: InputEvent) -> void:
 				KEY_ESCAPE:
 					get_tree().quit()
 		return
-	if _falling or _landing or not _side_hold.is_empty() or not _climb_jump.is_empty() or _grapple.active():
+	if _falling or _landing or not _side_hold.is_empty() or not _climb_jump.is_empty() or _grapple.active() or _descent.active():
 		if event.is_pressed():
 			match event.keycode:
 				KEY_F1:
@@ -854,6 +1000,7 @@ func _unhandled_key_input(event: InputEvent) -> void:
 		return
 	if event.keycode == KEY_LEFT or event.keycode == KEY_RIGHT:
 		if event.is_pressed():
+			_cancel_sit()
 			_auto_walk = false
 			_auto_run = false
 			_auto_run_bouncy = false
@@ -918,7 +1065,16 @@ func _unhandled_key_input(event: InputEvent) -> void:
 
 
 func _process(delta: float) -> void:
+	_descent.advance_dust(delta)
 	_auto_climb_cooldown = maxf(0.0, _auto_climb_cooldown - delta)
+	if _press_pending:
+		if not Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
+			_press_pending = false
+		elif get_viewport().get_mouse_position().distance_to(_press_position) >= CLICK_DRAG_THRESHOLD:
+			_press_pending = false
+			_begin_drag(_press_position)
+		if _press_pending:
+			return
 	if _dragging:
 		if not Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 			_end_drag()
@@ -933,6 +1089,9 @@ func _process(delta: float) -> void:
 		_position_x = bongbong.position.x
 		_update_mouse_region()
 		queue_redraw()
+		return
+	if _descent.active():
+		_descent.advance(delta)
 		return
 	if _grapple.active():
 		_grapple.advance(delta)
@@ -976,8 +1135,24 @@ func _process(delta: float) -> void:
 		_update_mouse_region()
 		queue_redraw()
 		return
-	if _landing:
+	if _greeting or _landing:
 		return
+	if _sitting:
+		if bongbong.animation == SIT_REST:
+			if _system_idle_seconds >= SLEEP_AFTER_NO_INPUT_SECONDS:
+				_start_sit_sleep()
+				return
+			_sit_time_left -= delta
+			if _sit_time_left <= 0.0:
+				_start_sit_up()
+		elif _system_idle_seconds >= 0.0 and _system_idle_seconds < SLEEP_AFTER_NO_INPUT_SECONDS:
+			if bongbong.animation == SIT_SLEEP_ENTER or bongbong.animation == SIT_SLEEP_LOOP:
+				_sleep_wake_requested = true
+				_start_sit_wake()
+		return
+	if _system_idle_seconds >= SLEEP_AFTER_NO_INPUT_SECONDS and bongbong.animation == IDLE_DEFAULT:
+		if not _platform_surfaces.supporting_window(bongbong.position).is_empty() and _begin_sitting():
+			return
 	_update_wandering(delta)
 	var automatic := _auto_walk or _auto_run or _auto_run_bouncy
 	var running := _auto_run or _auto_run_bouncy or _run_pressed
@@ -1006,7 +1181,17 @@ func _process(delta: float) -> void:
 				move_speed = base_speed * lerpf(BOUNCY_APPROACH_MIN_RATIO, 1.0, approach_ratio)
 			else:
 				move_speed = minf(base_speed, sqrt(CLIMB_APPROACH_MIN_SPEED * CLIMB_APPROACH_MIN_SPEED + 2.0 * CLIMB_APPROACH_DECELERATION * distance))
+	var exit_target: Dictionary = _descent.target_for(direction) if automatic and approach.is_empty() and auto_climb_enabled else {}
+	if not exit_target.is_empty():
+		var distance := maxf(0.0, (Vector2(exit_target["point"]).x - _position_x) * direction)
+		move_speed = minf(move_speed, sqrt(pow(WALK_SPEED * MOVEMENT_SCALE, 2) + 2.0 * CLIMB_APPROACH_DECELERATION * distance))
 	var next_x := _position_x + direction * move_speed * delta
+	if not exit_target.is_empty() and (Vector2(exit_target["point"]).x - next_x) * direction <= 0.01:
+		# Stop at the authored standing anchor before turning toward the ledge.
+		bongbong.position.x = roundf(Vector2(exit_target["point"]).x)
+		_position_x = bongbong.position.x
+		if _descent.begin(exit_target):
+			return
 	if not approach.is_empty():
 		# Check the whole movement step before turning at an edge. Even a fast
 		# run or a late frame must stop at hand contact instead of passing through.
@@ -1038,6 +1223,8 @@ func _process(delta: float) -> void:
 			return
 	# Bouncy run keeps its raised arms through braking and its dedicated reach.
 	var still_running := running and (_auto_run_bouncy or move_speed > WALK_SPEED * MOVEMENT_SCALE)
+	if not exit_target.is_empty() and move_speed <= WALK_SPEED * MOVEMENT_SCALE + 1.0:
+		still_running = false
 	_begin_walk(direction, still_running)
 	var normal_speed := (LIGHT_RUN_SPEED if still_running else WALK_SPEED) * MOVEMENT_SCALE
 	bongbong.speed_scale = (MOVEMENT_SCALE if still_running else WALK_ANIMATION_SCALE) * move_speed / normal_speed
@@ -1092,6 +1279,93 @@ func _clear_bouncy_approach() -> void:
 		bongbong.play(RUN_BOUNCY)
 
 
+func _begin_sitting() -> bool:
+	if _sitting or bongbong.animation != IDLE_DEFAULT or not _has_support():
+		return false
+	if _platform_surfaces.supporting_window(bongbong.position).is_empty():
+		return false
+	_sitting = true
+	_sit_time_left = _rng.randf_range(SIT_REST_SECONDS.x, SIT_REST_SECONDS.y)
+	_sleep_wake_requested = false
+	_wander_moving = false
+	_requested_idle = &""
+	_completed_loops = 0
+	bongbong.speed_scale = 1.0
+	bongbong.play(SIT_DOWN)
+	bongbong.set_frame_and_progress(0, 0.0)
+	_set_facing(_facing)
+	_update_help()
+	return true
+
+
+func _start_sit_up() -> void:
+	if not _sitting or bongbong.animation == SIT_UP:
+		return
+	_sit_time_left = 0.0
+	if bongbong.animation == SIT_SLEEP_ENTER or bongbong.animation == SIT_SLEEP_LOOP:
+		_sleep_wake_requested = true
+		_start_sit_wake()
+		return
+	if bongbong.animation == SIT_DOWN or bongbong.animation == SIT_SLEEP_WAKE:
+		return
+	bongbong.play(SIT_UP)
+	bongbong.set_frame_and_progress(0, 0.0)
+	_set_facing(_facing)
+	_update_help()
+
+
+func _start_sit_sleep() -> void:
+	if not _sitting or bongbong.animation != SIT_REST:
+		return
+	_sleep_wake_requested = false
+	bongbong.play(SIT_SLEEP_ENTER)
+	bongbong.set_frame_and_progress(0, 0.0)
+	_set_facing(_facing)
+	_update_help()
+
+
+func _start_sit_wake() -> void:
+	if not _sitting or (bongbong.animation != SIT_SLEEP_ENTER and bongbong.animation != SIT_SLEEP_LOOP):
+		return
+	var wake_frame: int
+	if bongbong.animation == SIT_SLEEP_ENTER:
+		wake_frame = SLEEP_ENTER_WAKE_FRAMES[clampi(bongbong.frame, 0, SLEEP_ENTER_WAKE_FRAMES.size() - 1)]
+	else:
+		wake_frame = SLEEP_LOOP_WAKE_FRAMES[clampi(bongbong.frame, 0, SLEEP_LOOP_WAKE_FRAMES.size() - 1)]
+	bongbong.play(SIT_SLEEP_WAKE)
+	bongbong.set_frame_and_progress(wake_frame, 0.0)
+	_sleep_wake_requested = false
+	_set_facing(_facing)
+	queue_redraw()
+	_update_help()
+
+
+func _cancel_sit() -> void:
+	if not _sitting:
+		return
+	_sitting = false
+	_sit_time_left = 0.0
+	_sleep_wake_requested = false
+	_set_facing(_facing)
+	queue_redraw()
+	_update_help()
+
+
+func _sit_anchor_y() -> float:
+	if not _sitting:
+		return FOOT_ANCHOR.y
+	if bongbong.animation in [SIT_REST, SIT_SLEEP_ENTER, SIT_SLEEP_LOOP, SIT_SLEEP_WAKE]:
+		return SIT_SEAT_ANCHOR_Y
+	if bongbong.animation == SIT_DOWN:
+		return SIT_DOWN_ANCHOR_Y[clampi(bongbong.frame, 0, SIT_DOWN_ANCHOR_Y.size() - 1)]
+	if bongbong.animation == SIT_UP:
+		# The feet lift once, then plant while both hands push the body upright.
+		if bongbong.frame < 30:
+			return SIT_SEAT_ANCHOR_Y
+		return 146.0 + 28.0 * smoothstep(30.0, 58.0, float(bongbong.frame))
+	return FOOT_ANCHOR.y
+
+
 func _update_wandering(delta: float) -> void:
 	if not _wander_enabled or _left_pressed or _right_pressed:
 		return
@@ -1103,6 +1377,8 @@ func _update_wandering(delta: float) -> void:
 		return
 	if _wander_moving:
 		_stop_walking()
+		return
+	if not _platform_surfaces.supporting_window(bongbong.position).is_empty() and (_system_idle_seconds >= SLEEP_AFTER_NO_INPUT_SECONDS or _rng.randf() < SIT_CHANCE) and _begin_sitting():
 		return
 
 	# Usually continue exploring in the same direction; turn inward near an edge.
@@ -1134,7 +1410,7 @@ func _set_facing(direction: int) -> void:
 	bongbong.flip_h = direction < 0
 	# The source anchor is x=95, not the canvas midpoint. Mirror around that
 	# same pixel centre instead of shifting the character by one pixel.
-	bongbong.offset = Vector2(-(CANVAS_SIZE.x - 1.0 - FOOT_ANCHOR.x) if bongbong.flip_h else -FOOT_ANCHOR.x, -FOOT_ANCHOR.y)
+	bongbong.offset = Vector2(-(CANVAS_SIZE.x - 1.0 - FOOT_ANCHOR.x) if bongbong.flip_h else -FOOT_ANCHOR.x, -_sit_anchor_y())
 	queue_redraw()
 
 
@@ -1143,6 +1419,7 @@ func _is_moving() -> bool:
 
 
 func _begin_walk(direction: int, running: bool = false) -> void:
+	_cancel_sit()
 	var animation_name := (RUN_BOUNCY if _auto_run_bouncy else RUN_LIGHT) if running else WALK
 	var turned := direction != _facing
 	_set_facing(direction)
@@ -1185,6 +1462,7 @@ func _stop_walking() -> void:
 
 func _notification(what: int) -> void:
 	if what == NOTIFICATION_APPLICATION_FOCUS_OUT and is_node_ready():
+		_press_pending = false
 		_end_drag()
 		# Other applications must not stop the desktop pet. Only release keyboard
 		# movement, since its key-up events may now belong to another window.
@@ -1196,6 +1474,10 @@ func _notification(what: int) -> void:
 
 
 func _request_idle(animation_name: StringName) -> void:
+	if _sitting:
+		_cancel_sit()
+		_begin_idle(animation_name)
+		return
 	# Stop motion immediately; keep the existing Idle-to-Idle loop boundaries.
 	var was_walking := _is_moving()
 	_stop_walking()
@@ -1209,7 +1491,11 @@ func _request_idle(animation_name: StringName) -> void:
 
 
 func _on_animation_looped() -> void:
-	if _dragging or _falling or _landing or not _side_hold.is_empty() or not _climb_jump.is_empty() or _grapple.active():
+	if _sitting and bongbong.animation == SIT_SLEEP_LOOP:
+		if _sleep_wake_requested:
+			_start_sit_wake()
+		return
+	if _dragging or _falling or _landing or _greeting or _sitting or not _side_hold.is_empty() or not _climb_jump.is_empty() or _grapple.active() or _descent.active():
 		return
 	_completed_loops += 1
 	if _is_moving():
@@ -1235,6 +1521,39 @@ func _on_animation_looped() -> void:
 
 
 func _on_animation_finished() -> void:
+	if _sitting:
+		if bongbong.animation == SIT_DOWN:
+			bongbong.play(SIT_REST)
+			bongbong.set_frame_and_progress(0, 0.0)
+			_set_facing(_facing)
+			_update_help()
+			if _sit_time_left <= 0.0:
+				_start_sit_up()
+			elif _system_idle_seconds >= SLEEP_AFTER_NO_INPUT_SECONDS:
+				_start_sit_sleep()
+			return
+		if bongbong.animation == SIT_SLEEP_ENTER:
+			if _sleep_wake_requested or (_system_idle_seconds >= 0.0 and _system_idle_seconds < SLEEP_AFTER_NO_INPUT_SECONDS):
+				_start_sit_wake()
+				return
+			bongbong.play(SIT_SLEEP_LOOP)
+			bongbong.set_frame_and_progress(0, 0.0)
+			_set_facing(_facing)
+			queue_redraw()
+			_update_help()
+			return
+		if bongbong.animation == SIT_SLEEP_WAKE:
+			bongbong.play(SIT_REST)
+			bongbong.set_frame_and_progress(0, 0.0)
+			_start_sit_up()
+			return
+		if bongbong.animation == SIT_UP:
+			_cancel_sit()
+			_begin_idle(IDLE_DEFAULT)
+			return
+	if _descent.active():
+		_descent.animation_finished()
+		return
 	if _reaching_wall and bongbong.animation in [CLIMB_ENTRY, CLIMB_BOUNCY_ENTRY]:
 		if not _sync_side_hold():
 			_begin_fall()
@@ -1258,6 +1577,9 @@ func _on_animation_finished() -> void:
 	elif _landing and bongbong.animation in [LAND_LOW, LAND_HIGH]:
 		_landing = false
 		_begin_idle(IDLE_DEFAULT)
+	elif _greeting and bongbong.animation == GREET_WAVE:
+		_greeting = false
+		_begin_idle(IDLE_DEFAULT)
 
 
 func _choose_idle() -> StringName:
@@ -1270,6 +1592,7 @@ func _choose_idle() -> StringName:
 
 
 func _begin_idle(animation_name: StringName, bridge_loops: int = 0) -> void:
+	_cancel_sit()
 	# Idle posture changes happen on loop boundaries; stopping movement enters the
 	# default pose immediately at the same foot anchor and facing direction.
 	var limits := DEFAULT_LOOPS
@@ -1290,7 +1613,9 @@ func _update_help() -> void:
 		help_label.text = "창 위 착지 테스트 · 1단계\n봉봉이를 초록색 선 위로 들어 올린 뒤 놓아 보세요.\n← / →: 직접 걷기    R: 자동 이동 켜기/끄기    Space: 멈춤\n발판 끝을 직접 걸어 나가면 아래로 떨어집니다.    Esc: 종료"
 		return
 	var mode := "Drag" if _dragging else ("Bouncy run" if bongbong.animation == RUN_BOUNCY else ("Light run" if bongbong.animation == RUN_LIGHT else ("Walk" if bongbong.animation == WALK else "Idle")))
-	if _grapple.active():
+	if _descent.active():
+		mode = "Descend: " + str(_descent.state["phase"])
+	elif _grapple.active():
 		mode = "Grapple: " + str(_grapple.state["phase"])
 	elif not _climb_jump.is_empty():
 		mode = "Jump to wall"
@@ -1298,18 +1623,22 @@ func _update_help() -> void:
 		mode = "Fall"
 	elif _landing:
 		mode = "Land"
+	elif _greeting:
+		mode = "Greeting"
+	elif _sitting:
+		mode = "Window sleep" if bongbong.animation in [SIT_SLEEP_ENTER, SIT_SLEEP_LOOP, SIT_SLEEP_WAKE] else "Window rest"
 	elif not _side_hold.is_empty():
 		mode = "Reach for wall" if _reaching_wall else ("Pull up" if _pulling_up else ("Climb" if _climbing else "Side hold"))
 	if _auto_walk or _auto_run or _auto_run_bouncy:
 		mode = "Auto " + mode.to_lower()
-	help_label.text = "%s | Facing: %s\n1: Default    2: Pockets    3: Arms crossed\nLeft/Right: Walk    Shift + Left/Right: Light run\n4: Auto walk    5: Auto light run    6: Auto bouncy run\nR: Random roaming on/off    Space: Pause roaming\nMouse: Drag to lift and release to test Fall" % [mode, "Left" if _facing < 0 else "Right"]
+	help_label.text = "%s | Facing: %s\n1: Default    2: Pockets    3: Arms crossed\nLeft/Right: Walk    Shift + Left/Right: Light run\n4: Auto walk    5: Auto light run    6: Auto bouncy run\nR: Random roaming on/off    Space: Pause roaming    D: Climb down\nMouse: Click to wave, drag to lift and release to test Fall" % [mode, "Left" if _facing < 0 else "Right"]
 	help_label.text += "\nF1: Test view    Esc: Quit"
 	if not _side_hold.is_empty():
 		help_label.text += "\nHolding window edge: drag to move, Space to let go"
 	help_label.text += "\nRandom roaming: %s" % ("On" if _wander_enabled else "Paused")
 	if _windows_provider != null:
 		help_label.text += "\nWindow platforms: %d" % _platform_surfaces.rectangles.size()
-	help_label.text += "\nCurrent: %s | Loops: %d / %s" % [bongbong.animation, _completed_loops, "until floor" if _falling else ("once" if _landing else ("infinite" if _is_moving() or _dragging else str(_target_loops)))]
+	help_label.text += "\nCurrent: %s | Loops: %d / %s" % [bongbong.animation, _completed_loops, "until floor" if _falling else ("once" if _landing or _greeting else ("infinite" if _is_moving() or _dragging else str(_target_loops)))]
 	if _requested_idle != &"":
 		var next := String(_requested_idle)
 		if not _is_moving() and bongbong.animation != IDLE_DEFAULT and _requested_idle != IDLE_DEFAULT and bongbong.animation != _requested_idle:

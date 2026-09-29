@@ -1,0 +1,281 @@
+[gd_resource type="SpriteFrames" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_01.png" id="1_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_02.png" id="2_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_03.png" id="3_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_04.png" id="4_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_05.png" id="5_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_06.png" id="6_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_07.png" id="7_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_08.png" id="8_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_09.png" id="9_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_10.png" id="10_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_11.png" id="11_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_12.png" id="12_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_13.png" id="13_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_14.png" id="14_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_15.png" id="15_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_16.png" id="16_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_17.png" id="17_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_18.png" id="18_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_19.png" id="19_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_20.png" id="20_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_21.png" id="21_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_22.png" id="22_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_23.png" id="23_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_24.png" id="24_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_25.png" id="25_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_26.png" id="26_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_27.png" id="27_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_28.png" id="28_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_29.png" id="29_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_30.png" id="30_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_31.png" id="31_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_32.png" id="32_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_33.png" id="33_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_34.png" id="34_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_35.png" id="35_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_36.png" id="36_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_37.png" id="37_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_38.png" id="38_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_39.png" id="39_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_40.png" id="40_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_41.png" id="41_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_42.png" id="42_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_43.png" id="43_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_44.png" id="44_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_45.png" id="45_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_46.png" id="46_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_47.png" id="47_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_48.png" id="48_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_49.png" id="49_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_50.png" id="50_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_51.png" id="51_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_52.png" id="52_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_53.png" id="53_greet"]
+[ext_resource type="Texture2D" path="res://assets/character/greet/grok_wave_02/greet_54.png" id="54_greet"]
+
+[resource]
+animations = [{
+"frames": [
+{
+"duration": 1.0,
+"texture": ExtResource("1_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("2_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("3_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("4_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("5_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("6_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("7_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("8_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("9_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("10_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("11_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("12_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("13_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("14_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("15_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("16_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("17_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("18_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("19_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("20_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("21_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("22_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("23_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("24_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("25_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("26_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("27_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("28_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("29_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("30_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("31_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("32_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("33_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("34_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("35_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("36_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("37_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("38_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("39_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("40_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("41_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("42_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("43_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("44_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("45_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("46_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("47_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("48_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("49_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("50_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("51_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("52_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("53_greet")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("54_greet")
+}
+],
+"loop": 0,
+"name": &"greet_wave",
+"speed": 24.0
+}]

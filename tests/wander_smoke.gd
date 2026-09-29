@@ -48,6 +48,17 @@ func _run() -> void:
 		_fail("Pet did not explore in both directions")
 		return
 
+	_main.call("_begin_greeting")
+	var greeting_position := _sprite.position
+	while bool(_main.get("_greeting")):
+		await process_frame
+		if _sprite.position != greeting_position or bool(_main.get("_wander_moving")):
+			_fail("Wandering interrupted the greeting")
+			return
+	if not await _wait_for_movement(360):
+		_fail("Wandering did not resume after the greeting")
+		return
+
 	_main.call("_begin_drag", _sprite.position)
 	_sprite.position.y -= 150.0
 	_main.call("_end_drag")
@@ -76,7 +87,7 @@ func _run() -> void:
 	if not await _wait_for_movement(90):
 		_fail("R did not resume wandering")
 		return
-	print("Wander smoke passed: autonomous rest/walk/both runs, bounds, focus loss, landing recovery, pause/resume")
+	print("Wander smoke passed: autonomous rest/walk/both runs, bounds, focus loss, greeting and landing recovery, pause/resume")
 	quit()
 
 

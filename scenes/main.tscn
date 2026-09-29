@@ -1,14 +1,14 @@
 [gd_scene format=3 uid="uid://cjvupdrvhjn5y"]
 
 [ext_resource type="Script" uid="uid://c4exjb8shadbe" path="res://scripts/main.gd" id="1_script"]
-[ext_resource type="SpriteFrames" path="res://scenes/idle_frames.tres" id="2_frames"]
+[ext_resource type="SpriteFrames" uid="uid://d04tue8k536p4" path="res://scenes/idle_frames.tres" id="2_frames"]
 
 [node name="Main" type="Node2D" unique_id=1045299581]
 script = ExtResource("1_script")
 
 [node name="Bongbong" type="AnimatedSprite2D" parent="." unique_id=355821441]
 texture_filter = 1
-position = Vector2(330, 337)
+position = Vector2(381, 345)
 sprite_frames = ExtResource("2_frames")
 animation = &"idle_arms_crossed"
 centered = false

@@ -147,6 +147,7 @@ func reset(position: Vector2,right: bool,gait: StringName) -> void:
 	pet._dragging=false
 	pet._falling=false
 	pet._landing=false
+	pet._greeting=false
 	pet._wander_enabled=false
 	pet._auto_climb_cooldown=0.0
 	sprite.position=position

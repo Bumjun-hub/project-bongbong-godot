@@ -76,6 +76,7 @@ func reset(position: Vector2, right: bool, pose: int) -> void:
 	main._dragging = false
 	main._falling = false
 	main._landing = false
+	main._greeting = false
 	main._auto_climb_cooldown = 0.0
 	sprite.position = position
 	main._position_x = position.x

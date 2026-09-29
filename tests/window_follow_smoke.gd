@@ -31,9 +31,9 @@ func _run() -> void:
 	if not _expect(_sprite.position == Vector2(walking_x - 40, 250) and _sprite.animation == &"walk", "Window movement interrupted walking or lost its position"):
 		return
 	_main.call("_stop_walking")
-	_main.call("_begin_idle", &"idle_default")
+	_main.call("_begin_greeting")
 	_snapshot(initial)
-	if not _expect(_sprite.animation == &"idle_default" and _sprite.position.y == 230, "Idle did not ride along with its supporting window"):
+	if not _expect(_main.get("_greeting") and _sprite.position.y == 230, "Greeting did not ride along with its supporting window"):
 		return
 
 	_stand(Vector2(480, 230))
@@ -73,7 +73,7 @@ func _run() -> void:
 	_snapshot(Rect2(100, 40, 400, 100))
 	if not _expect(_main.get("_falling") and _sprite.position.y == 230, "Window movement without headroom hid the pet beyond the screen"):
 		return
-	print("Window follow passed: translation, walking/idle continuity, resize, occlusion, drag/airborne detachment, removal, headroom")
+	print("Window follow passed: translation, walking/greeting continuity, resize, occlusion, drag/airborne detachment, removal, headroom")
 	quit()
 
 

@@ -95,6 +95,7 @@ func begin(approach: Dictionary) -> bool:
 	pet._fall_position_y = start.y
 	pet._falling = false
 	pet._landing = false
+	pet._greeting = false
 	pet._requested_idle = &""
 	state = {"phase":"prepare","elapsed":0.0,"airborne":false,"start":start,"target":target,
 		"hold":approach["hold"].duplicate(),"anchor":anchor,"velocity":Vector2.ZERO,

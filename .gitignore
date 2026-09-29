@@ -1,3 +1,7 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+
+# 제작 중간물과 실행 화면 미리보기는 커밋하지 않습니다.
+/experiments/
+/assets/character/**/runtime*_preview.gif
