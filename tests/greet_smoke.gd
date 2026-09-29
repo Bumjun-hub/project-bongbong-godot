@@ -15,6 +15,10 @@ func _run() -> void:
 		push_error("Greeting must be a 54-frame one-shot")
 		quit(1)
 		return
+	if sprite.sprite_frames.get_frame_texture(&"greet_wave", 53).get_image().get_data() != sprite.sprite_frames.get_frame_texture(&"idle_default", 0).get_image().get_data():
+		push_error("Greeting must finish on the exact IDLE pose")
+		quit(1)
+		return
 	var hit := sprite.position + (sprite.offset + Vector2(95, 90)) * sprite.scale
 	if not main.call("_is_character_hit", hit):
 		push_error("Greeting smoke test point must hit the character")

@@ -178,8 +178,13 @@ func run() -> void:
 	await tick(420)
 	check(main._side_hold.is_empty() and not main._wander_moving, "Paused pet reattached automatically")
 	press(KEY_R)
-	await tick(400)
-	check(main._climbing or main._pulling_up, "Resuming roaming did not allow climbing again")
+	var resumed_climbing := false
+	for frame in 400:
+		await tick(1)
+		if main._climbing or main._pulling_up:
+			resumed_climbing = true
+			break
+	check(resumed_climbing, "Resuming roaming did not allow climbing again")
 	main._begin_drag(sprite.position)
 	check(main._dragging and main._side_hold.is_empty(), "Dragging did not interrupt automatic climbing")
 	check(main._auto_climb_cooldown > 0.0 and main._find_climb_approach().is_empty(), "Detached pet can reattach immediately")

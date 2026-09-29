@@ -13,7 +13,7 @@ func _run() -> void:
 	root.add_child(main)
 	main.set_process(false)
 	var sprite: AnimatedSprite2D = main.get_node("Bongbong")
-	if not _check(sprite.sprite_frames.get_frame_count(&"sit_down") == 16 and sprite.sprite_frames.get_frame_count(&"sit_rest") == 1 and sprite.sprite_frames.get_frame_count(&"sit_up") == 63, "Window rest frame counts changed"):
+	if not _check(sprite.sprite_frames.get_frame_count(&"sit_down") == 16 and sprite.sprite_frames.get_frame_count(&"sit_rest") == 5 and sprite.sprite_frames.get_frame_count(&"sit_up") == 63, "Window rest frame counts changed"):
 		return
 	if not _check(is_equal_approx(sprite.sprite_frames.get_animation_speed(&"sit_down"), 20.0) and is_equal_approx(sprite.sprite_frames.get_animation_speed(&"sit_up"), 40.0), "Window sit playback speeds changed"):
 		return
@@ -63,19 +63,24 @@ func _run() -> void:
 		return
 	if not _check(sprite.sprite_frames.get_frame_texture(&"sit_rest", 0).get_image().get_data() == seated_pose and sprite.sprite_frames.get_frame_texture(&"sit_up", 0).get_image().get_data() == seated_pose, "The seated pose shifted before standing"):
 		return
-	if not _check(sprite.sprite_frames.get_frame_count(&"sit_sleep_enter") == 8 and sprite.sprite_frames.get_frame_count(&"sit_sleep_loop") == 11 and sprite.sprite_frames.get_frame_count(&"sit_sleep_wake") == 16, "The seated sleep transitions are missing"):
+	if not _check(sprite.sprite_frames.get_frame_texture(&"sit_rest", 2).get_image().get_data() != seated_pose and sprite.sprite_frames.get_frame_texture(&"sit_rest", 4).get_image().get_data() == seated_pose, "The seated breathing loop froze or failed to return"):
 		return
-	if not _check(sprite.sprite_frames.get_animation_speed(&"sit_sleep_wake") == 18.0, "The wake-up animation speed changed"):
+	if not _check(sprite.sprite_frames.get_frame_count(&"sit_sleep_enter") == 8 and sprite.sprite_frames.get_frame_count(&"sit_sleep_loop") == 24 and sprite.sprite_frames.get_frame_count(&"sit_sleep_wake") == 24, "The seated sleep transitions are missing"):
 		return
-	if not _check(sprite.sprite_frames.get_animation_speed(&"sit_sleep_loop") == 10.0 and is_equal_approx(sprite.sprite_frames.get_frame_duration(&"sit_sleep_loop", 0), 1.8) and is_equal_approx(sprite.sprite_frames.get_frame_duration(&"sit_sleep_loop", 8), 1.0) and is_equal_approx(sprite.sprite_frames.get_frame_duration(&"sit_sleep_loop", 9), 1.1) and is_equal_approx(sprite.sprite_frames.get_frame_duration(&"sit_sleep_loop", 10), 1.1), "The sleepy nod must lower slowly and recover smoothly across the loop"):
+	if not _check(sprite.sprite_frames.get_animation_speed(&"sit_sleep_wake") == 24.0, "The wake-up animation speed changed"):
 		return
-	if not _check(sprite.sprite_frames.get_frame_texture(&"sit_sleep_enter", 0).get_image().get_data() == seated_pose and sprite.sprite_frames.get_frame_texture(&"sit_sleep_wake", 15).get_image().get_data() == seated_pose, "Sleep did not join the seated pose seamlessly"):
+	if not _check(sprite.sprite_frames.get_animation_speed(&"sit_sleep_loop") == 10.0 and is_equal_approx(sprite.sprite_frames.get_frame_duration(&"sit_sleep_loop", 0), 0.9) and is_equal_approx(sprite.sprite_frames.get_frame_duration(&"sit_sleep_loop", 15), 0.9) and is_equal_approx(sprite.sprite_frames.get_frame_duration(&"sit_sleep_loop", 16), 1.0) and is_equal_approx(sprite.sprite_frames.get_frame_duration(&"sit_sleep_loop", 23), 0.5), "The sleepy nod must lower slowly and recover smoothly across the loop"):
 		return
-	for pair in [[0, 8], [8, 0], [10, 6]]:
+	if not _check(sprite.sprite_frames.get_frame_texture(&"sit_sleep_enter", 0).get_image().get_data() == seated_pose and sprite.sprite_frames.get_frame_texture(&"sit_sleep_wake", 23).get_image().get_data() == seated_pose, "Sleep did not join the seated pose seamlessly"):
+		return
+	for pair in [[0, 16], [1, 15], [10, 6], [16, 0], [23, 14]]:
 		if not _check(sprite.sprite_frames.get_frame_texture(&"sit_sleep_loop", pair[0]).get_image().get_data() == sprite.sprite_frames.get_frame_texture(&"sit_sleep_wake", pair[1]).get_image().get_data(), "Waking changed the current sleeping pose at loop frame %d" % (pair[0] + 1)):
 			return
+	for index in range(1, 8):
+		if not _check(sprite.sprite_frames.get_frame_texture(&"sit_sleep_loop", index * 2).get_image().get_data() == sprite.sprite_frames.get_frame_texture(&"sit_sleep_loop", 24 - index).get_image().get_data(), "The sleepy nod skipped a return pose near the loop seam"):
+			return
 	for index in 8:
-		if not _check(sprite.sprite_frames.get_frame_texture(&"sit_sleep_enter", index).get_image().get_data() == sprite.sprite_frames.get_frame_texture(&"sit_sleep_wake", 15 - index).get_image().get_data(), "Waking changed the current falling-asleep pose at frame %d" % (index + 1)):
+		if not _check(sprite.sprite_frames.get_frame_texture(&"sit_sleep_enter", index).get_image().get_data() == sprite.sprite_frames.get_frame_texture(&"sit_sleep_wake", 23 - index).get_image().get_data(), "Waking changed the current falling-asleep pose at frame %d" % (index + 1)):
 			return
 	for animation_name in [&"sit_sleep_enter", &"sit_sleep_loop", &"sit_sleep_wake"]:
 		for index in sprite.sprite_frames.get_frame_count(animation_name):
@@ -115,8 +120,8 @@ func _run() -> void:
 	main.call("_process", 10.0)
 	if not _check(sprite.animation == &"sit_sleep_loop", "Sleep stopped without user input"):
 		return
-	sprite.set_frame_and_progress(8, 0.0)
-	var sleepy_pose := sprite.sprite_frames.get_frame_texture(&"sit_sleep_loop", 8).get_image().get_data()
+	sprite.set_frame_and_progress(16, 0.0)
+	var sleepy_pose := sprite.sprite_frames.get_frame_texture(&"sit_sleep_loop", 16).get_image().get_data()
 	main.call("_on_system_idle_changed", 0.1)
 	if not _check(sprite.animation == &"sit_sleep_wake" and sprite.frame == 0 and sprite.sprite_frames.get_frame_texture(&"sit_sleep_wake", sprite.frame).get_image().get_data() == sleepy_pose, "Windows input did not wake immediately from the current nod pose"):
 		return

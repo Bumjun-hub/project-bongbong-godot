@@ -49,7 +49,8 @@ const CLIMB: StringName = &"climb"
 const PULL_UP: StringName = &"pull_up"
 const CLIMB_FRAMES: SpriteFrames = preload("res://scenes/climb_frames.tres")
 const PullUpMotion = preload("res://scripts/pull_up_motion.gd")
-const CLIMB_SPEED := 32.0
+const CLIMB_SPEED := 43.0
+const CLIMB_PLAYBACK_RATE := 1.34
 const PULL_UP_PLAYBACK_RATE := 1.2
 const CLIMB_START_DELAY := 0.35
 const CLIMB_ENTRY_SETTLE := 0.05
@@ -89,9 +90,9 @@ const WANDER_MOVE_SECONDS := Vector2(4.0, 12.0)
 const SIT_REST_SECONDS := Vector2(4.0, 7.0)
 const SIT_CHANCE := 0.35
 const SLEEP_AFTER_NO_INPUT_SECONDS := 20.0
-const SLEEP_Z_STAGES := [0, 1, 1, 2, 2, 3, 3, 3, 3, 2, 1]
-const SLEEP_ENTER_WAKE_FRAMES := [15, 14, 13, 12, 11, 10, 9, 8]
-const SLEEP_LOOP_WAKE_FRAMES := [8, 7, 6, 5, 4, 3, 2, 1, 0, 3, 6]
+const SLEEP_Z_STAGES := [0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 1, 0]
+const SLEEP_ENTER_WAKE_FRAMES := [23, 22, 21, 20, 19, 18, 17, 16]
+const SLEEP_LOOP_WAKE_FRAMES := [16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 2, 4, 6, 8, 10, 12, 14]
 const SLEEP_Z_GLYPH := ["11111", "00010", "00100", "01000", "11111"]
 const SIT_SEAT_ANCHOR_Y := 140.0
 const SIT_DOWN_ANCHOR_Y := [174.0, 174.0, 174.0, 174.0, 174.0, 174.0, 174.0, 174.0, 174.0, 174.0, 164.0, 150.0, 140.0, 140.0, 140.0, 140.0]
@@ -209,7 +210,7 @@ func _ready() -> void:
 	for animation_name in [CLIMB_ENTRY, CLIMB_BOUNCY_ENTRY, CLIMB, PULL_UP]:
 		var motion_frames := CLIMB_BOUNCY_ENTRY_FRAMES if animation_name == CLIMB_BOUNCY_ENTRY else (CLIMB_ENTRY_FRAMES if animation_name == CLIMB_ENTRY else CLIMB_FRAMES)
 		bongbong.sprite_frames.add_animation(animation_name)
-		var playback_rate := PULL_UP_PLAYBACK_RATE if animation_name == PULL_UP else 1.0
+		var playback_rate := PULL_UP_PLAYBACK_RATE if animation_name == PULL_UP else (CLIMB_PLAYBACK_RATE if animation_name == CLIMB else 1.0)
 		bongbong.sprite_frames.set_animation_speed(animation_name, motion_frames.get_animation_speed(animation_name) * playback_rate)
 		bongbong.sprite_frames.set_animation_loop(animation_name, motion_frames.get_animation_loop(animation_name))
 		for index in motion_frames.get_frame_count(animation_name):
@@ -1378,7 +1379,8 @@ func _update_wandering(delta: float) -> void:
 	if _wander_moving:
 		_stop_walking()
 		return
-	if not _platform_surfaces.supporting_window(bongbong.position).is_empty() and (_system_idle_seconds >= SLEEP_AFTER_NO_INPUT_SECONDS or _rng.randf() < SIT_CHANCE) and _begin_sitting():
+	var approach := _find_auto_approach()
+	if approach.is_empty() and not _platform_surfaces.supporting_window(bongbong.position).is_empty() and (_system_idle_seconds >= SLEEP_AFTER_NO_INPUT_SECONDS or _rng.randf() < SIT_CHANCE) and _begin_sitting():
 		return
 
 	# Usually continue exploring in the same direction; turn inward near an edge.
@@ -1389,7 +1391,6 @@ func _update_wandering(delta: float) -> void:
 		direction = 1
 	elif _position_x > limits.y - turn_margin:
 		direction = -1
-	var approach := _find_auto_approach()
 	if not approach.is_empty():
 		direction = int(approach["facing"])
 	var roll := _rng.randi_range(1, 100)
